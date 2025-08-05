@@ -1,0 +1,40 @@
+{
+  "generated_topologies": [
+    "3x3",
+    "4x4",
+    "5x5",
+    "6x6"
+  ],
+  "scalability_comparison": {
+    "3": {
+      "nodes": 9,
+      "roads": 24,
+      "complexity": 81,
+      "estimated_training_time_minutes": 4.5
+    },
+    "4": {
+      "nodes": 16,
+      "roads": 48,
+      "complexity": 256,
+      "estimated_training_time_minutes": 8.0
+    },
+    "5": {
+      "nodes": 25,
+      "roads": 80,
+      "complexity": 625,
+      "estimated_training_time_minutes": 12.5
+    },
+    "6": {
+      "nodes": 36,
+      "roads": 120,
+      "complexity": 1296,
+      "estimated_training_time_minutes": 18.0
+    }
+  },
+  "recommended_usage": {
+    "3x3": "概念验证和快速原型",
+    "4x4": "小规模港区仿真",
+    "5x5": "中等规模综合测试",
+    "6x6": "大规模性能评估"
+  }
+}

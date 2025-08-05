@@ -1,0 +1,189 @@
+# 海事GAT-PPO联邦学习配置文件
+# 适用于多港口/航道节点的分布式强化学习训练
+
+common_args:
+  training_type: "cross_silo"  # 跨组织联邦学习
+  scenario: "horizontal"       # 水平联邦学习
+  using_mlops: false          # 是否使用MLOps平台
+  random_seed: 42             # 随机种子
+  config_version: release     # 配置版本
+
+environment_args:
+  bootstrap: config/bootstrap.sh  # 环境初始化脚本
+
+# 海事数据配置
+data_args:
+  dataset: "maritime_traffic"           # 海事交通数据集
+  data_cache_dir: "./data/cache"        # 数据缓存目录
+  partition_method: "hetero"            # 分区方法
+  partition_alpha: 0.5                  # 数据异质性参数
+  
+  # 海事特定数据配置
+  ais_data_path: "./data/processed/ais/" # AIS数据路径
+  cityflow_config_path: "./FedML/CityFlow/examples/config.json"  # CityFlow配置
+  
+  # 节点映射及港口特征配置 (对应真实港口数据)
+  node_mapping:                          # 节点映射
+    1: "new_orleans"        # 新奥尔良港
+    2: "south_louisiana"    # 南路易斯安那港
+    3: "baton_rouge"        # 巴吞鲁日港
+    4: "gulfport"           # 海湾港
+  
+  # 港口特征差异化配置 (基于真实港口数据)
+  port_characteristics:
+    new_orleans:        # 新奥尔良港 - 主要集装箱港
+      port_type: "container_terminal"
+      traffic_intensity: "high"
+      operational_hours: "24/7"
+      dominant_ship_types: ["container", "ro_ro", "general_cargo"]
+      average_vessel_size: "large"
+      seasonal_variation: 0.2
+      data_distribution_bias: "peak_hours"  # 工作时间数据更多
+      location: "29.9311°N, 90.0831°W"
+      data_source: "new_orleans_week1"
+    
+    south_louisiana:    # 南路易斯安那港 - 散货港
+      port_type: "bulk_terminal" 
+      traffic_intensity: "high"
+      operational_hours: "24/7"
+      dominant_ship_types: ["bulk_carrier", "tanker", "barge"]
+      average_vessel_size: "large"
+      seasonal_variation: 0.3
+      data_distribution_bias: "continuous_operations"  # 连续作业
+      location: "29.7755°N, 90.6420°W"
+      data_source: "south_louisiana_week1"
+    
+    baton_rouge:        # 巴吞鲁日港 - 内河港
+      port_type: "inland_waterway"
+      traffic_intensity: "medium"
+      operational_hours: "daytime_priority"
+      dominant_ship_types: ["barge", "pusher", "inland_cargo"]
+      average_vessel_size: "medium"
+      seasonal_variation: 0.5
+      data_distribution_bias: "daylight_operations"  # 日间作业为主
+      location: "30.4515°N, 91.1871°W"
+      data_source: "baton_rouge_week1"
+    
+    gulfport:           # 海湾港 - 综合港
+      port_type: "multipurpose_terminal"
+      traffic_intensity: "medium"
+      operational_hours: "24/7"
+      dominant_ship_types: ["container", "bulk_carrier", "general_cargo"]
+      average_vessel_size: "mixed"
+      seasonal_variation: 0.4
+      data_distribution_bias: "weather_dependent"  # 天气影响显著
+      location: "30.3674°N, 89.0928°W"
+      data_source: "gulfport_week1"
+
+# 模型配置
+model_args:
+  model: "maritime_gat_ppo"                    # 海事GAT-PPO模型
+  model_file_cache_folder: "./model_cache"    # 模型文件缓存
+  global_model_file_path: "./model_cache/global_maritime_model.pt"  # 全局模型路径
+  
+  # GAT网络配置
+  gat_config:
+    num_heads: 8           # 注意力头数
+    hidden_dim: 64         # 隐藏维度
+    dropout_rate: 0.1      # Dropout率
+    use_residual: true     # 使用残差连接
+  
+  # PPO配置
+  ppo_config:
+    learning_rate: 0.0003    # 学习率
+    gamma: 0.99              # 折扣因子
+    gae_lambda: 0.95         # GAE参数
+    clip_ratio: 0.2          # PPO裁剪比例
+    ppo_epochs: 4            # PPO更新轮数
+    ppo_batch_size: 20       # PPO批量大小
+    ppo_mini_batch_size: 10  # PPO小批量大小
+
+# 训练配置
+train_args:
+  federated_optimizer: "FedAvg"     # 联邦优化器
+  client_id_list: [0, 1, 2, 3]     # 客户端ID列表
+  client_num_in_total: 4           # 总客户端数量
+  client_num_per_round: 4          # 每轮参与的客户端数量
+  comm_round: 10                   # 通信轮数（减少用于测试）
+  epochs: 2                        # 本地训练轮数（减少用于测试）
+  
+  # 海事特定训练配置
+  episodes_per_epoch: 5            # 每轮的episode数量
+  steps_per_episode: 15            # 每个episode的步数
+  
+  # 优化器配置
+  client_optimizer: "adam"         # 客户端优化器
+  learning_rate: 0.0003           # 学习率
+  weight_decay: 0.0001            # 权重衰减
+  
+  # 联邦聚合配置
+  use_geographic_weights: true     # 使用地理位置权重
+  use_performance_weights: true    # 使用性能权重
+  use_fairness_weights: true       # 使用公平性权重
+  min_client_weight: 0.1          # 最小客户端权重
+  max_client_weight: 2.0          # 最大客户端权重
+
+# 验证配置
+validation_args:
+  frequency_of_the_test: 5         # 测试频率（每5轮）
+  test_episodes: 10                # 测试episode数量
+  
+# 设备配置
+device_args:
+  using_gpu: false                 # 是否使用GPU
+  gpu_mapping_file: config/gpu_mapping.yaml  # GPU映射文件
+  gpu_mapping_key: mapping_default # GPU映射键
+
+# 通信配置
+comm_args:
+  backend: "MQTT_S3"               # 通信后端
+  mqtt_config_path: config/mqtt_config.yaml    # MQTT配置路径
+  s3_config_path: config/s3_config.yaml        # S3配置路径
+  grpc_ipconfig_path: config/grpc_ipconfig.csv # gRPC IP配置
+  
+  # 通信超时配置
+  client_timeout: 300              # 客户端超时时间（秒）
+  server_timeout: 600              # 服务器超时时间（秒）
+
+# 跟踪和监控配置
+tracking_args:
+  enable_wandb: false              # 启用Weights & Biases
+  wandb_key: ""                    # WandB API密钥
+  wandb_project: "maritime_fedml"  # WandB项目名
+  wandb_name: "maritime_gat_ppo_federated"  # 实验名称
+  
+  # 本地日志配置
+  log_level: "INFO"                # 日志级别
+  log_file: "./logs/fedml.log"     # 日志文件路径
+  save_model_freq: 10              # 模型保存频率
+
+# 安全和隐私配置
+security_args:
+  enable_secure_aggregation: false # 启用安全聚合
+  differential_privacy: false      # 启用差分隐私
+  noise_multiplier: 0.1            # 噪声倍数
+  max_grad_norm: 1.0               # 最大梯度范数
+
+# 海事特定配置
+maritime_args:
+  # 环境配置
+  simulation_time_step: 1.0        # 仿真时间步长（秒）
+  max_waiting_time: 300            # 最大等待时间（秒）
+  weather_impact: true             # 考虑天气影响
+  
+  # 奖励函数配置
+  efficiency_weight: 0.4           # 效率权重
+  fairness_weight: 0.3             # 公平性权重
+  safety_weight: 0.2               # 安全性权重
+  environmental_weight: 0.1        # 环境权重
+  
+  # 公平性配置
+  fairness_metrics:
+    - "gini_index"                 # 基尼系数
+    - "jain_index"                 # Jain公平性指数
+    - "max_min_ratio"              # 最大最小比率
+  
+  # 性能目标
+  target_throughput: 100           # 目标吞吐量（船只/小时）
+  target_waiting_time: 60          # 目标等待时间（秒）
+  target_fairness_score: 0.8       # 目标公平性分数

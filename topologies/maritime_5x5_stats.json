@@ -1,0 +1,24 @@
+{
+  "topology_info": {
+    "grid_size": "5×5",
+    "total_nodes": 25,
+    "total_roads": 80,
+    "node_types": {
+      "main_port": 1,
+      "primary_channel": 8,
+      "inner_channel": 9,
+      "secondary_channel": 7
+    }
+  },
+  "network_metrics": {
+    "average_road_length": 0.10000000000000053,
+    "total_coverage_area": 0.16000000000000003,
+    "network_density": 3.2,
+    "connectivity": 0.26666666666666666
+  },
+  "scalability_analysis": {
+    "computational_complexity": "O(n²) where n=5",
+    "communication_overhead": 160,
+    "memory_footprint": 105
+  }
+}

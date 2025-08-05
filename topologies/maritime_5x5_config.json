@@ -1,0 +1,12 @@
+{
+  "interval": 1.0,
+  "seed": 42,
+  "dir": "topologies/",
+  "roadnetFile": "maritime_5x5_roadnet.json",
+  "flowFile": "maritime_5x5_flows.json",
+  "rlTrafficLight": true,
+  "laneChange": false,
+  "saveReplay": true,
+  "roadnetLogFile": "maritime_5x5_replay_roadnet.json",
+  "replayLogFile": "maritime_5x5_replay.txt"
+}

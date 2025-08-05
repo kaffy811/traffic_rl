@@ -1,0 +1,2286 @@
+[
+  {
+    "id": 0,
+    "vehicle": {
+      "length": 295.2291924748777,
+      "width": 22.215743136801844,
+      "maxPosAcc": 1.3905147779014355,
+      "maxNegAcc": 2.486098412850848,
+      "usualPosAcc": 0.98122031807677,
+      "usualNegAcc": 1.7661415230943187,
+      "minGap": 3.255803292264927,
+      "maxSpeed": 9.00686931196185,
+      "headwayTime": 1.727329594263396
+    },
+    "route": [
+      "Node_2_2",
+      "Node_2_1"
+    ],
+    "interval": 6.138191451123525,
+    "startTime": 103.67857903042244,
+    "endTime": 714.2506709889814,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 44525.18506195705,
+      "priority": "high",
+      "environmental_impact": 0.49372526121970006
+    }
+  },
+  {
+    "id": 1,
+    "vehicle": {
+      "length": 305.9772590274313,
+      "width": 28.907069458583244,
+      "maxPosAcc": 0.5295487052744274,
+      "maxNegAcc": 1.5587222710490618,
+      "usualPosAcc": 0.598994732189958,
+      "usualNegAcc": 0.8423634307535662,
+      "minGap": 2.8326910740184514,
+      "maxSpeed": 11.601931930163422,
+      "headwayTime": 1.726397062861004
+    },
+    "route": [
+      "Node_1_1",
+      "Node_2_1",
+      "Node_3_1"
+    ],
+    "interval": 4.052247067401185,
+    "startTime": 141.20150653879588,
+    "endTime": 1149.2657389165279,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 16173.882943166422,
+      "priority": "high",
+      "environmental_impact": 0.25898375353399716
+    }
+  },
+  {
+    "id": 2,
+    "vehicle": {
+      "length": 149.90479777959197,
+      "width": 23.882734443991612,
+      "maxPosAcc": 1.3350532121115022,
+      "maxNegAcc": 2.358567752439702,
+      "usualPosAcc": 0.8561850468557837,
+      "usualNegAcc": 1.3518250894735473,
+      "minGap": 2.8786801876446644,
+      "maxSpeed": 11.79190545191032,
+      "headwayTime": 2.052097226707545
+    },
+    "route": [
+      "Node_0_1",
+      "Node_0_0",
+      "Node_1_0"
+    ],
+    "interval": 5.123412408304008,
+    "startTime": 224.98478414269408,
+    "endTime": 910.3262514378823,
+    "metadata": {
+      "vessel_type": "passenger",
+      "cargo_capacity": 49866.978454227756,
+      "priority": "normal",
+      "environmental_impact": 0.4697572652383343
+    }
+  },
+  {
+    "id": 3,
+    "vehicle": {
+      "length": 263.12249713169956,
+      "width": 23.75682296015819,
+      "maxPosAcc": 0.5664471909705624,
+      "maxNegAcc": 1.5733077685616155,
+      "usualPosAcc": 0.3741021831595614,
+      "usualNegAcc": 1.8649648232940663,
+      "minGap": 4.959876213665618,
+      "maxSpeed": 10.293256423193576,
+      "headwayTime": 2.436607572245864
+    },
+    "route": [
+      "Node_1_0",
+      "Node_2_0"
+    ],
+    "interval": 2.5616258327887538,
+    "startTime": 130.5182724047982,
+    "endTime": 702.29135672624,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 33293.30795146899,
+      "priority": "high",
+      "environmental_impact": 0.8729698293412083
+    }
+  },
+  {
+    "id": 4,
+    "vehicle": {
+      "length": 189.91643529545757,
+      "width": 29.084589904376607,
+      "maxPosAcc": 0.6169176405949768,
+      "maxNegAcc": 1.178027215982808,
+      "usualPosAcc": 0.7443643108451529,
+      "usualNegAcc": 1.8768417676750448,
+      "minGap": 2.78163769728779,
+      "maxSpeed": 9.892836376577232,
+      "headwayTime": 2.9988878896399225
+    },
+    "route": [
+      "Node_0_0",
+      "Node_0_1",
+      "Node_1_1"
+    ],
+    "interval": 5.81480928191099,
+    "startTime": 243.96603345738163,
+    "endTime": 872.288194813139,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 8189.917889772513,
+      "priority": "emergency",
+      "environmental_impact": 0.755234306212294
+    }
+  },
+  {
+    "id": 5,
+    "vehicle": {
+      "length": 285.7923741659931,
+      "width": 30.809781249049365,
+      "maxPosAcc": 0.9855735735633466,
+      "maxNegAcc": 1.7591574611809786,
+      "usualPosAcc": 0.6867821853543075,
+      "usualNegAcc": 0.842965522138816,
+      "minGap": 2.6713649813251266,
+      "maxSpeed": 7.450588994380937,
+      "headwayTime": 2.053856726790891
+    },
+    "route": [
+      "Node_1_2",
+      "Node_2_2",
+      "Node_3_2"
+    ],
+    "interval": 6.8453287235496,
+    "startTime": 64.14200420641953,
+    "endTime": 966.2028276053345,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 13548.939157911369,
+      "priority": "normal",
+      "environmental_impact": 0.6563588174722467
+    }
+  },
+  {
+    "id": 6,
+    "vehicle": {
+      "length": 297.68115092853935,
+      "width": 28.46490590845066,
+      "maxPosAcc": 1.3855466222663222,
+      "maxNegAcc": 2.133178326466469,
+      "usualPosAcc": 0.4409615040809449,
+      "usualNegAcc": 1.3062034353947074,
+      "minGap": 2.120874923125562,
+      "maxSpeed": 8.268827005922326,
+      "headwayTime": 2.1826909968701482
+    },
+    "route": [
+      "Node_0_1",
+      "Node_0_2",
+      "Node_0_3",
+      "Node_1_3"
+    ],
+    "interval": 1.4302166189875956,
+    "startTime": 163.579181657484,
+    "endTime": 1118.3731339880453,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 16695.2979894884,
+      "priority": "normal",
+      "environmental_impact": 0.5156427721871248
+    }
+  },
+  {
+    "id": 7,
+    "vehicle": {
+      "length": 244.15069240071793,
+      "width": 28.195266814648658,
+      "maxPosAcc": 0.7458399349458692,
+      "maxNegAcc": 1.8108279434207701,
+      "usualPosAcc": 0.7629493117328766,
+      "usualNegAcc": 1.8921812912040223,
+      "minGap": 4.484677635404866,
+      "maxSpeed": 7.1378296179925265,
+      "headwayTime": 2.1413434558393325
+    },
+    "route": [
+      "Node_0_2",
+      "Node_0_1",
+      "Node_0_0",
+      "Node_1_0",
+      "Node_2_0"
+    ],
+    "interval": 4.879128030945209,
+    "startTime": 237.90576592218397,
+    "endTime": 997.3695089581771,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 27555.99717063445,
+      "priority": "high",
+      "environmental_impact": 0.691561298155495
+    }
+  },
+  {
+    "id": 8,
+    "vehicle": {
+      "length": 259.5973789683746,
+      "width": 22.75721431924199,
+      "maxPosAcc": 0.731683677062155,
+      "maxNegAcc": 1.5492693803348443,
+      "usualPosAcc": 0.8367064276359051,
+      "usualNegAcc": 1.6544089195456064,
+      "minGap": 3.8140741137926994,
+      "maxSpeed": 8.352471177012958,
+      "headwayTime": 2.5734566599466002
+    },
+    "route": [
+      "Node_1_3",
+      "Node_1_2",
+      "Node_1_1",
+      "Node_2_1",
+      "Node_3_1"
+    ],
+    "interval": 7.576041352757067,
+    "startTime": 230.48222823357543,
+    "endTime": 1119.1141068041557,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 8544.546247141356,
+      "priority": "high",
+      "environmental_impact": 0.5516009622908954
+    }
+  },
+  {
+    "id": 9,
+    "vehicle": {
+      "length": 153.71050869980536,
+      "width": 22.38358266686071,
+      "maxPosAcc": 0.5841719718520093,
+      "maxNegAcc": 1.0926433666548967,
+      "usualPosAcc": 0.982621667633576,
+      "usualNegAcc": 1.894438411607969,
+      "minGap": 3.987009227176663,
+      "maxSpeed": 11.600374901341999,
+      "headwayTime": 2.1916792087734103
+    },
+    "route": [
+      "Node_1_0",
+      "Node_1_1",
+      "Node_1_2",
+      "Node_2_2",
+      "Node_3_2"
+    ],
+    "interval": 4.356831857166553,
+    "startTime": 73.82749587554267,
+    "endTime": 625.7616623998364,
+    "metadata": {
+      "vessel_type": "passenger",
+      "cargo_capacity": 20249.821316990103,
+      "priority": "high",
+      "environmental_impact": 0.5758775298612572
+    }
+  },
+  {
+    "id": 10,
+    "vehicle": {
+      "length": 205.84375810076762,
+      "width": 25.73800336252129,
+      "maxPosAcc": 0.7775484959870246,
+      "maxNegAcc": 1.5450673343975574,
+      "usualPosAcc": 0.49901214820625517,
+      "usualNegAcc": 1.1433697867801635,
+      "minGap": 4.194012382436606,
+      "maxSpeed": 6.086225058314602,
+      "headwayTime": 1.8374455460399086
+    },
+    "route": [
+      "Node_0_3",
+      "Node_1_3",
+      "Node_2_3"
+    ],
+    "interval": 7.425088443651212,
+    "startTime": 243.73752830185856,
+    "endTime": 676.7116075767218,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 34568.00279274557,
+      "priority": "normal",
+      "environmental_impact": 0.4908553562659822
+    }
+  },
+  {
+    "id": 11,
+    "vehicle": {
+      "length": 189.24217901877185,
+      "width": 31.311404973135502,
+      "maxPosAcc": 0.9904885986714062,
+      "maxNegAcc": 1.2350095935571783,
+      "usualPosAcc": 0.7346361066748193,
+      "usualNegAcc": 1.0120112687422758,
+      "minGap": 2.3376220843264637,
+      "maxSpeed": 7.2137335353422944,
+      "headwayTime": 1.897784382277601
+    },
+    "route": [
+      "Node_3_2",
+      "Node_2_2",
+      "Node_1_2"
+    ],
+    "interval": 8.954595306986329,
+    "startTime": 234.08863634107,
+    "endTime": 774.8746141755395,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 33095.94324384956,
+      "priority": "emergency",
+      "environmental_impact": 0.9643397354299472
+    }
+  },
+  {
+    "id": 12,
+    "vehicle": {
+      "length": 294.4129434483094,
+      "width": 34.18015883711471,
+      "maxPosAcc": 1.3096596008763277,
+      "maxNegAcc": 1.4955866127777164,
+      "usualPosAcc": 0.943521787978419,
+      "usualNegAcc": 1.3163207107022257,
+      "minGap": 3.8630170159058035,
+      "maxSpeed": 8.690321683423765,
+      "headwayTime": 1.9085119642807526
+    },
+    "route": [
+      "Node_1_0",
+      "Node_1_1",
+      "Node_1_2",
+      "Node_1_3",
+      "Node_0_3"
+    ],
+    "interval": 7.686148587493265,
+    "startTime": 260.4643394361256,
+    "endTime": 718.1206461996679,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 47112.91695236596,
+      "priority": "high",
+      "environmental_impact": 0.41038188332217373
+    }
+  },
+  {
+    "id": 13,
+    "vehicle": {
+      "length": 365.5434811570253,
+      "width": 30.55500409582413,
+      "maxPosAcc": 0.8208959396787104,
+      "maxNegAcc": 1.7109979824568953,
+      "usualPosAcc": 0.5131842300297028,
+      "usualNegAcc": 1.395128822140712,
+      "minGap": 3.4082995148894106,
+      "maxSpeed": 9.409454913631656,
+      "headwayTime": 2.582141082641609
+    },
+    "route": [
+      "Node_2_1",
+      "Node_2_0",
+      "Node_1_0",
+      "Node_0_0"
+    ],
+    "interval": 4.415407679244624,
+    "startTime": 213.62234932524896,
+    "endTime": 1020.6667025118791,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 47204.48437670977,
+      "priority": "emergency",
+      "environmental_impact": 0.7759590649827508
+    }
+  },
+  {
+    "id": 14,
+    "vehicle": {
+      "length": 256.938994786063,
+      "width": 28.194409451892568,
+      "maxPosAcc": 1.0605057961812432,
+      "maxNegAcc": 2.182353725341824,
+      "usualPosAcc": 0.4417605501521829,
+      "usualNegAcc": 1.7338611783676487,
+      "minGap": 4.304550440899602,
+      "maxSpeed": 8.98910393270653,
+      "headwayTime": 2.840682391397523
+    },
+    "route": [
+      "Node_3_3",
+      "Node_3_2",
+      "Node_3_1",
+      "Node_2_1",
+      "Node_1_1"
+    ],
+    "interval": 2.0321464228130806,
+    "startTime": 169.12023346447558,
+    "endTime": 924.1677916908216,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 41189.46023978782,
+      "priority": "high",
+      "environmental_impact": 0.9092272463531967
+    }
+  },
+  {
+    "id": 15,
+    "vehicle": {
+      "length": 275.71277697807784,
+      "width": 33.89605092108365,
+      "maxPosAcc": 1.2190155589747103,
+      "maxNegAcc": 2.2097505847780594,
+      "usualPosAcc": 0.7877701222425002,
+      "usualNegAcc": 1.8581153369274443,
+      "minGap": 4.283153726211847,
+      "maxSpeed": 9.87760884920852,
+      "headwayTime": 1.8661887868607916
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_1",
+      "Node_1_0"
+    ],
+    "interval": 8.109176627730491,
+    "startTime": 76.31454342773193,
+    "endTime": 1035.0726538822892,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 44785.73400613738,
+      "priority": "emergency",
+      "environmental_impact": 0.47702312488375387
+    }
+  },
+  {
+    "id": 16,
+    "vehicle": {
+      "length": 256.45435438031086,
+      "width": 34.79952880537064,
+      "maxPosAcc": 0.8547843673167294,
+      "maxNegAcc": 1.934392191991845,
+      "usualPosAcc": 0.6489909029278423,
+      "usualNegAcc": 0.8119088414563799,
+      "minGap": 3.319651639744652,
+      "maxSpeed": 8.1380983190408,
+      "headwayTime": 2.595064827315219
+    },
+    "route": [
+      "Node_0_2",
+      "Node_0_1",
+      "Node_0_0",
+      "Node_1_0",
+      "Node_2_0",
+      "Node_3_0"
+    ],
+    "interval": 4.713006939690683,
+    "startTime": 146.8727264005119,
+    "endTime": 846.952233370596,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 28929.608830903944,
+      "priority": "high",
+      "environmental_impact": 0.9011821837253715
+    }
+  },
+  {
+    "id": 17,
+    "vehicle": {
+      "length": 160.88393227033006,
+      "width": 25.966945318552163,
+      "maxPosAcc": 1.4581003308398113,
+      "maxNegAcc": 1.1105374484941308,
+      "usualPosAcc": 0.5838658689095482,
+      "usualNegAcc": 1.7408411089256965,
+      "minGap": 4.404274709231158,
+      "maxSpeed": 7.382046519099044,
+      "headwayTime": 2.509733207606538
+    },
+    "route": [
+      "Node_3_1",
+      "Node_2_1",
+      "Node_1_1",
+      "Node_0_1"
+    ],
+    "interval": 2.3963963007434574,
+    "startTime": 285.4651806030001,
+    "endTime": 793.1729182416767,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 42143.034831903715,
+      "priority": "normal",
+      "environmental_impact": 0.4056376432912402
+    }
+  },
+  {
+    "id": 18,
+    "vehicle": {
+      "length": 254.8764618017987,
+      "width": 29.80333682018012,
+      "maxPosAcc": 1.283998785585531,
+      "maxNegAcc": 1.9776316393500848,
+      "usualPosAcc": 0.8896771105906138,
+      "usualNegAcc": 0.9737017678035191,
+      "minGap": 3.795478623869655,
+      "maxSpeed": 9.31752430391645,
+      "headwayTime": 2.846507564027113
+    },
+    "route": [
+      "Node_1_3",
+      "Node_1_2",
+      "Node_1_1",
+      "Node_1_0"
+    ],
+    "interval": 1.843757002120007,
+    "startTime": 181.069918957823,
+    "endTime": 785.4410497481468,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 18399.494975159352,
+      "priority": "high",
+      "environmental_impact": 0.8085915268129649
+    }
+  },
+  {
+    "id": 19,
+    "vehicle": {
+      "length": 292.8100153477304,
+      "width": 26.014930478659043,
+      "maxPosAcc": 0.7314423430081072,
+      "maxNegAcc": 1.8129778123870568,
+      "usualPosAcc": 0.4374803720035947,
+      "usualNegAcc": 1.2590782719801588,
+      "minGap": 3.711724064878981,
+      "maxSpeed": 10.501413826452698,
+      "headwayTime": 2.26772441484725
+    },
+    "route": [
+      "Node_0_0",
+      "Node_0_1",
+      "Node_0_2",
+      "Node_1_2",
+      "Node_2_2",
+      "Node_3_2"
+    ],
+    "interval": 8.930635981453415,
+    "startTime": 15.761821269344466,
+    "endTime": 1076.5965923155927,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 18346.533224854233,
+      "priority": "emergency",
+      "environmental_impact": 0.33544835207234547
+    }
+  },
+  {
+    "id": 20,
+    "vehicle": {
+      "length": 210.75936876225012,
+      "width": 27.35914885228102,
+      "maxPosAcc": 1.3090956354112873,
+      "maxNegAcc": 2.42815314472167,
+      "usualPosAcc": 0.7672558505233049,
+      "usualNegAcc": 1.2503753056142206,
+      "minGap": 4.984987937180511,
+      "maxSpeed": 9.690734473849163,
+      "headwayTime": 1.6308649623842704
+    },
+    "route": [
+      "Node_3_2",
+      "Node_3_1",
+      "Node_3_0",
+      "Node_2_0",
+      "Node_1_0"
+    ],
+    "interval": 5.6840613642684215,
+    "startTime": 11.03095647487522,
+    "endTime": 945.2076298794096,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 10106.617298951238,
+      "priority": "emergency",
+      "environmental_impact": 0.6977670985343136
+    }
+  },
+  {
+    "id": 21,
+    "vehicle": {
+      "length": 342.941320756909,
+      "width": 30.620618292916262,
+      "maxPosAcc": 1.1466642320881895,
+      "maxNegAcc": 1.487059556110541,
+      "usualPosAcc": 0.9977822345957699,
+      "usualNegAcc": 1.8924406012607098,
+      "minGap": 4.815017618696849,
+      "maxSpeed": 8.48554278279013,
+      "headwayTime": 1.9717658512772662
+    },
+    "route": [
+      "Node_1_0",
+      "Node_2_0"
+    ],
+    "interval": 9.197877501468371,
+    "startTime": 30.861877137357652,
+    "endTime": 1164.4598204014449,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 21809.65736322926,
+      "priority": "normal",
+      "environmental_impact": 0.6405454638585667
+    }
+  },
+  {
+    "id": 22,
+    "vehicle": {
+      "length": 332.56598688862584,
+      "width": 30.202470660569983,
+      "maxPosAcc": 1.1684488949721532,
+      "maxNegAcc": 2.1290946375026127,
+      "usualPosAcc": 0.3806554326877679,
+      "usualNegAcc": 1.1874983955183405,
+      "minGap": 3.7506977008620326,
+      "maxSpeed": 8.732975858203856,
+      "headwayTime": 2.435568829761201
+    },
+    "route": [
+      "Node_2_2",
+      "Node_2_3",
+      "Node_1_3"
+    ],
+    "interval": 7.889943323608321,
+    "startTime": 137.01135246597119,
+    "endTime": 1006.384098989807,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 13791.757249804603,
+      "priority": "high",
+      "environmental_impact": 0.2636677400202904
+    }
+  },
+  {
+    "id": 23,
+    "vehicle": {
+      "length": 151.72864072845405,
+      "width": 25.89059284399152,
+      "maxPosAcc": 0.699530331146849,
+      "maxNegAcc": 2.128941096271764,
+      "usualPosAcc": 0.7747658338173016,
+      "usualNegAcc": 1.3141946175020554,
+      "minGap": 2.060205175384016,
+      "maxSpeed": 7.624271216265442,
+      "headwayTime": 2.2503111888078076
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_1_2"
+    ],
+    "interval": 1.9498901341303128,
+    "startTime": 87.02250317170692,
+    "endTime": 928.1936394151529,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 18472.15267926181,
+      "priority": "normal",
+      "environmental_impact": 0.8243732532786703
+    }
+  },
+  {
+    "id": 24,
+    "vehicle": {
+      "length": 224.14675637172127,
+      "width": 21.560355164773643,
+      "maxPosAcc": 1.1403108866055858,
+      "maxNegAcc": 2.4849237446542514,
+      "usualPosAcc": 0.6754994258511393,
+      "usualNegAcc": 0.8595200115359225,
+      "minGap": 3.841030757445559,
+      "maxSpeed": 6.399826211124899,
+      "headwayTime": 2.30214200543017
+    },
+    "route": [
+      "Node_0_2",
+      "Node_0_3"
+    ],
+    "interval": 3.269471425461327,
+    "startTime": 24.525493901939278,
+    "endTime": 986.5780335875274,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 11404.857328330952,
+      "priority": "high",
+      "environmental_impact": 0.2830349353956547
+    }
+  },
+  {
+    "id": 25,
+    "vehicle": {
+      "length": 262.9823267195527,
+      "width": 25.454122891974553,
+      "maxPosAcc": 1.1388080818471562,
+      "maxNegAcc": 1.6087682012885605,
+      "usualPosAcc": 0.6155818846379004,
+      "usualNegAcc": 1.8555314994079541,
+      "minGap": 4.994449280146158,
+      "maxSpeed": 10.178890057252419,
+      "headwayTime": 2.717621594006697
+    },
+    "route": [
+      "Node_2_2",
+      "Node_2_1",
+      "Node_1_1",
+      "Node_0_1"
+    ],
+    "interval": 7.042039898903033,
+    "startTime": 115.58331946819041,
+    "endTime": 919.1828903648536,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 25500.515366886615,
+      "priority": "normal",
+      "environmental_impact": 0.45893803630421126
+    }
+  },
+  {
+    "id": 26,
+    "vehicle": {
+      "length": 279.6413298973943,
+      "width": 24.314088238572754,
+      "maxPosAcc": 1.3680104378758569,
+      "maxNegAcc": 1.79937544157971,
+      "usualPosAcc": 0.6570566247252383,
+      "usualNegAcc": 1.7967621332578894,
+      "minGap": 2.418593917708578,
+      "maxSpeed": 10.380709440429309,
+      "headwayTime": 2.6270456522098313
+    },
+    "route": [
+      "Node_1_3",
+      "Node_2_3"
+    ],
+    "interval": 6.308644128720642,
+    "startTime": 129.23797392174973,
+    "endTime": 956.4864296008056,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 6705.596459408427,
+      "priority": "normal",
+      "environmental_impact": 0.3366305532889613
+    }
+  },
+  {
+    "id": 27,
+    "vehicle": {
+      "length": 279.45801730753135,
+      "width": 25.23300066843732,
+      "maxPosAcc": 1.176471468904931,
+      "maxNegAcc": 2.263844869123758,
+      "usualPosAcc": 0.6201458755268356,
+      "usualNegAcc": 0.8575104738634611,
+      "minGap": 3.6535826611728934,
+      "maxSpeed": 8.179166859265933,
+      "headwayTime": 2.7976569862980645
+    },
+    "route": [
+      "Node_1_0",
+      "Node_2_0",
+      "Node_3_0"
+    ],
+    "interval": 6.639168444704646,
+    "startTime": 40.66406083078642,
+    "endTime": 647.4815164421152,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 1479.5436172487566,
+      "priority": "high",
+      "environmental_impact": 0.4819138847250809
+    }
+  },
+  {
+    "id": 28,
+    "vehicle": {
+      "length": 275.48961336538116,
+      "width": 27.645898942069334,
+      "maxPosAcc": 0.7871203298689972,
+      "maxNegAcc": 1.9162223666463254,
+      "usualPosAcc": 0.8189278097445258,
+      "usualNegAcc": 1.3802569691535727,
+      "minGap": 3.0783689402900865,
+      "maxSpeed": 6.295028066421603,
+      "headwayTime": 2.1895167900372234
+    },
+    "route": [
+      "Node_2_1",
+      "Node_2_2",
+      "Node_2_3",
+      "Node_1_3"
+    ],
+    "interval": 7.019839819083173,
+    "startTime": 286.55023241238354,
+    "endTime": 1140.5840659330865,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 10893.7163376362,
+      "priority": "high",
+      "environmental_impact": 0.3373340736961741
+    }
+  },
+  {
+    "id": 29,
+    "vehicle": {
+      "length": 249.5891592787951,
+      "width": 30.011134942945464,
+      "maxPosAcc": 1.398608195217896,
+      "maxNegAcc": 1.1422730332455786,
+      "usualPosAcc": 0.4200123703582299,
+      "usualNegAcc": 0.9696122621955399,
+      "minGap": 2.546692363833166,
+      "maxSpeed": 8.270507189250836,
+      "headwayTime": 1.5864024614428747
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1",
+      "Node_2_0",
+      "Node_3_0"
+    ],
+    "interval": 4.932603087947966,
+    "startTime": 6.804851561081127,
+    "endTime": 1048.0480750382121,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 28797.469908593623,
+      "priority": "emergency",
+      "environmental_impact": 0.7222831346610856
+    }
+  },
+  {
+    "id": 30,
+    "vehicle": {
+      "length": 187.49271811515814,
+      "width": 23.725291418180124,
+      "maxPosAcc": 0.8088335225111832,
+      "maxNegAcc": 2.1137565806419647,
+      "usualPosAcc": 0.3844967747289356,
+      "usualNegAcc": 1.9104921619634412,
+      "minGap": 4.375116975486382,
+      "maxSpeed": 9.534112694348417,
+      "headwayTime": 2.2269115512924023
+    },
+    "route": [
+      "Node_2_1",
+      "Node_2_2",
+      "Node_1_2",
+      "Node_0_2"
+    ],
+    "interval": 8.189642547117836,
+    "startTime": 130.8983292377834,
+    "endTime": 824.7016214411872,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 41065.66307300846,
+      "priority": "emergency",
+      "environmental_impact": 0.373330430856173
+    }
+  },
+  {
+    "id": 31,
+    "vehicle": {
+      "length": 267.2617746318311,
+      "width": 29.6094533317558,
+      "maxPosAcc": 0.8304229112841199,
+      "maxNegAcc": 2.4717977586046342,
+      "usualPosAcc": 0.7539839360479301,
+      "usualNegAcc": 1.7050071769845239,
+      "minGap": 2.579124243520682,
+      "maxSpeed": 7.088764154256853,
+      "headwayTime": 2.3957237988889504
+    },
+    "route": [
+      "Node_0_2",
+      "Node_0_1",
+      "Node_1_1",
+      "Node_2_1",
+      "Node_3_1"
+    ],
+    "interval": 6.841189155882432,
+    "startTime": 172.02325840312324,
+    "endTime": 1113.0169923159383,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 4129.148177902833,
+      "priority": "normal",
+      "environmental_impact": 0.7512861167471806
+    }
+  },
+  {
+    "id": 32,
+    "vehicle": {
+      "length": 324.52760838033976,
+      "width": 30.556453502611095,
+      "maxPosAcc": 0.9847172994953063,
+      "maxNegAcc": 1.1267683774478257,
+      "usualPosAcc": 0.44456530798753024,
+      "usualNegAcc": 1.8223773388647209,
+      "minGap": 4.877883067665515,
+      "maxSpeed": 11.11284022760416,
+      "headwayTime": 2.2512552582071796
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1"
+    ],
+    "interval": 4.904982836792632,
+    "startTime": 113.07549913191284,
+    "endTime": 919.6999121187048,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 34636.00646431428,
+      "priority": "emergency",
+      "environmental_impact": 0.7386174067469524
+    }
+  },
+  {
+    "id": 33,
+    "vehicle": {
+      "length": 218.9571981355395,
+      "width": 29.645172713492723,
+      "maxPosAcc": 1.1825988957576972,
+      "maxNegAcc": 1.0107815339634914,
+      "usualPosAcc": 0.48300732034947524,
+      "usualNegAcc": 1.9542504231863755,
+      "minGap": 2.7949984061703144,
+      "maxSpeed": 8.39056627723334,
+      "headwayTime": 2.5716616532342433
+    },
+    "route": [
+      "Node_3_2",
+      "Node_3_1",
+      "Node_2_1"
+    ],
+    "interval": 5.493002003359393,
+    "startTime": 181.4584552485117,
+    "endTime": 951.2365420010915,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 36834.98625184072,
+      "priority": "high",
+      "environmental_impact": 0.7716289609240934
+    }
+  },
+  {
+    "id": 34,
+    "vehicle": {
+      "length": 107.5141593900947,
+      "width": 24.20792481017437,
+      "maxPosAcc": 1.4735694230137144,
+      "maxNegAcc": 2.2919315912454263,
+      "usualPosAcc": 0.9778414715979853,
+      "usualNegAcc": 0.8820324185926508,
+      "minGap": 4.562590264746088,
+      "maxSpeed": 14.416038055878575,
+      "headwayTime": 1.9112631434062088
+    },
+    "route": [
+      "Node_3_2",
+      "Node_2_2"
+    ],
+    "interval": 1.4533954623660432,
+    "startTime": 246.98407293091515,
+    "endTime": 1169.7174140313848,
+    "metadata": {
+      "vessel_type": "passenger",
+      "cargo_capacity": 8495.774208676754,
+      "priority": "emergency",
+      "environmental_impact": 0.723798834925814
+    }
+  },
+  {
+    "id": 35,
+    "vehicle": {
+      "length": 262.4630492959948,
+      "width": 28.95024291510898,
+      "maxPosAcc": 1.2773374435707625,
+      "maxNegAcc": 1.5059909446247837,
+      "usualPosAcc": 0.5449218838813374,
+      "usualNegAcc": 1.969131536438925,
+      "minGap": 3.142440213883896,
+      "maxSpeed": 7.563187255388323,
+      "headwayTime": 2.6404090808104983
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_1"
+    ],
+    "interval": 9.551770141264111,
+    "startTime": 261.6277070528207,
+    "endTime": 879.4562837657409,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 4246.672003717231,
+      "priority": "high",
+      "environmental_impact": 0.3383235252975526
+    }
+  },
+  {
+    "id": 36,
+    "vehicle": {
+      "length": 296.87368466863495,
+      "width": 24.914238817328275,
+      "maxPosAcc": 1.463877589265275,
+      "maxNegAcc": 2.3741796661985015,
+      "usualPosAcc": 0.6232108337422185,
+      "usualNegAcc": 1.9275734332233319,
+      "minGap": 2.5992183952861745,
+      "maxSpeed": 7.812723868225535,
+      "headwayTime": 2.522120730658968
+    },
+    "route": [
+      "Node_0_3",
+      "Node_1_3",
+      "Node_2_3"
+    ],
+    "interval": 8.16277776983652,
+    "startTime": 78.21822324340087,
+    "endTime": 723.5293886853641,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 16230.921354260585,
+      "priority": "normal",
+      "environmental_impact": 0.2548426697479499
+    }
+  },
+  {
+    "id": 37,
+    "vehicle": {
+      "length": 219.58828440946985,
+      "width": 31.73426315162301,
+      "maxPosAcc": 0.7960201317382721,
+      "maxNegAcc": 1.453501491909604,
+      "usualPosAcc": 0.5132912616779887,
+      "usualNegAcc": 1.5783180199310114,
+      "minGap": 2.908705264518777,
+      "maxSpeed": 9.29325471912118,
+      "headwayTime": 1.7205049074874204
+    },
+    "route": [
+      "Node_0_3",
+      "Node_1_3",
+      "Node_2_3",
+      "Node_3_3"
+    ],
+    "interval": 6.728181145033307,
+    "startTime": 102.27069541920424,
+    "endTime": 1191.6914295829804,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 39568.49057151999,
+      "priority": "normal",
+      "environmental_impact": 0.4836301331338346
+    }
+  },
+  {
+    "id": 38,
+    "vehicle": {
+      "length": 192.18546096979568,
+      "width": 28.899634623535682,
+      "maxPosAcc": 0.7765086745429373,
+      "maxNegAcc": 1.1919074245269066,
+      "usualPosAcc": 0.5401877454905768,
+      "usualNegAcc": 0.9477515414271129,
+      "minGap": 3.293377980387416,
+      "maxSpeed": 7.768784884653314,
+      "headwayTime": 2.5445908443836096
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2"
+    ],
+    "interval": 6.129306109630486,
+    "startTime": 258.45255672460246,
+    "endTime": 672.7283549963798,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 15760.103604505433,
+      "priority": "normal",
+      "environmental_impact": 0.1674738005724768
+    }
+  },
+  {
+    "id": 39,
+    "vehicle": {
+      "length": 289.9259621227322,
+      "width": 22.858217321119447,
+      "maxPosAcc": 1.2922494645547107,
+      "maxNegAcc": 1.9239635150458525,
+      "usualPosAcc": 0.3425039663086917,
+      "usualNegAcc": 1.2531810204876241,
+      "minGap": 3.9773340409143065,
+      "maxSpeed": 9.751887643326983,
+      "headwayTime": 1.8457404979380345
+    },
+    "route": [
+      "Node_0_2",
+      "Node_1_2",
+      "Node_2_2",
+      "Node_3_2"
+    ],
+    "interval": 1.1956475088728122,
+    "startTime": 77.83215203410734,
+    "endTime": 865.7735710360565,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 16446.824450058237,
+      "priority": "normal",
+      "environmental_impact": 0.5915070555779698
+    }
+  },
+  {
+    "id": 40,
+    "vehicle": {
+      "length": 268.942880045668,
+      "width": 27.107327696566518,
+      "maxPosAcc": 1.3843604023871143,
+      "maxNegAcc": 2.475118468242019,
+      "usualPosAcc": 0.9731707237802967,
+      "usualNegAcc": 1.3159013538602147,
+      "minGap": 3.2927096399152473,
+      "maxSpeed": 9.213175844343716,
+      "headwayTime": 2.377720477667372
+    },
+    "route": [
+      "Node_0_3",
+      "Node_0_2",
+      "Node_0_1",
+      "Node_0_0",
+      "Node_1_0",
+      "Node_2_0"
+    ],
+    "interval": 9.757798940534151,
+    "startTime": 146.8285421260375,
+    "endTime": 674.6023792704999,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 16782.74441934052,
+      "priority": "normal",
+      "environmental_impact": 0.5794930446060544
+    }
+  },
+  {
+    "id": 41,
+    "vehicle": {
+      "length": 280.824695706193,
+      "width": 20.040636676470292,
+      "maxPosAcc": 0.9349980114624087,
+      "maxNegAcc": 1.2535815188461557,
+      "usualPosAcc": 0.34497193525757286,
+      "usualNegAcc": 1.582286071130269,
+      "minGap": 4.001366195512904,
+      "maxSpeed": 9.248411825716472,
+      "headwayTime": 1.8002661627991974
+    },
+    "route": [
+      "Node_3_1",
+      "Node_3_2",
+      "Node_3_3"
+    ],
+    "interval": 3.080991304681346,
+    "startTime": 24.466186680383593,
+    "endTime": 723.6035578892643,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 14466.828662287566,
+      "priority": "high",
+      "environmental_impact": 0.39490753295026415
+    }
+  },
+  {
+    "id": 42,
+    "vehicle": {
+      "length": 286.71713071660133,
+      "width": 24.321008906530942,
+      "maxPosAcc": 0.7775418512526565,
+      "maxNegAcc": 1.0376921436969075,
+      "usualPosAcc": 0.6585601012590454,
+      "usualNegAcc": 0.8891287259184807,
+      "minGap": 3.0745152409605923,
+      "maxSpeed": 7.532160354736078,
+      "headwayTime": 1.7392455812724839
+    },
+    "route": [
+      "Node_1_3",
+      "Node_2_3"
+    ],
+    "interval": 8.386850413216678,
+    "startTime": 41.823276104426235,
+    "endTime": 906.2730225556348,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 26641.150163066122,
+      "priority": "high",
+      "environmental_impact": 0.915620086011822
+    }
+  },
+  {
+    "id": 43,
+    "vehicle": {
+      "length": 161.2138399534309,
+      "width": 22.94784074196292,
+      "maxPosAcc": 1.23913923998613,
+      "maxNegAcc": 1.3761625115686646,
+      "usualPosAcc": 0.7812762602612511,
+      "usualNegAcc": 1.6845065113285878,
+      "minGap": 2.169545124773398,
+      "maxSpeed": 8.515900315535752,
+      "headwayTime": 2.662729728270615
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_3",
+      "Node_2_3"
+    ],
+    "interval": 2.173177718756421,
+    "startTime": 286.2245541396488,
+    "endTime": 706.759187992764,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 43871.02120875165,
+      "priority": "normal",
+      "environmental_impact": 0.2894052549336637
+    }
+  },
+  {
+    "id": 44,
+    "vehicle": {
+      "length": 229.1570577179608,
+      "width": 30.24907840801269,
+      "maxPosAcc": 1.214019543827577,
+      "maxNegAcc": 2.201508074834689,
+      "usualPosAcc": 0.6983605535015667,
+      "usualNegAcc": 1.0334772711175575,
+      "minGap": 2.2390593303165343,
+      "maxSpeed": 9.185866059631207,
+      "headwayTime": 1.6525172747421821
+    },
+    "route": [
+      "Node_0_1",
+      "Node_0_2",
+      "Node_1_2",
+      "Node_2_2"
+    ],
+    "interval": 5.817073325605363,
+    "startTime": 111.57048692687363,
+    "endTime": 1124.5294228771065,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 2408.1544456927477,
+      "priority": "normal",
+      "environmental_impact": 0.2416809336219134
+    }
+  },
+  {
+    "id": 45,
+    "vehicle": {
+      "length": 389.34370001287476,
+      "width": 26.109195020725203,
+      "maxPosAcc": 1.0656220223069341,
+      "maxNegAcc": 2.315861189284042,
+      "usualPosAcc": 0.8296769572641101,
+      "usualNegAcc": 1.0892474721188332,
+      "minGap": 2.646527669569448,
+      "maxSpeed": 11.697673345333321,
+      "headwayTime": 2.6970954612520446
+    },
+    "route": [
+      "Node_2_0",
+      "Node_2_1",
+      "Node_2_2",
+      "Node_2_3",
+      "Node_1_3"
+    ],
+    "interval": 7.604221729681591,
+    "startTime": 88.3688908786547,
+    "endTime": 964.7779082161347,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 31429.499542130667,
+      "priority": "high",
+      "environmental_impact": 0.48682421797476805
+    }
+  },
+  {
+    "id": 46,
+    "vehicle": {
+      "length": 239.4014799154233,
+      "width": 31.596721270381032,
+      "maxPosAcc": 0.684338275846092,
+      "maxNegAcc": 1.063304226791609,
+      "usualPosAcc": 0.39312204838918824,
+      "usualNegAcc": 1.4159811753290408,
+      "minGap": 4.263641215885224,
+      "maxSpeed": 11.913151384530718,
+      "headwayTime": 2.2497806690690982
+    },
+    "route": [
+      "Node_3_0",
+      "Node_3_1",
+      "Node_2_1"
+    ],
+    "interval": 5.840669538812742,
+    "startTime": 105.44862631488309,
+    "endTime": 1118.6074734676258,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 16204.140636465387,
+      "priority": "emergency",
+      "environmental_impact": 0.37147663825846444
+    }
+  },
+  {
+    "id": 47,
+    "vehicle": {
+      "length": 190.8116354407651,
+      "width": 27.610798552692486,
+      "maxPosAcc": 0.6490213091925954,
+      "maxNegAcc": 1.0363264798572747,
+      "usualPosAcc": 0.6513292988112213,
+      "usualNegAcc": 1.6507625760481708,
+      "minGap": 3.928849806630173,
+      "maxSpeed": 9.169144799486196,
+      "headwayTime": 2.1221814319654384
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_1",
+      "Node_1_0"
+    ],
+    "interval": 1.581128849120066,
+    "startTime": 107.24066730632335,
+    "endTime": 986.1870075472249,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 35110.97709268458,
+      "priority": "high",
+      "environmental_impact": 0.7850849715642971
+    }
+  },
+  {
+    "id": 48,
+    "vehicle": {
+      "length": 235.22255019108906,
+      "width": 23.457059169332588,
+      "maxPosAcc": 1.3931613545851844,
+      "maxNegAcc": 1.755132608616413,
+      "usualPosAcc": 0.3963408771095181,
+      "usualNegAcc": 1.3927990485887927,
+      "minGap": 3.621081661747605,
+      "maxSpeed": 8.482414463417198,
+      "headwayTime": 2.629973892608822
+    },
+    "route": [
+      "Node_0_3",
+      "Node_0_2",
+      "Node_0_1",
+      "Node_1_1",
+      "Node_2_1",
+      "Node_3_1"
+    ],
+    "interval": 8.611446031780556,
+    "startTime": 210.16428638075527,
+    "endTime": 1148.6890900810586,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 37957.0003958809,
+      "priority": "emergency",
+      "environmental_impact": 0.304357434740462
+    }
+  },
+  {
+    "id": 49,
+    "vehicle": {
+      "length": 208.37534880825802,
+      "width": 22.29868750783367,
+      "maxPosAcc": 1.1483803250338114,
+      "maxNegAcc": 1.2646017401432184,
+      "usualPosAcc": 0.5608373624098335,
+      "usualNegAcc": 1.3742525113813022,
+      "minGap": 2.6704339871316822,
+      "maxSpeed": 6.083392849983488,
+      "headwayTime": 1.7195211112368796
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_1",
+      "Node_1_0",
+      "Node_2_0"
+    ],
+    "interval": 6.701881962075892,
+    "startTime": 46.37785658951382,
+    "endTime": 643.4046678622334,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 3201.685489315016,
+      "priority": "high",
+      "environmental_impact": 0.2095809530455999
+    }
+  },
+  {
+    "id": 50,
+    "vehicle": {
+      "length": 241.18445454667955,
+      "width": 21.034225526713538,
+      "maxPosAcc": 1.3116782547219845,
+      "maxNegAcc": 2.0285138140858923,
+      "usualPosAcc": 0.5184774666784295,
+      "usualNegAcc": 1.9966892998448182,
+      "minGap": 4.105398491051956,
+      "maxSpeed": 7.100816782884727,
+      "headwayTime": 1.5978685346258792
+    },
+    "route": [
+      "Node_2_0",
+      "Node_2_1",
+      "Node_2_2"
+    ],
+    "interval": 3.182556784254356,
+    "startTime": 152.6014585903742,
+    "endTime": 631.0523444516041,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 21132.10617746482,
+      "priority": "normal",
+      "environmental_impact": 0.555147518947177
+    }
+  },
+  {
+    "id": 51,
+    "vehicle": {
+      "length": 229.86537469191683,
+      "width": 33.474018153007975,
+      "maxPosAcc": 0.8507633325392226,
+      "maxNegAcc": 1.5289588926159337,
+      "usualPosAcc": 0.9763417497211355,
+      "usualNegAcc": 1.695308305625956,
+      "minGap": 2.797706086636551,
+      "maxSpeed": 11.131188358195313,
+      "headwayTime": 1.8576115412966292
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_3",
+      "Node_0_3"
+    ],
+    "interval": 3.2732309088851026,
+    "startTime": 249.32209012255427,
+    "endTime": 997.7393081660923,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 11715.4035693851,
+      "priority": "high",
+      "environmental_impact": 0.511871555682393
+    }
+  },
+  {
+    "id": 52,
+    "vehicle": {
+      "length": 207.2281336714365,
+      "width": 31.06022117605707,
+      "maxPosAcc": 1.425956567509354,
+      "maxNegAcc": 2.081744580194125,
+      "usualPosAcc": 0.720484089152648,
+      "usualNegAcc": 1.8678964610489819,
+      "minGap": 4.998204136116671,
+      "maxSpeed": 9.382603998337299,
+      "headwayTime": 2.3826287536620256
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1",
+      "Node_2_0",
+      "Node_1_0"
+    ],
+    "interval": 8.719612044534603,
+    "startTime": 268.65191273502097,
+    "endTime": 864.4109763300996,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 46104.636303911226,
+      "priority": "normal",
+      "environmental_impact": 0.1982187390255709
+    }
+  },
+  {
+    "id": 53,
+    "vehicle": {
+      "length": 152.07627174618176,
+      "width": 21.513019141896407,
+      "maxPosAcc": 0.6208124366589678,
+      "maxNegAcc": 1.525445664063204,
+      "usualPosAcc": 0.6198744101168323,
+      "usualNegAcc": 0.9143364535176035,
+      "minGap": 4.1607180196483124,
+      "maxSpeed": 12.959123292032022,
+      "headwayTime": 1.9381790410813222
+    },
+    "route": [
+      "Node_3_2",
+      "Node_3_1",
+      "Node_2_1",
+      "Node_1_1"
+    ],
+    "interval": 6.691712471274213,
+    "startTime": 271.9828143695974,
+    "endTime": 1191.333058296974,
+    "metadata": {
+      "vessel_type": "passenger",
+      "cargo_capacity": 1440.4235289224112,
+      "priority": "emergency",
+      "environmental_impact": 0.6456475715044767
+    }
+  },
+  {
+    "id": 54,
+    "vehicle": {
+      "length": 273.155538850151,
+      "width": 27.04371282790763,
+      "maxPosAcc": 1.4713522294443342,
+      "maxNegAcc": 1.791497330987966,
+      "usualPosAcc": 0.6915209869555692,
+      "usualNegAcc": 1.6778451832156054,
+      "minGap": 3.4240466115157187,
+      "maxSpeed": 9.903096499044143,
+      "headwayTime": 2.3981896903255446
+    },
+    "route": [
+      "Node_1_1",
+      "Node_1_2"
+    ],
+    "interval": 9.373258178336592,
+    "startTime": 112.79668550233154,
+    "endTime": 1074.3793226461862,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 41753.75159025831,
+      "priority": "emergency",
+      "environmental_impact": 0.6836792730719132
+    }
+  },
+  {
+    "id": 55,
+    "vehicle": {
+      "length": 366.78473663893465,
+      "width": 30.01359519573763,
+      "maxPosAcc": 0.9571042457483527,
+      "maxNegAcc": 1.8974480554493076,
+      "usualPosAcc": 0.46814119986256386,
+      "usualNegAcc": 0.9477038330648411,
+      "minGap": 4.755950728081515,
+      "maxSpeed": 10.41539457352266,
+      "headwayTime": 2.3829907137895803
+    },
+    "route": [
+      "Node_0_0",
+      "Node_0_1"
+    ],
+    "interval": 7.274943351192248,
+    "startTime": 59.343164287359265,
+    "endTime": 765.100996722473,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 5365.018098365277,
+      "priority": "normal",
+      "environmental_impact": 0.8904625084022556
+    }
+  },
+  {
+    "id": 56,
+    "vehicle": {
+      "length": 252.3444597473098,
+      "width": 33.173637772586346,
+      "maxPosAcc": 0.9036277979183259,
+      "maxNegAcc": 2.0871298137430863,
+      "usualPosAcc": 0.9026594563200907,
+      "usualNegAcc": 1.7225163722446464,
+      "minGap": 4.235294135195095,
+      "maxSpeed": 8.163319296633905,
+      "headwayTime": 1.6864287589549587
+    },
+    "route": [
+      "Node_1_3",
+      "Node_1_2",
+      "Node_1_1",
+      "Node_2_1"
+    ],
+    "interval": 6.758888017794905,
+    "startTime": 13.731413974732687,
+    "endTime": 1113.7142443632422,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 49106.450939683964,
+      "priority": "high",
+      "environmental_impact": 0.38092529856215374
+    }
+  },
+  {
+    "id": 57,
+    "vehicle": {
+      "length": 204.15421108914825,
+      "width": 26.29693346282602,
+      "maxPosAcc": 0.8605015965476545,
+      "maxNegAcc": 1.5305372335519845,
+      "usualPosAcc": 0.4323650414557189,
+      "usualNegAcc": 1.726055159865749,
+      "minGap": 2.527629456965996,
+      "maxSpeed": 6.3461336264455355,
+      "headwayTime": 1.9633221840801636
+    },
+    "route": [
+      "Node_2_2",
+      "Node_3_2"
+    ],
+    "interval": 3.7490651887453286,
+    "startTime": 123.56011170882813,
+    "endTime": 1002.9520514032579,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 16097.251268391134,
+      "priority": "high",
+      "environmental_impact": 0.5561208867735574
+    }
+  },
+  {
+    "id": 58,
+    "vehicle": {
+      "length": 275.2570036729445,
+      "width": 23.919753356727878,
+      "maxPosAcc": 0.9311566393263904,
+      "maxNegAcc": 2.1942697731615635,
+      "usualPosAcc": 0.5410668411475692,
+      "usualNegAcc": 1.9542484368186355,
+      "minGap": 4.346129076492664,
+      "maxSpeed": 8.11166364706952,
+      "headwayTime": 2.317131756376397
+    },
+    "route": [
+      "Node_0_1",
+      "Node_0_2",
+      "Node_1_2",
+      "Node_2_2"
+    ],
+    "interval": 1.1441033442806092,
+    "startTime": 237.30927763395422,
+    "endTime": 663.4013878480382,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 2342.4869140387354,
+      "priority": "emergency",
+      "environmental_impact": 0.40293603276942125
+    }
+  },
+  {
+    "id": 59,
+    "vehicle": {
+      "length": 338.08623188420313,
+      "width": 26.02485385792588,
+      "maxPosAcc": 1.3519541847069778,
+      "maxNegAcc": 1.4551724390284095,
+      "usualPosAcc": 0.601514712572727,
+      "usualNegAcc": 1.8630762255620723,
+      "minGap": 4.92027903892121,
+      "maxSpeed": 9.133156273578539,
+      "headwayTime": 2.0127683886636873
+    },
+    "route": [
+      "Node_2_0",
+      "Node_2_1",
+      "Node_2_2",
+      "Node_2_3",
+      "Node_1_3",
+      "Node_0_3"
+    ],
+    "interval": 2.104873812625795,
+    "startTime": 241.08541486563442,
+    "endTime": 789.755016678724,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 1981.8489841198489,
+      "priority": "normal",
+      "environmental_impact": 0.11267630874503165
+    }
+  },
+  {
+    "id": 60,
+    "vehicle": {
+      "length": 294.94244714114615,
+      "width": 30.405937808027126,
+      "maxPosAcc": 0.8083655563121421,
+      "maxNegAcc": 2.18121213894191,
+      "usualPosAcc": 0.6525548283723395,
+      "usualNegAcc": 0.8734501835611773,
+      "minGap": 2.041165379490149,
+      "maxSpeed": 8.041238221312906,
+      "headwayTime": 2.3702921781237376
+    },
+    "route": [
+      "Node_0_0",
+      "Node_0_1"
+    ],
+    "interval": 2.5770778617431715,
+    "startTime": 277.64834690647825,
+    "endTime": 1144.9484107495114,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 27350.22986442769,
+      "priority": "high",
+      "environmental_impact": 0.41076370650981175
+    }
+  },
+  {
+    "id": 61,
+    "vehicle": {
+      "length": 238.24482414845139,
+      "width": 31.404300298129883,
+      "maxPosAcc": 1.256775960859168,
+      "maxNegAcc": 1.049117176742965,
+      "usualPosAcc": 0.4288894642850133,
+      "usualNegAcc": 0.9470335080781327,
+      "minGap": 2.6790457588990897,
+      "maxSpeed": 11.47111529570945,
+      "headwayTime": 2.766138100668357
+    },
+    "route": [
+      "Node_1_2",
+      "Node_1_1"
+    ],
+    "interval": 6.650508965109268,
+    "startTime": 69.95963081668887,
+    "endTime": 664.4512523826835,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 41263.569497385346,
+      "priority": "normal",
+      "environmental_impact": 0.7734831035748584
+    }
+  },
+  {
+    "id": 62,
+    "vehicle": {
+      "length": 238.76009356152892,
+      "width": 30.274071266549907,
+      "maxPosAcc": 1.004759076687919,
+      "maxNegAcc": 2.3168549301404013,
+      "usualPosAcc": 0.32335839619593754,
+      "usualNegAcc": 1.0492164851417451,
+      "minGap": 2.921071498445074,
+      "maxSpeed": 7.333377616746057,
+      "headwayTime": 2.5827357412506773
+    },
+    "route": [
+      "Node_0_0",
+      "Node_0_1",
+      "Node_0_2",
+      "Node_1_2",
+      "Node_2_2"
+    ],
+    "interval": 2.979765169585445,
+    "startTime": 192.8928802409508,
+    "endTime": 942.9088859945375,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 26520.219434872546,
+      "priority": "high",
+      "environmental_impact": 0.12499858922355975
+    }
+  },
+  {
+    "id": 63,
+    "vehicle": {
+      "length": 115.26537219878287,
+      "width": 22.498778331060556,
+      "maxPosAcc": 1.3160998795581047,
+      "maxNegAcc": 2.0050508182030073,
+      "usualPosAcc": 0.3791532485652462,
+      "usualNegAcc": 1.0190320312069086,
+      "minGap": 4.138968724819124,
+      "maxSpeed": 12.839536894622473,
+      "headwayTime": 1.8663778562155706
+    },
+    "route": [
+      "Node_2_1",
+      "Node_2_2",
+      "Node_3_2"
+    ],
+    "interval": 2.964879696322063,
+    "startTime": 11.370268011509898,
+    "endTime": 1110.5606224096598,
+    "metadata": {
+      "vessel_type": "passenger",
+      "cargo_capacity": 48292.59471186865,
+      "priority": "normal",
+      "environmental_impact": 0.5145971512860185
+    }
+  },
+  {
+    "id": 64,
+    "vehicle": {
+      "length": 339.87557786237994,
+      "width": 23.092914635543035,
+      "maxPosAcc": 0.5259447380324439,
+      "maxNegAcc": 1.2046350129000023,
+      "usualPosAcc": 0.42446669736160775,
+      "usualNegAcc": 1.3996520518942588,
+      "minGap": 3.540482347316782,
+      "maxSpeed": 7.158004120636791,
+      "headwayTime": 1.5199467866509961
+    },
+    "route": [
+      "Node_0_3",
+      "Node_0_2",
+      "Node_0_1",
+      "Node_0_0",
+      "Node_1_0",
+      "Node_2_0"
+    ],
+    "interval": 5.74924826298658,
+    "startTime": 291.7524056427523,
+    "endTime": 949.3890958594595,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 8570.007034764603,
+      "priority": "high",
+      "environmental_impact": 0.8501926172778211
+    }
+  },
+  {
+    "id": 65,
+    "vehicle": {
+      "length": 234.6832583216643,
+      "width": 23.292971103189043,
+      "maxPosAcc": 1.1695821124388943,
+      "maxNegAcc": 1.7150906493993565,
+      "usualPosAcc": 0.6435853532168829,
+      "usualNegAcc": 1.007884219300124,
+      "minGap": 4.503169059438969,
+      "maxSpeed": 8.652951322015909,
+      "headwayTime": 2.507654756928063
+    },
+    "route": [
+      "Node_3_2",
+      "Node_2_2"
+    ],
+    "interval": 6.636670253987726,
+    "startTime": 109.80775190203764,
+    "endTime": 683.6514892717753,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 12815.600696276062,
+      "priority": "emergency",
+      "environmental_impact": 0.40438097697053255
+    }
+  },
+  {
+    "id": 66,
+    "vehicle": {
+      "length": 191.1961162530327,
+      "width": 24.24901161283664,
+      "maxPosAcc": 0.6609298718062107,
+      "maxNegAcc": 1.3336562584198015,
+      "usualPosAcc": 0.535806165980185,
+      "usualNegAcc": 1.9917269640910338,
+      "minGap": 2.235051553220333,
+      "maxSpeed": 8.343171639990624,
+      "headwayTime": 2.3719607356740022
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1",
+      "Node_2_0",
+      "Node_1_0"
+    ],
+    "interval": 5.6816188477638265,
+    "startTime": 37.74118082961113,
+    "endTime": 1194.913510185959,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 25827.066782179794,
+      "priority": "high",
+      "environmental_impact": 0.5876947164128956
+    }
+  },
+  {
+    "id": 67,
+    "vehicle": {
+      "length": 283.8686063348238,
+      "width": 22.074639719934602,
+      "maxPosAcc": 1.2569446747180462,
+      "maxNegAcc": 2.094775528120616,
+      "usualPosAcc": 0.3906949273640456,
+      "usualNegAcc": 1.6646561292366333,
+      "minGap": 4.974255063709936,
+      "maxSpeed": 7.528648474617215,
+      "headwayTime": 2.3754870167975555
+    },
+    "route": [
+      "Node_3_3",
+      "Node_2_3"
+    ],
+    "interval": 5.502701467631759,
+    "startTime": 169.35652976691543,
+    "endTime": 1165.5855972336694,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 33189.54126715795,
+      "priority": "high",
+      "environmental_impact": 0.11865402158004136
+    }
+  },
+  {
+    "id": 68,
+    "vehicle": {
+      "length": 269.5522125985438,
+      "width": 28.849868349123366,
+      "maxPosAcc": 0.7232649597962347,
+      "maxNegAcc": 1.0245456065645064,
+      "usualPosAcc": 0.45700128057463546,
+      "usualNegAcc": 1.171255884861958,
+      "minGap": 2.258585637062377,
+      "maxSpeed": 10.982093743725422,
+      "headwayTime": 1.9103438423859722
+    },
+    "route": [
+      "Node_1_1",
+      "Node_1_2",
+      "Node_1_3"
+    ],
+    "interval": 1.837299864547,
+    "startTime": 46.021122940803934,
+    "endTime": 698.0483088819423,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 49760.74321115563,
+      "priority": "normal",
+      "environmental_impact": 0.7815599045308605
+    }
+  },
+  {
+    "id": 69,
+    "vehicle": {
+      "length": 336.3842282950027,
+      "width": 31.088388105446874,
+      "maxPosAcc": 1.4818822243950787,
+      "maxNegAcc": 1.4825906788648913,
+      "usualPosAcc": 0.4807443032934595,
+      "usualNegAcc": 0.9063147039452413,
+      "minGap": 2.5738147008031813,
+      "maxSpeed": 8.217716371665867,
+      "headwayTime": 1.5311721231174737
+    },
+    "route": [
+      "Node_0_3",
+      "Node_0_2",
+      "Node_0_1",
+      "Node_1_1",
+      "Node_2_1",
+      "Node_3_1"
+    ],
+    "interval": 9.534623601890628,
+    "startTime": 120.62349050751017,
+    "endTime": 1047.8903404212074,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 13960.621156500287,
+      "priority": "high",
+      "environmental_impact": 0.2103857287592084
+    }
+  },
+  {
+    "id": 70,
+    "vehicle": {
+      "length": 188.93746322796014,
+      "width": 29.343198323950798,
+      "maxPosAcc": 0.5671124630733901,
+      "maxNegAcc": 1.295717791082794,
+      "usualPosAcc": 0.9518169040627629,
+      "usualNegAcc": 1.8479449071781642,
+      "minGap": 4.737906700188959,
+      "maxSpeed": 9.004735174066198,
+      "headwayTime": 1.7978239571681525
+    },
+    "route": [
+      "Node_2_1",
+      "Node_2_2",
+      "Node_2_3"
+    ],
+    "interval": 6.679444164701807,
+    "startTime": 111.37329080832527,
+    "endTime": 1024.4236386864484,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 1093.6687890399046,
+      "priority": "emergency",
+      "environmental_impact": 0.4188394400742482
+    }
+  },
+  {
+    "id": 71,
+    "vehicle": {
+      "length": 338.0133435482819,
+      "width": 31.13577128213089,
+      "maxPosAcc": 1.1444227126043411,
+      "maxNegAcc": 1.128302706397517,
+      "usualPosAcc": 0.8543721881659767,
+      "usualNegAcc": 0.9726072163934544,
+      "minGap": 2.834420677165588,
+      "maxSpeed": 10.245918458930715,
+      "headwayTime": 2.564546754319327
+    },
+    "route": [
+      "Node_0_1",
+      "Node_0_0",
+      "Node_1_0"
+    ],
+    "interval": 5.977706353298787,
+    "startTime": 112.7119404082778,
+    "endTime": 841.108736066506,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 1257.267222966478,
+      "priority": "emergency",
+      "environmental_impact": 0.5827640769270321
+    }
+  },
+  {
+    "id": 72,
+    "vehicle": {
+      "length": 296.5605380143127,
+      "width": 23.0124946415387,
+      "maxPosAcc": 1.3087377229437958,
+      "maxNegAcc": 1.0603034442638268,
+      "usualPosAcc": 0.9751452562934415,
+      "usualNegAcc": 1.518525591203805,
+      "minGap": 4.845364830464346,
+      "maxSpeed": 8.30780635145074,
+      "headwayTime": 2.7342293342469866
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1"
+    ],
+    "interval": 4.330312497068281,
+    "startTime": 9.001805980162192,
+    "endTime": 749.602724425439,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 7801.563863653773,
+      "priority": "normal",
+      "environmental_impact": 0.8779237337583498
+    }
+  },
+  {
+    "id": 73,
+    "vehicle": {
+      "length": 238.71915872904182,
+      "width": 21.09556731238129,
+      "maxPosAcc": 0.5248095421340394,
+      "maxNegAcc": 1.1063679941499196,
+      "usualPosAcc": 0.6569486988079375,
+      "usualNegAcc": 1.506786483922936,
+      "minGap": 3.8378084745316396,
+      "maxSpeed": 7.522578863964895,
+      "headwayTime": 2.945065178273839
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1",
+      "Node_2_0"
+    ],
+    "interval": 7.00668053199816,
+    "startTime": 282.7738846315619,
+    "endTime": 865.5144327592736,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 39376.571150309814,
+      "priority": "emergency",
+      "environmental_impact": 0.7130500682454424
+    }
+  },
+  {
+    "id": 74,
+    "vehicle": {
+      "length": 174.9301847185748,
+      "width": 25.53907698985629,
+      "maxPosAcc": 0.9868881873514637,
+      "maxNegAcc": 1.8029743996424294,
+      "usualPosAcc": 0.811016595435293,
+      "usualNegAcc": 1.0662709790378126,
+      "minGap": 2.8681694251299095,
+      "maxSpeed": 6.747561626405487,
+      "headwayTime": 1.9148043762920526
+    },
+    "route": [
+      "Node_3_2",
+      "Node_2_2",
+      "Node_1_2"
+    ],
+    "interval": 4.781333528821396,
+    "startTime": 267.19711483680015,
+    "endTime": 995.8659469126546,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 30397.603315677494,
+      "priority": "high",
+      "environmental_impact": 0.4301394774031141
+    }
+  },
+  {
+    "id": 75,
+    "vehicle": {
+      "length": 336.01262715738517,
+      "width": 28.1932192884805,
+      "maxPosAcc": 1.2211873436765304,
+      "maxNegAcc": 1.9905239414717197,
+      "usualPosAcc": 0.8091366267271545,
+      "usualNegAcc": 1.140732227858354,
+      "minGap": 4.234845109944796,
+      "maxSpeed": 8.832598959682914,
+      "headwayTime": 1.984561358968587
+    },
+    "route": [
+      "Node_3_2",
+      "Node_3_1"
+    ],
+    "interval": 4.538269636431595,
+    "startTime": 198.49338387464246,
+    "endTime": 1098.1232980392485,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 49354.74917350968,
+      "priority": "normal",
+      "environmental_impact": 0.35914110926766574
+    }
+  },
+  {
+    "id": 76,
+    "vehicle": {
+      "length": 382.98621408570193,
+      "width": 25.100003116684395,
+      "maxPosAcc": 1.1788507155413646,
+      "maxNegAcc": 1.058052242966333,
+      "usualPosAcc": 0.679132530221763,
+      "usualNegAcc": 1.0424409508271109,
+      "minGap": 2.571416877883727,
+      "maxSpeed": 9.269538167908031,
+      "headwayTime": 2.0555374712736496
+    },
+    "route": [
+      "Node_2_3",
+      "Node_1_3"
+    ],
+    "interval": 7.888254626962326,
+    "startTime": 270.39442604921703,
+    "endTime": 637.0828858264973,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 9068.237951819348,
+      "priority": "high",
+      "environmental_impact": 0.6580985059862957
+    }
+  },
+  {
+    "id": 77,
+    "vehicle": {
+      "length": 235.5300587512416,
+      "width": 22.041350652432307,
+      "maxPosAcc": 1.3193334308615254,
+      "maxNegAcc": 1.556980448280074,
+      "usualPosAcc": 0.6619737828130017,
+      "usualNegAcc": 1.760222437534234,
+      "minGap": 4.555781934202555,
+      "maxSpeed": 7.151761488002462,
+      "headwayTime": 1.8181344360868725
+    },
+    "route": [
+      "Node_2_3",
+      "Node_2_2",
+      "Node_2_1",
+      "Node_2_0"
+    ],
+    "interval": 8.362542058146364,
+    "startTime": 103.80426705157345,
+    "endTime": 1142.0854175883042,
+    "metadata": {
+      "vessel_type": "tanker",
+      "cargo_capacity": 3610.372332043844,
+      "priority": "high",
+      "environmental_impact": 0.9118704450119196
+    }
+  },
+  {
+    "id": 78,
+    "vehicle": {
+      "length": 250.09271190027403,
+      "width": 20.499016423147776,
+      "maxPosAcc": 0.648173924056965,
+      "maxNegAcc": 2.4817515298212536,
+      "usualPosAcc": 0.9903351210559037,
+      "usualNegAcc": 1.761930687042017,
+      "minGap": 2.3945659348173827,
+      "maxSpeed": 6.033968502548574,
+      "headwayTime": 2.4307254187970453
+    },
+    "route": [
+      "Node_0_2",
+      "Node_1_2"
+    ],
+    "interval": 7.5911878508786295,
+    "startTime": 1.3600211035615817,
+    "endTime": 623.545498122106,
+    "metadata": {
+      "vessel_type": "bulk",
+      "cargo_capacity": 32015.480598661266,
+      "priority": "normal",
+      "environmental_impact": 0.3304972753798207
+    }
+  },
+  {
+    "id": 79,
+    "vehicle": {
+      "length": 257.41077377130887,
+      "width": 31.417807863656115,
+      "maxPosAcc": 0.5175149087302153,
+      "maxNegAcc": 2.39395406245682,
+      "usualPosAcc": 0.7931759700865397,
+      "usualNegAcc": 1.4860216503508843,
+      "minGap": 4.625333371480849,
+      "maxSpeed": 10.31577148827392,
+      "headwayTime": 1.9183901228998477
+    },
+    "route": [
+      "Node_1_3",
+      "Node_1_2",
+      "Node_1_1",
+      "Node_2_1",
+      "Node_3_1"
+    ],
+    "interval": 9.80505257432173,
+    "startTime": 182.16244468926607,
+    "endTime": 1087.8251282502458,
+    "metadata": {
+      "vessel_type": "container",
+      "cargo_capacity": 7999.189114819567,
+      "priority": "normal",
+      "environmental_impact": 0.3380627108065159
+    }
+  }
+]
