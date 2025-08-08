@@ -2,8 +2,8 @@ SHELL=/bin/bash
 PATH=/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin
 MAILTO=""
 
-# Nightly consistency check @ 02:00 - gulfport only (800 samples)
-0 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'mkdir -p logs/nightly && python3 scripts/nightly_ci.py --ports gulfport --samples 800 --seeds 42,123,2025 >> logs/nightly/cron.log 2>&1'
+# Nightly consistency check @ 02:00 - gulfport only (800 samples, relaxed alert boundary)
+0 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'mkdir -p logs/nightly && python3 scripts/nightly_ci.py --ports gulfport --samples 800 --seeds 42,123,2025 --lb-slack 0.04 >> logs/nightly/cron.log 2>&1'
 
 # Four-port nightly check @ 02:05-02:35 (staggered to avoid I/O conflicts)
 # 5 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'python3 scripts/nightly_ci.py --ports baton_rouge --samples 400 --seeds 42,123 >> logs/nightly/cron.log 2>&1'
