@@ -69,7 +69,8 @@ jobs:
           SUCCESS_RATE=$(python -c "import json; data=json.load(open('ci_report.json')); print(data['results']['success_rate'])")
           echo "success_rate=$SUCCESS_RATE" >> $GITHUB_OUTPUT
           
-          if [ "$(python -c "import json; print(json.load(open('ci_report.json'))['success'])")" = "True" ]; then
+          # 使用新的CI成功标准
+          if [ "$(python -c "import json; print(json.load(open('ci_report.json'))['ci_success'])")" = "True" ]; then
             echo "test_result=success" >> $GITHUB_OUTPUT
           else
             echo "test_result=failure" >> $GITHUB_OUTPUT
