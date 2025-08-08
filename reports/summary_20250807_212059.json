@@ -1,0 +1,11 @@
+{
+  "total_tests": 162,
+  "total_ports": 4,
+  "total_stages": 162,
+  "pass_rate": 61.72839506172839,
+  "avg_win_rate": 44.31481481481481,
+  "avg_threshold": 44.56172839506173,
+  "avg_margin": -0.24691358024691393,
+  "stable_rate": 100.0,
+  "port_stats": {
+    

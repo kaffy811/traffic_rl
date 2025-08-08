@@ -1,0 +1,118 @@
+{
+  "total_tests": 162,
+  "total_ports": 4,
+  "total_stages": 162,
+  "pass_rate": 61.72839506172839,
+  "avg_win_rate": 44.31481481481481,
+  "avg_threshold": 44.56172839506173,
+  "avg_margin": -0.24691358024691393,
+  "stable_rate": 100.0,
+  "port_stats": {
+    "baton_rouge": {
+      "total_stages": 42,
+      "passed_stages": 18,
+      "pass_rate": 0.429,
+      "avg_win_rate": 0.399,
+      "avg_threshold": 0.472,
+      "avg_margin": -0.073
+    },
+    "gulfport": {
+      "total_stages": 24,
+      "passed_stages": 12,
+      "pass_rate": 0.5,
+      "avg_win_rate": 0.457,
+      "avg_threshold": 0.477,
+      "avg_margin": -0.02
+    },
+    "new_orleans": {
+      "total_stages": 60,
+      "passed_stages": 48,
+      "pass_rate": 0.8,
+      "avg_win_rate": 0.448,
+      "avg_threshold": 0.4,
+      "avg_margin": 0.048
+    },
+    "south_louisiana": {
+      "total_stages": 36,
+      "passed_stages": 22,
+      "pass_rate": 0.611,
+      "avg_win_rate": 0.477,
+      "avg_threshold": 0.469,
+      "avg_margin": 0.008
+    }
+  },
+  "risk_stages": [
+    {
+      "port": "baton_rouge",
+      "stage": "中级阶段",
+      "win_rate": 0.0,
+      "threshold": 0.55,
+      "margin": -0.55
+    },
+    {
+      "port": "gulfport",
+      "stage": "标准阶段",
+      "win_rate": 0.0,
+      "threshold": 0.55,
+      "margin": -0.55
+    },
+    {
+      "port": "south_louisiana",
+      "stage": "中级阶段",
+      "win_rate": 0.0,
+      "threshold": 0.55,
+      "margin": -0.55
+    },
+    {
+      "port": "baton_rouge",
+      "stage": "中级阶段",
+      "win_rate": 0.0,
+      "threshold": 0.55,
+      "margin": -0.55
+    },
+    {
+      "port": "baton_rouge",
+      "stage": "基础阶段",
+      "win_rate": 0.0,
+      "threshold": 0.51,
+      "margin": -0.51
+    }
+  ],
+  "best_stages": [
+    {
+      "port": "south_louisiana",
+      "stage": "基础阶段",
+      "win_rate": 0.77,
+      "threshold": 0.41,
+      "margin": 0.36000000000000004
+    },
+    {
+      "port": "south_louisiana",
+      "stage": "基础阶段",
+      "win_rate": 0.765,
+      "threshold": 0.41,
+      "margin": 0.35500000000000004
+    },
+    {
+      "port": "south_louisiana",
+      "stage": "基础阶段",
+      "win_rate": 0.76,
+      "threshold": 0.41,
+      "margin": 0.35000000000000003
+    },
+    {
+      "port": "south_louisiana",
+      "stage": "基础阶段",
+      "win_rate": 0.77,
+      "threshold": 0.51,
+      "margin": 0.26
+    },
+    {
+      "port": "new_orleans",
+      "stage": "基础阶段",
+      "win_rate": 0.56,
+      "threshold": 0.35,
+      "margin": 0.21000000000000008
+    }
+  ]
+}

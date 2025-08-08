@@ -1,0 +1,213 @@
+{
+  "test_date": "2025-08-07T17:09:37.479272",
+  "test_samples": 100,
+  "random_seed": 42,
+  "ports": {
+    "baton_rouge": {
+      "port_name": "baton_rouge",
+      "stages": {
+        "基础阶段": {
+          "stage_name": "基础阶段",
+          "win_rate": 0.4646464646464647,
+          "win_rate_std": 0.07142492739258055,
+          "threshold": 0.51,
+          "success": false,
+          "stable": false,
+          "individual_runs": [
+            0.5151515151515151,
+            0.5151515151515151,
+            0.36363636363636365
+          ],
+          "test_samples": 100
+        },
+        "中级阶段": {
+          "stage_name": "中级阶段",
+          "win_rate": 0.5555555555555555,
+          "win_rate_std": 0.014284985478516152,
+          "threshold": 0.55,
+          "success": true,
+          "stable": true,
+          "individual_runs": [
+            0.5454545454545454,
+            0.5757575757575758,
+            0.5454545454545454
+          ],
+          "test_samples": 100
+        },
+        "高级阶段": {
+          "stage_name": "高级阶段",
+          "win_rate": 0.4545454545454546,
+          "win_rate_std": 0.10784927527304355,
+          "threshold": 0.4,
+          "success": true,
+          "stable": false,
+          "individual_runs": [
+            0.36363636363636365,
+            0.3939393939393939,
+            0.6060606060606061
+          ],
+          "test_samples": 100
+        }
+      },
+      "overall_success": false
+    },
+    "new_orleans": {
+      "port_name": "new_orleans",
+      "stages": {
+        "基础阶段": {
+          "stage_name": "基础阶段",
+          "win_rate": 0.5353535353535354,
+          "win_rate_std": 0.05713994191406448,
+          "threshold": 0.35,
+          "success": true,
+          "stable": false,
+          "individual_runs": [
+            0.5757575757575758,
+            0.45454545454545453,
+            0.5757575757575758
+          ],
+          "test_samples": 100
+        },
+        "初级阶段": {
+          "stage_name": "初级阶段",
+          "win_rate": 0.48484848484848486,
+          "win_rate_std": 0.04948464126834701,
+          "threshold": 0.47,
+          "success": true,
+          "stable": false,
+          "individual_runs": [
+            0.5454545454545454,
+            0.48484848484848486,
+            0.42424242424242425
+          ],
+          "test_samples": 100
+        },
+        "中级阶段": {
+          "stage_name": "中级阶段",
+          "win_rate": 0.47474747474747475,
+          "win_rate_std": 0.086892174414572,
+          "threshold": 0.5,
+          "success": false,
+          "stable": false,
+          "individual_runs": [
+            0.5757575757575758,
+            0.36363636363636365,
+            0.48484848484848486
+          ],
+          "test_samples": 100
+        },
+        "高级阶段": {
+          "stage_name": "高级阶段",
+          "win_rate": 0.47474747474747475,
+          "win_rate_std": 0.03779451905832263,
+          "threshold": 0.4,
+          "success": true,
+          "stable": false,
+          "individual_runs": [
+            0.5151515151515151,
+            0.42424242424242425,
+            0.48484848484848486
+          ],
+          "test_samples": 100
+        },
+        "专家阶段": {
+          "stage_name": "专家阶段",
+          "win_rate": 0.5454545454545454,
+          "win_rate_std": 0.024742320634173542,
+          "threshold": 0.3,
+          "success": true,
+          "stable": true,
+          "individual_runs": [
+            0.5454545454545454,
+            0.5757575757575758,
+            0.5151515151515151
+          ],
+          "test_samples": 100
+        }
+      },
+      "overall_success": false
+    },
+    "south_louisiana": {
+      "port_name": "south_louisiana",
+      "stages": {
+        "基础阶段": {
+          "stage_name": "基础阶段",
+          "win_rate": 0.4646464646464647,
+          "win_rate_std": 0.07142492739258055,
+          "threshold": 0.51,
+          "success": false,
+          "stable": false,
+          "individual_runs": [
+            0.5151515151515151,
+            0.5151515151515151,
+            0.36363636363636365
+          ],
+          "test_samples": 100
+        },
+        "中级阶段": {
+          "stage_name": "中级阶段",
+          "win_rate": 0.5555555555555555,
+          "win_rate_std": 0.014284985478516152,
+          "threshold": 0.55,
+          "success": true,
+          "stable": true,
+          "individual_runs": [
+            0.5454545454545454,
+            0.5757575757575758,
+            0.5454545454545454
+          ],
+          "test_samples": 100
+        },
+        "高级阶段": {
+          "stage_name": "高级阶段",
+          "win_rate": 0.4545454545454546,
+          "win_rate_std": 0.10784927527304355,
+          "threshold": 0.4,
+          "success": true,
+          "stable": false,
+          "individual_runs": [
+            0.36363636363636365,
+            0.3939393939393939,
+            0.6060606060606061
+          ],
+          "test_samples": 100
+        }
+      },
+      "overall_success": false
+    },
+    "gulfport": {
+      "port_name": "gulfport",
+      "stages": {
+        "标准阶段": {
+          "stage_name": "标准阶段",
+          "win_rate": 0.5151515151515151,
+          "win_rate_std": 0.12371160317086756,
+          "threshold": 0.55,
+          "success": false,
+          "stable": false,
+          "individual_runs": [
+            0.6666666666666666,
+            0.5151515151515151,
+            0.36363636363636365
+          ],
+          "test_samples": 100
+        },
+        "完整阶段": {
+          "stage_name": "完整阶段",
+          "win_rate": 0.4545454545454546,
+          "win_rate_std": 0.10784927527304355,
+          "threshold": 0.43,
+          "success": true,
+          "stable": false,
+          "individual_runs": [
+            0.36363636363636365,
+            0.3939393939393939,
+            0.6060606060606061
+          ],
+          "test_samples": 100
+        }
+      },
+      "overall_success": false
+    }
+  }
+}

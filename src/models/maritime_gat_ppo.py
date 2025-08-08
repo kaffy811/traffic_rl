@@ -718,6 +718,29 @@ class MaritimeGATPPOAgent(nn.Module):
             'exploration_noise': self.exploration_noise
         }
 
+    def set_model_parameters(self, params_dict: Dict[str, torch.Tensor]):
+        """
+        设置模型参数（用于联邦学习）
+        
+        Args:
+            params_dict: 模型参数字典
+        """
+        try:
+            self.load_state_dict(params_dict)
+            self.logger.info("✅ 模型参数更新成功")
+        except Exception as e:
+            self.logger.error(f"❌ 模型参数更新失败: {e}")
+            raise e
+
+    def get_model_parameters(self) -> Dict[str, torch.Tensor]:
+        """
+        获取模型参数（用于联邦学习）
+        
+        Returns:
+            模型参数字典
+        """
+        return self.state_dict()
+
 
 def comprehensive_test():
     """修复后的完整智能体测试"""

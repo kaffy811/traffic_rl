@@ -987,5 +987,95 @@ def comprehensive_test():
     print(f"\n完整公平性奖励计算器测试完成！")
 
 
+# 向后兼容的简化版本
+class AlphaFairRewardCalculator:
+    """
+    简化的α-公平奖励计算器
+    为了向后兼容而创建的包装类
+    """
+    
+    def __init__(self, alpha: float = 1.0, history_window: int = 100, min_reward: float = 0.1):
+        """
+        初始化α-公平奖励计算器
+        
+        Args:
+            alpha: 公平性参数
+            history_window: 历史窗口大小
+            min_reward: 最小奖励值
+        """
+        self.alpha = alpha
+        
+        # 创建配置
+        config = FairnessConfig(
+            use_alpha_fairness=True,
+            alpha=alpha,
+            history_window=history_window,
+            min_historical_reward=min_reward,
+            efficiency_weight=0.7,
+            fairness_weight=0.3
+        )
+        
+        # 使用综合计算器
+        self.comprehensive_calculator = ComprehensiveFairnessRewardCalculator(config)
+        
+        # 直接访问α-公平工具
+        self.alpha_fairness = self.comprehensive_calculator.alpha_fairness
+    
+    def calculate_fairness_reward(self, agent_id: str, raw_reward: float) -> float:
+        """
+        计算单个agent的公平性调整奖励
+        
+        Args:
+            agent_id: agent标识
+            raw_reward: 原始奖励
+            
+        Returns:
+            调整后的奖励
+        """
+        if self.alpha_fairness:
+            result = self.comprehensive_calculator.calculate_alpha_fair_reward(agent_id, raw_reward)
+            return result['adjusted_reward']
+        else:
+            return raw_reward
+    
+    def update_agent_reward(self, agent_id: str, reward: float):
+        """
+        更新agent的奖励历史
+        
+        Args:
+            agent_id: agent标识
+            reward: 奖励值
+        """
+        if self.alpha_fairness:
+            self.alpha_fairness.update_agent_history(agent_id, reward)
+    
+    def get_fairness_weight(self, agent_id: str) -> float:
+        """
+        获取agent的公平性权重
+        
+        Args:
+            agent_id: agent标识
+            
+        Returns:
+            公平性权重
+        """
+        if self.alpha_fairness:
+            return self.alpha_fairness.calculate_fairness_weight(agent_id)
+        else:
+            return 1.0
+    
+    def get_statistics(self) -> Dict:
+        """获取统计信息"""
+        if self.alpha_fairness:
+            return self.alpha_fairness.get_fairness_statistics()
+        else:
+            return {}
+    
+    def reset(self, agent_id: str = None):
+        """重置历史记录"""
+        if self.alpha_fairness:
+            self.alpha_fairness.reset_history(agent_id)
+
+
 if __name__ == "__main__":
     comprehensive_test()

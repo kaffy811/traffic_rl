@@ -1,0 +1,35 @@
+{
+  "port": "new_orleans",
+  "stages": [
+    {
+      "stage": "\u57fa\u7840\u9636\u6bb5",
+      "win_rate": 0.56,
+      "threshold": 0.35,
+      "pass": true
+    },
+    {
+      "stage": "\u521d\u7ea7\u9636\u6bb5",
+      "win_rate": 0.6,
+      "threshold": 0.47,
+      "pass": true
+    },
+    {
+      "stage": "\u4e2d\u7ea7\u9636\u6bb5",
+      "win_rate": 0.53,
+      "threshold": 0.5,
+      "pass": true
+    },
+    {
+      "stage": "\u9ad8\u7ea7\u9636\u6bb5",
+      "win_rate": 0.39,
+      "threshold": 0.4,
+      "pass": false
+    },
+    {
+      "stage": "\u4e13\u5bb6\u9636\u6bb5",
+      "win_rate": 0.5,
+      "threshold": 0.3,
+      "pass": true
+    }
+  ]
+}
