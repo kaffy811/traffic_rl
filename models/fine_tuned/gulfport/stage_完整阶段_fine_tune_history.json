@@ -1,0 +1,150 @@
+{
+  "initial_performance": {
+    "avg_reward": 22.37498085329155,
+    "baseline_avg_reward": 22.629707081738744,
+    "completion_rate": 0.39,
+    "success": true,
+    "reward_threshold": 21.368030251441326,
+    "win_rate": 0.39,
+    "std": 0.0606217782649107,
+    "stable": false,
+    "n_samples": 200
+  },
+  "episodes": [
+    {
+      "episode": 5,
+      "win_rate": 0.38,
+      "improvement": -0.010000000000000009,
+      "metrics": {
+        "avg_reward": 21.446817899702882,
+        "updates": 4,
+        "loss": 9077.423583984375,
+        "steps": 50
+      },
+      "performance": {
+        "avg_reward": 22.415801231900105,
+        "baseline_avg_reward": 21.710633569616267,
+        "completion_rate": 0.38,
+        "success": true,
+        "reward_threshold": 21.20133967060721,
+        "win_rate": 0.38,
+        "std": 0.09165151389911678,
+        "stable": false,
+        "n_samples": 100
+      }
+    },
+    {
+      "episode": 10,
+      "win_rate": 0.36,
+      "improvement": -0.030000000000000027,
+      "metrics": {
+        "avg_reward": 21.97034042926074,
+        "updates": 4,
+        "loss": 9964.115478515625,
+        "steps": 50
+      },
+      "performance": {
+        "avg_reward": 21.843050145251553,
+        "baseline_avg_reward": 21.727549045886313,
+        "completion_rate": 0.36,
+        "success": false,
+        "reward_threshold": 21.16931523640001,
+        "win_rate": 0.36,
+        "std": 0.05196152422706632,
+        "stable": false,
+        "n_samples": 100
+      }
+    },
+    {
+      "episode": 15,
+      "win_rate": 0.37,
+      "improvement": -0.020000000000000018,
+      "metrics": {
+        "avg_reward": 22.64263390898779,
+        "updates": 4,
+        "loss": 7068.927001953125,
+        "steps": 50
+      },
+      "performance": {
+        "avg_reward": 22.13153808994422,
+        "baseline_avg_reward": 22.287413437766293,
+        "completion_rate": 0.37,
+        "success": false,
+        "reward_threshold": 20.938508244850322,
+        "win_rate": 0.37,
+        "std": 0.05196152422706631,
+        "stable": false,
+        "n_samples": 100
+      }
+    },
+    {
+      "episode": 20,
+      "win_rate": 0.37,
+      "improvement": -0.020000000000000018,
+      "metrics": {
+        "avg_reward": 21.154054608359708,
+        "updates": 4,
+        "loss": 4319.69140625,
+        "steps": 50
+      },
+      "performance": {
+        "avg_reward": 22.13153808994422,
+        "baseline_avg_reward": 21.744753062797685,
+        "completion_rate": 0.37,
+        "success": false,
+        "reward_threshold": 20.85732738288936,
+        "win_rate": 0.37,
+        "std": 0.0714142842854285,
+        "stable": false,
+        "n_samples": 100
+      }
+    },
+    {
+      "episode": 25,
+      "win_rate": 0.37,
+      "improvement": -0.020000000000000018,
+      "metrics": {
+        "avg_reward": 21.270224668283305,
+        "updates": 4,
+        "loss": 2341.0521545410156,
+        "steps": 50
+      },
+      "performance": {
+        "avg_reward": 22.13153808994422,
+        "baseline_avg_reward": 21.867599726276307,
+        "completion_rate": 0.37,
+        "success": false,
+        "reward_threshold": 21.17476524057271,
+        "win_rate": 0.37,
+        "std": 0.06324555320336758,
+        "stable": false,
+        "n_samples": 100
+      }
+    }
+  ],
+  "best_performance": {
+    "avg_reward": 22.37498085329155,
+    "baseline_avg_reward": 22.629707081738744,
+    "completion_rate": 0.39,
+    "success": true,
+    "reward_threshold": 21.368030251441326,
+    "win_rate": 0.39,
+    "std": 0.0606217782649107,
+    "stable": false,
+    "n_samples": 200
+  },
+  "best_episode": 0,
+  "final_performance": {
+    "avg_reward": 22.37498085329155,
+    "baseline_avg_reward": 22.754209836806613,
+    "completion_rate": 0.395,
+    "success": true,
+    "reward_threshold": 20.77016244635371,
+    "win_rate": 0.395,
+    "std": 0.04555216789572149,
+    "stable": false,
+    "n_samples": 200
+  },
+  "total_episodes": 25,
+  "target_achieved": false
+}

@@ -65,6 +65,7 @@ class StageFinetuner:
         self.device = torch.device(device)
         self.trainer = CurriculumTrainer(port_name)
         self.agent = build_agent(port_name, device=self.device)
+        self.current_stage = None
         
         logger.info(f"初始化阶段微调器 - 港口: {port_name}, 设备: {device}")
     
@@ -127,6 +128,9 @@ class StageFinetuner:
         # 加载模型
         if not self.load_stage_model(stage_name):
             return {'error': '模型加载失败'}
+        
+        # 设置当前阶段
+        self.current_stage = stage
         
         # 评估初始性能
         logger.info("📊 评估初始性能...")
@@ -275,52 +279,83 @@ class StageFinetuner:
             self.agent.ppo_epochs = config.get('ppo_epochs', 8)
     
     def _train_episode(self, train_data: List, config: Dict) -> Dict:
-        """训练一个episode - 最小可用实现"""
-        metrics = {
-            'avg_reward': 0.0,
-            'policy_loss': 0.0,
-            'value_loss': 0.0,
-            'entropy': 0.0
+        """
+        最小可用的 PPO 微调回合：
+        1) 用当前策略采样若干交互样本并存入 buffer
+        2) 调 agent.update() 做多次小步更新
+        """
+        stage = self.current_stage
+        assert stage is not None, "current_stage 未设置"
+        steps, total_reward = 0, 0.0
+        num_updates, total_loss = 0, 0.0
+
+        # 采样子集，避免一次塞太多
+        batch = train_data[: min(80, len(train_data))]
+
+        for dp in batch:
+            # 1) 前向与动作采样
+            state = self.trainer._extract_state_from_data(dp)
+            node_feats, adj = self.trainer._extract_graph_features_from_data(dp)
+            try:
+                with torch.no_grad():
+                    ap, value = self.agent.actor_critic(
+                        torch.as_tensor(state, dtype=torch.float32, device=self.device).unsqueeze(0),
+                        torch.as_tensor(node_feats, dtype=torch.float32, device=self.device).unsqueeze(0),
+                        self.trainer._prep_adj_3d(adj)
+                    )
+                ap = torch.nan_to_num(ap, nan=0.0, posinf=0.0, neginf=0.0)
+                num_actions = stage.max_berths
+                if ap.shape[-1] != num_actions:
+                    ap = ap[..., :num_actions]
+                ap = ap / ap.sum(dim=-1, keepdim=True).clamp_min(1e-8)
+                dist = torch.distributions.Categorical(ap)
+                action = int(dist.sample().item())
+                logp = dist.log_prob(torch.tensor(action, device=self.device)).item()
+                val = float(value.squeeze(-1).item()) if hasattr(value, "item") else 0.0
+            except Exception:
+                # 兜底：完全随机动作
+                num_actions = stage.max_berths
+                action, logp, val = np.random.randint(0, num_actions), 0.0, 0.0
+
+            # 2) 环境"奖励"计算（用你已有的端口奖励）
+            reward = float(self.trainer._calculate_stage_reward(dp, action, stage))
+            total_reward += reward
+            steps += 1
+
+            # 3) 存经验（用 next_state=state, done=False 简化）
+            try:
+                self.agent.store_experience(
+                    np.asarray(state, dtype=np.float32),
+                    np.asarray(node_feats, dtype=np.float32),
+                    np.asarray(adj, dtype=np.float32),
+                    int(action),
+                    float(reward),
+                    np.asarray(state, dtype=np.float32),
+                    False,
+                    float(logp),
+                    float(val),
+                )
+            except Exception:
+                continue
+
+        # 4) 多次小步更新
+        for _ in range(config.get('ppo_updates_per_episode', 4)):
+            try:
+                out = self.agent.update()
+                if isinstance(out, dict):
+                    total_loss += float(out.get('total_loss', out.get('loss', 0.0)))
+                elif out is not None:
+                    total_loss += float(out)
+                num_updates += 1
+            except Exception:
+                break
+
+        return {
+            'avg_reward': (total_reward / max(1, steps)),
+            'updates': num_updates,
+            'loss': (total_loss / max(1, num_updates)),
+            'steps': steps
         }
-        
-        try:
-            # 简化的训练逻辑：使用trainer的现有方法
-            if hasattr(self.trainer, '_train_single_step'):
-                # 如果trainer有单步训练方法，直接使用
-                step_metrics = self.trainer._train_single_step(train_data)
-                if isinstance(step_metrics, dict):
-                    metrics.update(step_metrics)
-            else:
-                # 最小实现：计算平均奖励
-                if train_data:
-                    rewards = []
-                    for data in train_data[:10]:  # 只处理前10个样本
-                        try:
-                            # 提取状态和动作
-                            state = self.trainer._extract_state_from_data(data)
-                            node_features, adj_matrix = self.trainer._extract_graph_features_from_data(data)
-                            
-                            # 转换为张量
-                            state_tensor = torch.as_tensor(state, dtype=torch.float32).unsqueeze(0)
-                            node_features_tensor = torch.as_tensor(node_features, dtype=torch.float32).unsqueeze(0)
-                            adj_matrix_tensor = torch.as_tensor(adj_matrix, dtype=torch.float32).unsqueeze(0)
-                            
-                            # 前向传播
-                            with torch.no_grad():
-                                action_probs, value = self.agent.actor_critic(
-                                    state_tensor, node_features_tensor, adj_matrix_tensor
-                                )
-                                rewards.append(value.item())
-                        except Exception:
-                            continue
-                    
-                    if rewards:
-                        metrics['avg_reward'] = np.mean(rewards)
-                        
-        except Exception as e:
-            logger.warning(f"训练步骤失败: {e}")
-        
-        return metrics
     
     def _save_fine_tuned_model(self, stage_name: str, episode: int, performance: Dict):
         """保存微调后的模型"""

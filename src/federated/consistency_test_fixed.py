@@ -57,14 +57,14 @@ def _format_adj_safe(trainer: CurriculumTrainer, adj: np.ndarray, device: torch.
     return t
 
 def eval_one_stage(trainer: CurriculumTrainer, agent, stage, *,
-                   n_samples=200, fixed_test_data=None, k_baseline=50, device=None):
+                   n_samples=200, fixed_test_data=None, k_baseline=50, device=None, seed=42):
     device = device or (torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu"))
     
     # 评测数据集缓存
     if fixed_test_data is None:
         cache_dir = Path("../../models/releases") / time.strftime("%Y-%m-%d") / "datasets"
         cache_dir.mkdir(parents=True, exist_ok=True)
-        cache_file = cache_dir / f"{trainer.port_name}__{stage.name.replace(' ', '_')}__seed42__samples{n_samples}.npz"
+        cache_file = cache_dir / f"{trainer.port_name}__{stage.name.replace(' ', '_')}__seed{seed}__samples{n_samples}.npz"
         
         if cache_file.exists():
             logging.info(f"  📁 加载缓存数据集: {cache_file.name}")
@@ -198,7 +198,7 @@ def main(port: str, n=200, seed=42, k=50, margin=0.02, force_recheck=False, disa
             print(">>> 使用保存的 test_data:", stage.name)
 
         perf, std, stable, n_used = eval_one_stage(
-            trainer, agent, stage, n_samples=n, fixed_test_data=saved_test_data, k_baseline=k, device=device
+            trainer, agent, stage, n_samples=n, fixed_test_data=saved_test_data, k_baseline=k, device=device, seed=seed
         )
         wr = perf["win_rate"]; thr = stage.success_threshold
         ok, lb = pass_decision(wr, thr, n_used, margin=margin)
@@ -213,7 +213,7 @@ def main(port: str, n=200, seed=42, k=50, margin=0.02, force_recheck=False, disa
             print(f"↻ 触发复评：stage={stage.name} | 原 wr={wr*100:.1f}% / thr={thr*100:.1f}% | "
                   f"stable={stable} | K→{k2} | samples→{n2 if saved_test_data is None else '保持'}")
             perf2, std2, stable2, n_used2 = eval_one_stage(
-                trainer, agent, stage, n_samples=n2, fixed_test_data=saved_test_data, k_baseline=k2, device=device
+                trainer, agent, stage, n_samples=n2, fixed_test_data=saved_test_data, k_baseline=k2, device=device, seed=seed
             )
             wr2 = perf2["win_rate"]; ok2, lb2 = pass_decision(wr2, thr, n_used2, margin=margin)
             print(f"↻ 复评结果：wr={wr2*100:.1f}%, std={std2*100:.1f}%, WilsonLB={lb2*100:.1f}% → {'通过' if ok2 else '未过'} "
