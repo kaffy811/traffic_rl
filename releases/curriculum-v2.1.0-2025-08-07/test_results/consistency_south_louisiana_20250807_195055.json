@@ -1,0 +1,23 @@
+{
+  "port": "south_louisiana",
+  "stages": [
+    {
+      "stage": "\u57fa\u7840\u9636\u6bb5",
+      "win_rate": 0.5,
+      "threshold": 0.51,
+      "pass": false
+    },
+    {
+      "stage": "\u4e2d\u7ea7\u9636\u6bb5",
+      "win_rate": 0.56,
+      "threshold": 0.55,
+      "pass": true
+    },
+    {
+      "stage": "\u9ad8\u7ea7\u9636\u6bb5",
+      "win_rate": 0.48,
+      "threshold": 0.4,
+      "pass": true
+    }
+  ]
+}

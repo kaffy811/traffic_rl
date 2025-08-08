@@ -1,0 +1,17 @@
+{
+  "port": "gulfport",
+  "stages": [
+    {
+      "stage": "标准阶段",
+      "win_rate": 0.57,
+      "threshold": 0.55,
+      "pass": true
+    },
+    {
+      "stage": "完整阶段",
+      "win_rate": 0.505,
+      "threshold": 0.43,
+      "pass": true
+    }
+  ]
+}
