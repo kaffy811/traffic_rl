@@ -1,0 +1,9 @@
+# GAT-FedPPO 夜间CI检查
+# 每晚2点运行gulfport测试，800样本
+0 2 * * * cd /path/to/GAT-FedPPO && python scripts/nightly_ci.py --port gulfport --samples 800
+
+# 每周日凌晨4点运行全港口测试
+0 4 * * 0 cd /path/to/GAT-FedPPO && python scripts/nightly_ci.py --port all --samples 400
+
+# 每月1号凌晨6点触发全量重训（需要实现）
+0 6 1 * * cd /path/to/GAT-FedPPO && python scripts/monthly_retrain.py
