@@ -1,0 +1,33 @@
+{
+  "monitoring": {
+    "enabled": true,
+    "start_date": "2025-08-07",
+    "version": "v0.9-baseline-green",
+    "schedule": "0 2 * * *",
+    "description": "每晚2点运行gulfport一致性测试"
+  },
+  "configuration": {
+    "port": "gulfport",
+    "samples": 800,
+    "seeds": [42, 123, 2025],
+    "thresholds": {
+      "标准阶段": 0.49,
+      "完整阶段": 0.37
+    },
+    "alert_conditions": {
+      "wilson_lb_safety_margin": 0.03,
+      "min_seeds_passing": 1
+    }
+  },
+  "last_setup": {
+    "timestamp": "2025-08-07T22:45:00Z",
+    "crontab_installed": true,
+    "log_directory": "logs/nightly",
+    "test_run_successful": true
+  },
+  "next_steps": [
+    "等待今晚2点首次自动运行",
+    "检查明天的日志文件",
+    "一周后评估是否提升完整阶段阈值至0.38"
+  ]
+}
