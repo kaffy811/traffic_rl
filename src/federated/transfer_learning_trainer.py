@@ -63,7 +63,7 @@ class TransferLearningTrainer:
         )
         
         # 加载预训练权重
-        checkpoint = torch.load(latest_model, map_location=self.device)
+        checkpoint = torch.load(latest_model, map_location=self.device, weights_only=False)
         agent.actor_critic.load_state_dict(checkpoint['model_state_dict'])
         
         logger.info(f"成功加载源模型，训练轮数: {checkpoint.get('episode', 'unknown')}")

@@ -1,0 +1,23 @@
+{
+  "port": "south_louisiana",
+  "stages": [
+    {
+      "stage": "基础阶段",
+      "win_rate": 0.69,
+      "threshold": 0.41,
+      "pass": true
+    },
+    {
+      "stage": "中级阶段",
+      "win_rate": 0.5825,
+      "threshold": 0.45,
+      "pass": true
+    },
+    {
+      "stage": "高级阶段",
+      "win_rate": 0.4,
+      "threshold": 0.39,
+      "pass": true
+    }
+  ]
+}

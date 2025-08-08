@@ -85,7 +85,7 @@ class StageFinetuner:
             return False
         
         try:
-            checkpoint = torch.load(model_path, map_location=self.device)
+            checkpoint = torch.load(model_path, map_location=self.device, weights_only=False)
             if 'model_state_dict' in checkpoint:
                 self.agent.actor_critic.load_state_dict(checkpoint['model_state_dict'])
                 if 'optimizer_state_dict' in checkpoint:
