@@ -190,7 +190,7 @@ def main(port: str, n=200, seed=42, k=50, margin=0.02, force_recheck=False, disa
         if not ckpt_path.exists():
             log.warning(f"  ⚠️ 找不到模型: {ckpt_path}"); port_ok = False; continue
         log.info(f"  ✅ 加载模型: {ckpt_path}")
-        ckpt = torch.load(str(ckpt_path), map_location=device)
+        ckpt = torch.load(str(ckpt_path), map_location=device, weights_only=False)
         agent.actor_critic.load_state_dict(ckpt["model_state_dict"])
 
         saved_test_data = ckpt.get("test_data", None)

@@ -1,0 +1,8 @@
+gulfport.std=0.49
+gulfport.full=0.37
+baton_rouge.mid=0.45
+baton_rouge.high=0.39
+new_orleans.mid=0.50
+new_orleans.high=0.40
+south_louisiana.std=0.45
+south_louisiana.full=0.35
