@@ -1,33 +1,51 @@
 {
-  "monitoring": {
-    "enabled": true,
-    "start_date": "2025-08-07",
-    "version": "v0.9-baseline-green",
-    "schedule": "0 2 * * *",
-    "description": "每晚2点运行gulfport一致性测试"
-  },
-  "configuration": {
-    "port": "gulfport",
-    "samples": 800,
-    "seeds": [42, 123, 2025],
-    "thresholds": {
-      "标准阶段": 0.49,
-      "完整阶段": 0.37
-    },
-    "alert_conditions": {
-      "wilson_lb_safety_margin": 0.03,
-      "min_seeds_passing": 1
+  "run_time": "2025-08-07 23:14:23",
+  "ports": {
+    "gulfport": {
+      "seeds": [
+        {
+          "seed": 42,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_gulfport_20250807_231427.json",
+          "data": {
+            "port": "gulfport",
+            "stages": [
+              {
+                "stage": "标准阶段",
+                "win_rate": 0.51,
+                "threshold": 0.49,
+                "pass": true
+              },
+              {
+                "stage": "完整阶段",
+                "win_rate": 0.37,
+                "threshold": 0.37,
+                "pass": true
+              }
+            ]
+          }
+        }
+      ],
+      "alerts": [
+        {
+          "stage": "标准阶段",
+          "win_rate": 0.51,
+          "thr_config": 0.49,
+          "wilson_lb": 0.41347840477434145
+        },
+        {
+          "stage": "完整阶段",
+          "win_rate": 0.37,
+          "thr_config": 0.37,
+          "wilson_lb": 0.28182212569509163
+        }
+      ],
+      "ok": false
     }
   },
-  "last_setup": {
-    "timestamp": "2025-08-07T22:45:00Z",
-    "crontab_installed": true,
-    "log_directory": "logs/nightly",
-    "test_run_successful": true
-  },
-  "next_steps": [
-    "等待今晚2点首次自动运行",
-    "检查明天的日志文件",
-    "一周后评估是否提升完整阶段阈值至0.38"
-  ]
+  "samples": 100,
+  "seeds": [
+    42
+  ],
+  "thr_offset": 0.0,
+  "lb_slack": 0.03
 }

@@ -1,107 +1,38 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-监控仪表板
-查看夜间CI的运行状态和历史结果
-"""
-import json
-import glob
-import os
-from datetime import datetime, timedelta
+import json, sys
 from pathlib import Path
+from datetime import datetime
 
-def load_monitoring_status():
-    """加载监控状态"""
-    status_file = Path("logs/nightly/monitoring_status.json")
-    if status_file.exists():
-        with open(status_file, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return None
+ROOT = Path("/Users/kaffy/Documents/GAT-FedPPO")
+LOG_DIR = ROOT / "logs" / "nightly"
 
-def get_recent_logs(days=7):
-    """获取最近几天的日志"""
-    log_dir = Path("logs/nightly")
-    if not log_dir.exists():
-        return []
-    
-    cutoff_date = datetime.now() - timedelta(days=days)
-    logs = []
-    
-    for log_file in log_dir.glob("nightly_*.log"):
-        try:
-            # 从文件名提取时间戳
-            timestamp_str = log_file.stem.split('_')[-1]
-            timestamp = datetime.strptime(timestamp_str, "%Y%m%d_%H%M%S")
-            
-            if timestamp >= cutoff_date:
-                logs.append({
-                    'file': log_file,
-                    'timestamp': timestamp,
-                    'size': log_file.stat().st_size
-                })
-        except:
-            continue
-    
-    return sorted(logs, key=lambda x: x['timestamp'], reverse=True)
+def main():
+    status = LOG_DIR / "monitoring_status.json"
+    hist = LOG_DIR / "history.csv"
+    if not status.exists():
+        print("⚠️ 未发现监控状态文件，请先跑 nightly_ci.py")
+        sys.exit(0)
+    data = json.loads(status.read_text())
 
-def check_crontab_status():
-    """检查crontab状态"""
-    result = os.popen("crontab -l 2>/dev/null | grep nightly_ci").read()
-    return bool(result.strip())
-
-def display_dashboard():
-    """显示监控仪表板"""
-    print("🌙 GAT-FedPPO 夜间CI监控仪表板")
-    print("=" * 50)
-    
-    # 监控状态
-    status = load_monitoring_status()
-    if status:
-        config = status['configuration']
-        print(f"📊 监控状态: {'🟢 启用' if status['monitoring']['enabled'] else '🔴 禁用'}")
-        print(f"🏷️  版本: {status['monitoring']['version']}")
-        print(f"⏰ 调度: {status['monitoring']['schedule']} (每晚2点)")
-        print(f"🚢 测试港口: {config['port']}")
-        print(f"📈 样本数: {config['samples']}")
-        print(f"🎲 种子: {config['seeds']}")
-        print()
-        
-        # 阈值信息
-        print("🎯 当前阈值:")
-        for stage, threshold in config['thresholds'].items():
-            print(f"   {stage}: {threshold:.1%}")
-        print()
-    
-    # Crontab状态
-    cron_active = check_crontab_status()
-    print(f"⏰ Crontab状态: {'🟢 已安装' if cron_active else '🔴 未安装'}")
-    
-    # 最近日志
-    recent_logs = get_recent_logs(7)
-    print(f"\n📋 最近7天日志 ({len(recent_logs)}个文件):")
-    
-    if recent_logs:
-        for log in recent_logs[:5]:  # 只显示最近5个
-            size_kb = log['size'] / 1024
-            print(f"   📄 {log['timestamp'].strftime('%Y-%m-%d %H:%M')} - {size_kb:.1f}KB")
-    else:
-        print("   📭 暂无日志文件")
-    
-    # 下次运行时间
-    now = datetime.now()
-    if now.hour >= 2:
-        next_run = now.replace(hour=2, minute=0, second=0, microsecond=0) + timedelta(days=1)
-    else:
-        next_run = now.replace(hour=2, minute=0, second=0, microsecond=0)
-    
-    print(f"\n⏭️  下次运行: {next_run.strftime('%Y-%m-%d %H:%M')}")
-    
-    # 操作提示
-    print("\n🔧 管理命令:")
-    print("   查看最新日志: tail -f logs/nightly/cron.log")
-    print("   手动测试: python scripts/nightly_ci.py --port gulfport --samples 100")
-    print("   停用监控: crontab -r")
-    print("   重新启用: crontab scripts/crontab.active")
+    print("\n================= Nightly Dashboard =================")
+    print(f"最近运行时间: {data.get('run_time')}")
+    print(f"样本/种子: {data.get('samples')} / {data.get('seeds')}")
+    print(f"阈值偏移: {data.get('thr_offset',0)} | LB 安全边界: {data.get('lb_slack',0)}")
+    print("-----------------------------------------------------")
+    ports = data.get("ports", {})
+    for p, st in ports.items():
+        mark = "🟢" if st.get("ok") else "🔴"
+        print(f"{mark} {p} | alerts={len(st.get('alerts',[]))}")
+        for a in st.get("alerts", []):
+            print(f"    - {a['stage']}: wr={a['win_rate']*100:.1f}% | LB={a['wilson_lb']*100:.1f}% | thr={a['thr_config']*100:.1f}%")
+    print("-----------------------------------------------------")
+    if hist.exists():
+        lines = hist.read_text().strip().splitlines()[-6:]  # 最近5条 + 头
+        print("最近历史：")
+        for ln in lines:
+            print("  ", ln)
+    print("=====================================================\n")
 
 if __name__ == "__main__":
-    display_dashboard()
+    main()
