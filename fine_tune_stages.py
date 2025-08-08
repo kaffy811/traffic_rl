@@ -117,7 +117,17 @@ class StageFinetuner:
                 if performance > best_performance:
                     best_performance = performance
                     model_path = self.save_dir / f"stage_{self.stage_name}_fine_tuned_ep{episode+1}.pt"
-                    torch.save(self.agent.actor_critic.state_dict(), model_path)
+                    
+                    # 统一checkpoint格式
+                    checkpoint = {
+                        'model_state_dict': self.agent.actor_critic.state_dict(),
+                        'optimizer_state_dict': self.agent.optimizer.state_dict() if hasattr(self.agent, 'optimizer') else {},
+                        'episode': episode + 1,
+                        'performance': performance,  # 真实性能，不伪造
+                        'port_name': self.port_name,
+                        'stage_name': self.stage_name
+                    }
+                    torch.save(checkpoint, model_path)
                     logger.info(f"💾 保存最佳模型: {model_path}")
                 
                 # 检查是否达到目标
@@ -126,7 +136,17 @@ class StageFinetuner:
                     break
         
         final_model_path = self.save_dir / f"stage_{self.stage_name}_fine_tuned_final.pt"
-        torch.save(self.agent.actor_critic.state_dict(), final_model_path)
+        
+        # 统一checkpoint格式
+        final_checkpoint = {
+            'model_state_dict': self.agent.actor_critic.state_dict(),
+            'optimizer_state_dict': self.agent.optimizer.state_dict() if hasattr(self.agent, 'optimizer') else {},
+            'episode': max_episodes,
+            'performance': best_performance,
+            'port_name': self.port_name,
+            'stage_name': self.stage_name
+        }
+        torch.save(final_checkpoint, final_model_path)
         
         logger.info(f"✅ 微调完成 - 最终性能提升: {best_performance:.1%}")
         return str(final_model_path)
