@@ -1,23 +1,388 @@
 {
-  "run_time": "2025-08-07 23:14:23",
+  "run_time": "2025-08-07 23:31:22",
   "ports": {
+    "baton_rouge": {
+      "seeds": [
+        {
+          "seed": 42,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_baton_rouge_20250807_233141.json",
+          "data": {
+            "port": "baton_rouge",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.53625,
+                "threshold": 0.41,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.43375,
+                "threshold": 0.45,
+                "pass": false
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.3375,
+                "threshold": 0.39,
+                "pass": false
+              }
+            ]
+          }
+        },
+        {
+          "seed": 123,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_baton_rouge_20250807_233159.json",
+          "data": {
+            "port": "baton_rouge",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.56625,
+                "threshold": 0.41,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.44625,
+                "threshold": 0.45,
+                "pass": false
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.3475,
+                "threshold": 0.39,
+                "pass": false
+              }
+            ]
+          }
+        },
+        {
+          "seed": 2025,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_baton_rouge_20250807_233217.json",
+          "data": {
+            "port": "baton_rouge",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.57875,
+                "threshold": 0.41,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.4575,
+                "threshold": 0.45,
+                "pass": true
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.36875,
+                "threshold": 0.39,
+                "pass": false
+              }
+            ]
+          }
+        }
+      ],
+      "alerts": [
+        {
+          "stage": "中级阶段",
+          "win_rate": 0.43375,
+          "thr_config": 0.45,
+          "wilson_lb": 0.39980457133994096
+        },
+        {
+          "stage": "高级阶段",
+          "win_rate": 0.3375,
+          "thr_config": 0.39,
+          "wilson_lb": 0.3055784454585807
+        }
+      ],
+      "ok": false
+    },
+    "new_orleans": {
+      "seeds": [
+        {
+          "seed": 42,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_new_orleans_20250807_233239.json",
+          "data": {
+            "port": "new_orleans",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.5125,
+                "threshold": 0.35,
+                "pass": true
+              },
+              {
+                "stage": "初级阶段",
+                "win_rate": 0.5175,
+                "threshold": 0.4,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.445,
+                "threshold": 0.5,
+                "pass": false
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.39375,
+                "threshold": 0.4,
+                "pass": false
+              },
+              {
+                "stage": "专家阶段",
+                "win_rate": 0.335,
+                "threshold": 0.3,
+                "pass": true
+              }
+            ]
+          }
+        },
+        {
+          "seed": 123,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_new_orleans_20250807_233258.json",
+          "data": {
+            "port": "new_orleans",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.5025,
+                "threshold": 0.35,
+                "pass": true
+              },
+              {
+                "stage": "初级阶段",
+                "win_rate": 0.55625,
+                "threshold": 0.4,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.42875,
+                "threshold": 0.5,
+                "pass": false
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.4225,
+                "threshold": 0.4,
+                "pass": true
+              },
+              {
+                "stage": "专家阶段",
+                "win_rate": 0.34875,
+                "threshold": 0.3,
+                "pass": true
+              }
+            ]
+          }
+        },
+        {
+          "seed": 2025,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_new_orleans_20250807_233317.json",
+          "data": {
+            "port": "new_orleans",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.53,
+                "threshold": 0.35,
+                "pass": true
+              },
+              {
+                "stage": "初级阶段",
+                "win_rate": 0.53625,
+                "threshold": 0.4,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.455,
+                "threshold": 0.5,
+                "pass": false
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.4075,
+                "threshold": 0.4,
+                "pass": true
+              },
+              {
+                "stage": "专家阶段",
+                "win_rate": 0.37375,
+                "threshold": 0.3,
+                "pass": true
+              }
+            ]
+          }
+        }
+      ],
+      "alerts": [
+        {
+          "stage": "中级阶段",
+          "win_rate": 0.445,
+          "thr_config": 0.5,
+          "wilson_lb": 0.410906258786427
+        },
+        {
+          "stage": "高级阶段",
+          "win_rate": 0.39375,
+          "thr_config": 0.4,
+          "wilson_lb": 0.360478052759186
+        }
+      ],
+      "ok": false
+    },
+    "south_louisiana": {
+      "seeds": [
+        {
+          "seed": 42,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_south_louisiana_20250807_233330.json",
+          "data": {
+            "port": "south_louisiana",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.69125,
+                "threshold": 0.41,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.5575,
+                "threshold": 0.45,
+                "pass": true
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.44625,
+                "threshold": 0.39,
+                "pass": true
+              }
+            ]
+          }
+        },
+        {
+          "seed": 123,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_south_louisiana_20250807_233344.json",
+          "data": {
+            "port": "south_louisiana",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.705,
+                "threshold": 0.41,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.57125,
+                "threshold": 0.45,
+                "pass": true
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.39875,
+                "threshold": 0.39,
+                "pass": true
+              }
+            ]
+          }
+        },
+        {
+          "seed": 2025,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_south_louisiana_20250807_233354.json",
+          "data": {
+            "port": "south_louisiana",
+            "stages": [
+              {
+                "stage": "基础阶段",
+                "win_rate": 0.69625,
+                "threshold": 0.41,
+                "pass": true
+              },
+              {
+                "stage": "中级阶段",
+                "win_rate": 0.5425,
+                "threshold": 0.45,
+                "pass": true
+              },
+              {
+                "stage": "高级阶段",
+                "win_rate": 0.41875,
+                "threshold": 0.39,
+                "pass": true
+              }
+            ]
+          }
+        }
+      ],
+      "alerts": [],
+      "ok": true
+    },
     "gulfport": {
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_gulfport_20250807_231427.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_gulfport_20250807_233405.json",
           "data": {
             "port": "gulfport",
             "stages": [
               {
                 "stage": "标准阶段",
-                "win_rate": 0.51,
+                "win_rate": 0.47125,
+                "threshold": 0.49,
+                "pass": false
+              },
+              {
+                "stage": "完整阶段",
+                "win_rate": 0.3975,
+                "threshold": 0.37,
+                "pass": true
+              }
+            ]
+          }
+        },
+        {
+          "seed": 123,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_gulfport_20250807_233421.json",
+          "data": {
+            "port": "gulfport",
+            "stages": [
+              {
+                "stage": "标准阶段",
+                "win_rate": 0.4625,
+                "threshold": 0.49,
+                "pass": false
+              },
+              {
+                "stage": "完整阶段",
+                "win_rate": 0.38,
+                "threshold": 0.37,
+                "pass": true
+              }
+            ]
+          }
+        },
+        {
+          "seed": 2025,
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-07/consistency_gulfport_20250807_233432.json",
+          "data": {
+            "port": "gulfport",
+            "stages": [
+              {
+                "stage": "标准阶段",
+                "win_rate": 0.49375,
                 "threshold": 0.49,
                 "pass": true
               },
               {
                 "stage": "完整阶段",
-                "win_rate": 0.37,
+                "win_rate": 0.39875,
                 "threshold": 0.37,
                 "pass": true
               }
@@ -28,23 +393,19 @@
       "alerts": [
         {
           "stage": "标准阶段",
-          "win_rate": 0.51,
+          "win_rate": 0.47125,
           "thr_config": 0.49,
-          "wilson_lb": 0.41347840477434145
-        },
-        {
-          "stage": "完整阶段",
-          "win_rate": 0.37,
-          "thr_config": 0.37,
-          "wilson_lb": 0.28182212569509163
+          "wilson_lb": 0.43687897203387055
         }
       ],
       "ok": false
     }
   },
-  "samples": 100,
+  "samples": 800,
   "seeds": [
-    42
+    42,
+    123,
+    2025
   ],
   "thr_offset": 0.0,
   "lb_slack": 0.03

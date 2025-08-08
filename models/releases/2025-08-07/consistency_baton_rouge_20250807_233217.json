@@ -1,0 +1,23 @@
+{
+  "port": "baton_rouge",
+  "stages": [
+    {
+      "stage": "基础阶段",
+      "win_rate": 0.57875,
+      "threshold": 0.41,
+      "pass": true
+    },
+    {
+      "stage": "中级阶段",
+      "win_rate": 0.4575,
+      "threshold": 0.45,
+      "pass": true
+    },
+    {
+      "stage": "高级阶段",
+      "win_rate": 0.36875,
+      "threshold": 0.39,
+      "pass": false
+    }
+  ]
+}
