@@ -70,7 +70,7 @@ class StageFinetuner:
     def _load_model(self):
         """加载预训练模型"""
         try:
-            checkpoint = torch.load(self.model_path, map_location=self.device)
+            checkpoint = torch.load(self.model_path, map_location=self.device, weights_only=False)
             
             # 检查checkpoint格式
             if 'model_state_dict' in checkpoint:

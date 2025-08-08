@@ -1,0 +1,22 @@
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin:$HOME/.pyenv/shims
+PYENV_ROOT=$HOME/.pyenv
+MAILTO=""
+
+# Log rotation @ 01:59 - backup previous log
+59 1 * * * cd /Users/kaffy/Documents/GAT-FedPPO/logs/nightly && mv -f cron.log cron.log.$(date +\%Y\%m\%d) 2>/dev/null || true
+
+# Nightly consistency check @ 02:00 - gulfport only (800 samples, relaxed alert boundary)
+0 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /usr/bin/env python3 scripts/nightly_ci.py --ports gulfport --samples 800 --seeds 42,123,2025 --lb-slack 0.04 >> logs/nightly/cron.log 2>&1
+
+# Log compression @ 06:00 - compress yesterday's log
+0 6 * * * cd /Users/kaffy/Documents/GAT-FedPPO/logs/nightly && gzip -f cron.log.$(date -v-1d +\%Y\%m\%d) 2>/dev/null || true
+
+# Four-port nightly check @ 02:05-02:35 (staggered to avoid I/O conflicts)
+# 5 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'python3 scripts/nightly_ci.py --ports baton_rouge --samples 400 --seeds 42,123 >> logs/nightly/cron.log 2>&1'
+# 15 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'python3 scripts/nightly_ci.py --ports new_orleans --samples 400 --seeds 42,123 >> logs/nightly/cron.log 2>&1'
+# 25 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'python3 scripts/nightly_ci.py --ports south_louisiana --samples 400 --seeds 42,123 >> logs/nightly/cron.log 2>&1'
+# 35 2 * * * cd /Users/kaffy/Documents/GAT-FedPPO && /usr/bin/caffeinate -s /bin/bash -lc 'python3 scripts/nightly_ci.py --ports gulfport --samples 400 --seeds 42,123 >> logs/nightly/cron.log 2>&1'
+
+# Weekly log cleanup @ 03:00 Sunday (remove files older than 14 days)
+0 3 * * 0 find /Users/kaffy/Documents/GAT-FedPPO/logs/nightly -type f -mtime +14 -delete

@@ -558,7 +558,7 @@ class CurriculumTrainer:
                 best_path = self.save_dir / f"stage_{prev.name.replace(' ', '_')}_best.pt"
                 if best_path.exists():
                     logger.info(f"  加载上一阶段最佳模型: {best_path}")
-                    ckpt = torch.load(best_path, map_location=self.device)
+                    ckpt = torch.load(best_path, map_location=self.device, weights_only=False)
                     agent.actor_critic.load_state_dict(ckpt['model_state_dict'])
                 # 学习率衰减
                 if hasattr(agent, 'optimizer'):
