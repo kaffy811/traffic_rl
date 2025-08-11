@@ -23,9 +23,35 @@ def main():
     ports = data.get("ports", {})
     for p, st in ports.items():
         mark = "🟢" if st.get("ok") else "🔴"
-        print(f"{mark} {p} | alerts={len(st.get('alerts',[]))}")
+        
+        # 检查是否有缓存结果
+        has_cached = False
+        for seed_data in st.get("seeds", []):
+            if seed_data.get("data", {}).get("from_cache", False):
+                has_cached = True
+                break
+        
+        # 显示缓存状态
+        cache_flag = "🟡 cached" if has_cached else "🟢 fresh"
+        print(f"{mark} {p} | alerts={len(st.get('alerts',[]))} | {cache_flag}")
+        
         for a in st.get("alerts", []):
-            print(f"    - {a['stage']}: wr={a['win_rate']*100:.1f}% | LB={a['wilson_lb']*100:.1f}% | thr={a['thr_config']*100:.1f}%")
+            # 获取详细数据
+            stage_data = a.get('data', {})
+            win_rate = a.get('win_rate', 0)
+            wilson_lb = stage_data.get('wilson_lb', 0)
+            threshold = a.get('thr_config', 0)
+            threshold_source = stage_data.get('threshold_source', 'default')
+            n_samples = stage_data.get('n_samples', 0)
+            k_baseline = stage_data.get('k_baseline', 0)
+            recheck_used = stage_data.get('recheck_used', False)
+            
+            # 显示详细信息
+            thr_display = f"thr={threshold*100:.1f}% ({threshold_source})"
+            n_k_display = f"n={n_samples},k={k_baseline}"
+            recheck_display = "recheck=yes" if recheck_used else "recheck=no"
+            
+            print(f"    - {a['stage']}: wr={win_rate*100:.1f}% | LB={wilson_lb*100:.1f}% | {thr_display} | {n_k_display} | {recheck_display}")
     print("-----------------------------------------------------")
     if hist.exists():
         lines = hist.read_text().strip().splitlines()[-6:]  # 最近5条 + 头
