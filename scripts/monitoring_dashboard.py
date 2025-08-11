@@ -1,64 +1,63 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import json, sys
-from pathlib import Path
-from datetime import datetime
 
-ROOT = Path("/Users/kaffy/Documents/GAT-FedPPO")
-LOG_DIR = ROOT / "logs" / "nightly"
+import os, json, glob, time
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+RESULT_ROOT = REPO_ROOT / "models" / "releases"
+
+def _latest_result_path(port: str):
+    pats = sorted(glob.glob(str(RESULT_ROOT / "*" / f"consistency_{port}_*.json")),
+                  key=os.path.getmtime)
+    return Path(pats[-1]) if pats else None
+
+def _load_result(p: Path):
+    with open(p, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    # 兼容：补默认值（老结果不含新字段）
+    for s in data.get("stages", []):
+        s["pass"] = bool(s.get("pass", s.get("ok", False)))
+        s["wilson_lb"] = float(s.get("wilson_lb", s.get("wilson_lower_bound", 0.0)))
+        s["n_samples"] = int(s.get("n_samples", s.get("n", 0)))
+        s["k_baseline"] = int(s.get("k_baseline", s.get("k", 0)))
+        s["threshold_source"] = s.get("threshold_source", "default")
+        s["recheck_used"] = bool(s.get("recheck_used", False))
+        s["win_rate"] = float(s.get("win_rate", 0.0))
+        s["threshold"] = float(s.get("threshold", 0.0))
+    data["from_cache"] = bool(data.get("from_cache", False))
+    return data
+
+def _print_port(port: str):
+    rp = _latest_result_path(port)
+    if not rp:
+        print(f"🔴 {port} | 无结果"); return
+    data = _load_result(rp)
+    ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.path.getmtime(rp)))
+    status = "🟢 fresh" if not data["from_cache"] else "🟡 cached"
+    alerts = [s for s in data.get("stages", []) if not s["pass"]]
+    color = "🟢" if not alerts else "🔴"
+    print(f"{color} {port} | alerts={len(alerts)} | {status} | 文件时间: {ts}")
+    for s in data["stages"]:
+        print(
+          f"    - {s['stage']}: wr={s['win_rate']*100:.1f}% | "
+          f"LB={s['wilson_lb']*100:.1f}% | "
+          f"thr={s['threshold']*100:.1f}% ({s['threshold_source']}) | "
+          f"n={s['n_samples']},k={s['k_baseline']} | "
+          f"recheck={'yes' if s['recheck_used'] else 'no'}"
+        )
 
 def main():
-    status = LOG_DIR / "monitoring_status.json"
-    hist = LOG_DIR / "history.csv"
-    if not status.exists():
-        print("⚠️ 未发现监控状态文件，请先跑 nightly_ci.py")
-        sys.exit(0)
-    data = json.loads(status.read_text())
-
+    ports = ["baton_rouge", "new_orleans", "south_louisiana", "gulfport"]
     print("\n================= Nightly Dashboard =================")
-    print(f"最近运行时间: {data.get('run_time')}")
-    print(f"样本/种子: {data.get('samples')} / {data.get('seeds')}")
-    print(f"阈值偏移: {data.get('thr_offset',0)} | LB 安全边界: {data.get('lb_slack',0)}")
+    # 最近一次文件时间
+    latest = sorted(glob.glob(str(RESULT_ROOT / "*" / "consistency_*.json")),
+                    key=os.path.getmtime)
+    last_ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.path.getmtime(latest[-1]))) if latest else "N/A"
+    print(f"最近运行时间: {last_ts}")
     print("-----------------------------------------------------")
-    ports = data.get("ports", {})
-    for p, st in ports.items():
-        mark = "🟢" if st.get("ok") else "🔴"
-        
-        # 检查是否有缓存结果
-        has_cached = False
-        for seed_data in st.get("seeds", []):
-            if seed_data.get("data", {}).get("from_cache", False):
-                has_cached = True
-                break
-        
-        # 显示缓存状态
-        cache_flag = "🟡 cached" if has_cached else "🟢 fresh"
-        print(f"{mark} {p} | alerts={len(st.get('alerts',[]))} | {cache_flag}")
-        
-        for a in st.get("alerts", []):
-            # 获取详细数据
-            stage_data = a.get('data', {})
-            win_rate = a.get('win_rate', 0)
-            wilson_lb = stage_data.get('wilson_lb', 0)
-            threshold = a.get('thr_config', 0)
-            threshold_source = stage_data.get('threshold_source', 'default')
-            n_samples = stage_data.get('n_samples', 0)
-            k_baseline = stage_data.get('k_baseline', 0)
-            recheck_used = stage_data.get('recheck_used', False)
-            
-            # 显示详细信息
-            thr_display = f"thr={threshold*100:.1f}% ({threshold_source})"
-            n_k_display = f"n={n_samples},k={k_baseline}"
-            recheck_display = "recheck=yes" if recheck_used else "recheck=no"
-            
-            print(f"    - {a['stage']}: wr={win_rate*100:.1f}% | LB={wilson_lb*100:.1f}% | {thr_display} | {n_k_display} | {recheck_display}")
+    for p in ports: _print_port(p)
     print("-----------------------------------------------------")
-    if hist.exists():
-        lines = hist.read_text().strip().splitlines()[-6:]  # 最近5条 + 头
-        print("最近历史：")
-        for ln in lines:
-            print("  ", ln)
-    print("=====================================================\n")
 
 if __name__ == "__main__":
     main()
