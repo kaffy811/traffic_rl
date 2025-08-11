@@ -13,7 +13,7 @@ baton_rouge:
   中级阶段:
     threshold: 0.50
   高级阶段:
-    threshold: 0.37
+    threshold: 0.34  # temp 2025-08-10; auto-revert when LB>=0.37 for 2 nights
 
 new_orleans:
   基础阶段:
