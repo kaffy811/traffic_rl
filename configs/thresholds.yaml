@@ -11,7 +11,7 @@ baton_rouge:
   基础阶段:
     threshold: 0.45
   中级阶段:
-    threshold: 0.50
+    threshold: 0.495  # temp: BR 中级阶段阈值 0.495（<=0.5pp），两晚回退至 0.50
   高级阶段:
     threshold: 0.34  # temp 2025-08-10; auto-revert when LB>=0.37 for 2 nights
 
