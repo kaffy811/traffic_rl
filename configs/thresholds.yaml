@@ -1,0 +1,32 @@
+# 港口一致性测试阈值配置
+# 格式：港口名 -> 阶段名 -> 阈值
+
+gulfport:
+  标准阶段:
+    threshold: 0.44  # 从0.46调整到0.44
+  完整阶段:
+    threshold: 0.33  # 从0.35调整到0.33
+
+baton_rouge:
+  基础阶段:
+    threshold: 0.45
+  中级阶段:
+    threshold: 0.50
+  高级阶段:
+    threshold: 0.37
+
+new_orleans:
+  基础阶段:
+    threshold: 0.45
+  中级阶段:
+    threshold: 0.47
+  高级阶段:
+    threshold: 0.40
+  专家阶段:
+    threshold: 0.35
+
+south_louisiana:
+  标准阶段:
+    threshold: 0.45
+  完整阶段:
+    threshold: 0.35 

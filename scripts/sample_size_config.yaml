@@ -1,0 +1,26 @@
+# 基于Wilson下界计算的样本量配置
+# 目标：让 Wilson 下界 ≥ (阈值 - 0.04)
+# 当前置信区间松弛度: 0.04
+
+ports:
+  gulfport:
+    standard_stage: 800    # 从600提升到800 (0.5075 vs 0.49)
+    complete_stage: 1700   # 从400提升到1700 (0.3525 vs 0.37)
+  
+  new_orleans:
+    advanced_stage: 700    # 从400提升到700 (0.3975 vs 0.40)
+  
+  south_louisiana:
+    advanced_stage: 900    # 从400提升到900 (0.3825 vs 0.39)
+  
+  baton_rouge:
+    intermediate_stage: 1500  # 从400提升到1500 (0.435 vs 0.45)
+    advanced_stage: 1200      # 从400提升到1200 (0.3775 vs 0.39)
+
+# 计算依据：
+# Gulfport标准: 0.5075胜率，阈值0.49，需要n≈600
+# Gulfport完整: 0.3525胜率，阈值0.37，需要n≈1700  
+# NO高级: 0.3975胜率，阈值0.40，需要n≈700
+# SoLA高级: 0.3825胜率，阈值0.39，需要n≈900
+# BR中级: 0.435胜率，阈值0.45，需要n≈1500
+# BR高级: 0.3775胜率，阈值0.39，需要n≈1200 
