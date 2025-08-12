@@ -1,11 +1,11 @@
 {
-  "run_time": "2025-08-12 14:20:01",
+  "run_time": "2025-08-12 14:47:58",
   "ports": {
     "baton_rouge": {
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_142011.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_144808.json",
           "data": {
             "port": "baton_rouge",
             "stages": [
@@ -49,7 +49,7 @@
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_142033.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_144828.json",
           "data": {
             "port": "baton_rouge",
             "stages": [
@@ -93,7 +93,7 @@
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_142047.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_144841.json",
           "data": {
             "port": "baton_rouge",
             "stages": [
@@ -155,7 +155,7 @@
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_142101.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_144856.json",
           "data": {
             "port": "new_orleans",
             "stages": [
@@ -220,7 +220,7 @@
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_142116.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_144910.json",
           "data": {
             "port": "new_orleans",
             "stages": [
@@ -285,7 +285,7 @@
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_142131.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_144924.json",
           "data": {
             "port": "new_orleans",
             "stages": [
@@ -356,7 +356,7 @@
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_142145.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_144938.json",
           "data": {
             "port": "south_louisiana",
             "stages": [
@@ -399,7 +399,7 @@
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_142202.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_144954.json",
           "data": {
             "port": "south_louisiana",
             "stages": [
@@ -442,7 +442,7 @@
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_142216.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_145008.json",
           "data": {
             "port": "south_louisiana",
             "stages": [
@@ -491,7 +491,7 @@
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_142224.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_145015.json",
           "data": {
             "port": "gulfport",
             "stages": [
@@ -523,7 +523,7 @@
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_142231.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_145023.json",
           "data": {
             "port": "gulfport",
             "stages": [
@@ -555,7 +555,7 @@
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_142242.json",
+          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_145034.json",
           "data": {
             "port": "gulfport",
             "stages": [

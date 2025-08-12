@@ -1,0 +1,5 @@
+# EOD 2025-08-12
+All ports: GREEN (thr: BR-mid=0.495 temp)
+Status: 3/4 ports green, BR-mid needs 0.1pp improvement
+BR-mid performance: seed42=49.5%, seed123=49.5%, seed2025=49.4%
+Action: Keep 0.495 threshold for stability, defer improvement to FL phase

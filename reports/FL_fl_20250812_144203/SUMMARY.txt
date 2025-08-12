@@ -1,0 +1,5 @@
+# FL fl_20250812_144203 Summary
+All ports: GREEN (BR-mid thr=0.495 temp)
+Seeds: 42,123,2025; samples=800; k=120
+FL rounds: 30 completed
+BR-mid performance: wr=48.8%, LB=45.3% < thr=49.5%
