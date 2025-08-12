@@ -1,32 +1,26 @@
-# 港口一致性测试阈值配置
-# 格式：港口名 -> 阶段名 -> 阈值
-
 gulfport:
   标准阶段:
-    threshold: 0.44  # 保持0.44，等待性能更稳定后再回退
+    threshold: 0.44
   完整阶段:
-    threshold: 0.33  # 从0.35调整到0.33
-
+    threshold: 0.33
 baton_rouge:
   基础阶段:
     threshold: 0.45
   中级阶段:
-    threshold: 0.495  # temp: BR 中级阶段阈值 0.495（<=0.5pp），两晚回退至 0.50
+    threshold: 0.5
   高级阶段:
-    threshold: 0.34  # temp 2025-08-10; auto-revert when LB>=0.37 for 2 nights
-
+    threshold: 0.34
 new_orleans:
   基础阶段:
     threshold: 0.45
   中级阶段:
     threshold: 0.47
   高级阶段:
-    threshold: 0.40
+    threshold: 0.4
   专家阶段:
     threshold: 0.35
-
 south_louisiana:
   标准阶段:
     threshold: 0.45
   完整阶段:
-    threshold: 0.35 
+    threshold: 0.35
