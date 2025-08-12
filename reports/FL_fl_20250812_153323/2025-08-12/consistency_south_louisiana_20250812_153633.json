@@ -1,0 +1,39 @@
+{
+  "port": "south_louisiana",
+  "stages": [
+    {
+      "stage": "基础阶段",
+      "win_rate": 0.55875,
+      "threshold": 0.41,
+      "pass": true,
+      "wilson_lb": 0.5241421803790288,
+      "threshold_source": "default",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "中级阶段",
+      "win_rate": 0.4925,
+      "threshold": 0.45,
+      "pass": true,
+      "wilson_lb": 0.45797437282734893,
+      "threshold_source": "default",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "高级阶段",
+      "win_rate": 0.37375,
+      "threshold": 0.37,
+      "pass": true,
+      "wilson_lb": 0.3409025974357176,
+      "threshold_source": "default",
+      "n_samples": 800,
+      "k_baseline": 100,
+      "recheck_used": true
+    }
+  ],
+  "from_cache": false
+}

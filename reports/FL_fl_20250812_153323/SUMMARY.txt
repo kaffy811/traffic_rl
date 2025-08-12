@@ -1,0 +1,4 @@
+# FL fl_20250812_153323 Summary
+Seeds: 42,123,2025; samples=800
+Rounds: 30
+Init: models/fl/fl_20250812_153323/global_init.pt

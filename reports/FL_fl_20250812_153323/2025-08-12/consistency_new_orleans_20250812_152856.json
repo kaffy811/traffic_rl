@@ -1,0 +1,61 @@
+{
+  "port": "new_orleans",
+  "stages": [
+    {
+      "stage": "基础阶段",
+      "win_rate": 0.515,
+      "threshold": 0.45,
+      "pass": true,
+      "wilson_lb": 0.4803784574820477,
+      "threshold_source": "config",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "初级阶段",
+      "win_rate": 0.52,
+      "threshold": 0.4,
+      "pass": true,
+      "wilson_lb": 0.4853666097760782,
+      "threshold_source": "default",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "中级阶段",
+      "win_rate": 0.56,
+      "threshold": 0.47,
+      "pass": true,
+      "wilson_lb": 0.5253964915437855,
+      "threshold_source": "default",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "高级阶段",
+      "win_rate": 0.5,
+      "threshold": 0.4,
+      "pass": true,
+      "wilson_lb": 0.4654346597112372,
+      "threshold_source": "default",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "专家阶段",
+      "win_rate": 0.40375,
+      "threshold": 0.35,
+      "pass": true,
+      "wilson_lb": 0.37028800100538856,
+      "threshold_source": "config",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    }
+  ],
+  "from_cache": false
+}
