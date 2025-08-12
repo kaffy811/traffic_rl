@@ -53,13 +53,13 @@ def create_sample_input(port_name: str, stage_name: str) -> tuple:
             logger.warning(f"未找到阶段 {stage_name}，使用默认输入")
             # 使用默认维度
             batch_size = 1
-            state_dim = 20
+            state_dim = 56
             num_nodes = 10
             node_feature_dim = 8
         else:
             # 根据阶段配置创建输入
             batch_size = 1
-            state_dim = 20  # 基础状态维度
+            state_dim = 56  # 统一为56维状态
             num_nodes = min(target_stage.max_vessels + target_stage.max_berths, 20)
             node_feature_dim = 8
         
@@ -78,7 +78,7 @@ def create_sample_input(port_name: str, stage_name: str) -> tuple:
         # 返回默认输入
         device = torch.device("cpu")
         return (
-            torch.randn(1, 20, device=device),
+            torch.randn(1, 56, device=device),
             torch.randn(1, 10, 8, device=device),
             torch.randn(1, 10, 10, device=device)
         )

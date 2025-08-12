@@ -1,0 +1,6 @@
+{
+  "port": "baton_rouge",
+  "stage": "中级阶段",
+  "best_win_rate": 0.52,
+  "saved_to": "/Users/kaffy/Documents/GAT-FedPPO/models/curriculum_v2/baton_rouge/stage_中级阶段_best.pt"
+}

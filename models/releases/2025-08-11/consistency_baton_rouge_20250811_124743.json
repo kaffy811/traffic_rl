@@ -1,0 +1,39 @@
+{
+  "port": "baton_rouge",
+  "stages": [
+    {
+      "stage": "基础阶段",
+      "win_rate": 0.685,
+      "threshold": 0.45,
+      "pass": true,
+      "wilson_lb": 0.6379004762565755,
+      "threshold_source": "config",
+      "n_samples": 400,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "中级阶段",
+      "win_rate": 0.51,
+      "threshold": 0.5,
+      "pass": true,
+      "wilson_lb": 0.46114815164827233,
+      "threshold_source": "config",
+      "n_samples": 400,
+      "k_baseline": 50,
+      "recheck_used": true
+    },
+    {
+      "stage": "高级阶段",
+      "win_rate": 0.42,
+      "threshold": 0.34,
+      "pass": true,
+      "wilson_lb": 0.3726168694631035,
+      "threshold_source": "config",
+      "n_samples": 400,
+      "k_baseline": 50,
+      "recheck_used": false
+    }
+  ],
+  "from_cache": false
+}

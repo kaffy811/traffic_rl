@@ -161,7 +161,7 @@ class AlphaFairAggregator:
     def aggregate_parameters(self, client_params: Dict[str, Dict], 
                            client_metrics: Dict[str, ClientMetrics]) -> Dict:
         """
-        使用α-fair权重聚合客户端参数
+        使用α-fair权重聚合客户端参数，支持FedProx
         """
         if not client_params:
             return {}
@@ -169,10 +169,28 @@ class AlphaFairAggregator:
         # 计算权重
         weights = self.compute_alpha_fair_weights(client_metrics)
         
-        # 聚合参数
-        aggregated = {}
+        # 选择聚合策略
+        aggregation_strategy = self._select_aggregation_strategy(client_metrics)
         
-        # 获取参数结构（使用第一个客户端作为模板）
+        if aggregation_strategy == "fedprox":
+            return self._fedprox_aggregate(client_params, weights, mu=0.01)
+        else:
+            return self._fedavg_aggregate(client_params, weights)
+    
+    def _select_aggregation_strategy(self, client_metrics: Dict[str, ClientMetrics]) -> str:
+        """根据港口类型选择聚合策略"""
+        # 针对窄弯港口使用FedProx抑制跨港漂移
+        narrow_bend_ports = ['baton_rouge', 'new_orleans']
+        
+        for port_name in client_metrics.keys():
+            if any(nb_port in port_name.lower() for nb_port in narrow_bend_ports):
+                return "fedprox"
+        
+        return "fedavg"
+    
+    def _fedavg_aggregate(self, client_params: Dict[str, Dict], weights: Dict[str, float]) -> Dict:
+        """标准FedAvg聚合"""
+        aggregated = {}
         first_client = next(iter(client_params.values()))
         
         for param_name in first_client:
@@ -194,7 +212,44 @@ class AlphaFairAggregator:
             if weighted_sum is not None and total_weight > 0:
                 aggregated[param_name] = weighted_sum / total_weight
             else:
-                # 回退到第一个客户端的参数
+                aggregated[param_name] = first_client[param_name].clone()
+                self.logger.warning(f"参数 {param_name} 聚合失败，使用回退值")
+        
+        return aggregated
+    
+    def _fedprox_aggregate(self, client_params: Dict[str, Dict], weights: Dict[str, float], mu: float = 0.01) -> Dict:
+        """FedProx聚合，抑制跨港漂移"""
+        self.logger.info(f"使用FedProx聚合 (μ={mu}) 抑制跨港漂移")
+        
+        aggregated = {}
+        first_client = next(iter(client_params.values()))
+        
+        for param_name in first_client:
+            weighted_sum = None
+            total_weight = 0.0
+            
+            for client_name, params in client_params.items():
+                if client_name in weights and param_name in params:
+                    weight = weights[client_name]
+                    param_tensor = params[param_name]
+                    
+                    # FedProx: 添加正则化项抑制漂移
+                    if hasattr(self, 'global_model') and param_name in self.global_model:
+                        global_param = self.global_model[param_name]
+                        # 正则化项: -μ * (θ - θ_global)
+                        prox_term = -mu * (param_tensor - global_param)
+                        param_tensor = param_tensor + prox_term
+                    
+                    if weighted_sum is None:
+                        weighted_sum = weight * param_tensor.clone()
+                    else:
+                        weighted_sum += weight * param_tensor
+                    
+                    total_weight += weight
+            
+            if weighted_sum is not None and total_weight > 0:
+                aggregated[param_name] = weighted_sum / total_weight
+            else:
                 aggregated[param_name] = first_client[param_name].clone()
                 self.logger.warning(f"参数 {param_name} 聚合失败，使用回退值")
         

@@ -81,7 +81,7 @@ class InferenceRunner:
             if sample_input is None:
                 # 使用默认的示例输入
                 batch_size = 1
-                state_dim = 20  # 根据实际状态维度调整
+                state_dim = 56  # 统一为56维状态
                 node_features_dim = (10, 8)  # (num_nodes, feature_dim)
                 adj_matrix_dim = (10, 10)  # (num_nodes, num_nodes)
                 
@@ -121,7 +121,7 @@ class InferenceRunner:
             # 创建示例输入
             if sample_input is None:
                 batch_size = 1
-                state_dim = 20
+                state_dim = 56
                 node_features_dim = (10, 8)
                 adj_matrix_dim = (10, 10)
                 

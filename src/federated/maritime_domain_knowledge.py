@@ -74,7 +74,7 @@ class MaritimeStateBuilder:
     
     def __init__(self, port_name: str):
         self.port_spec = PORT_SPECIFICATIONS[port_name]
-        self.state_dim = 24  # 扩展到24维状态向量
+        self.state_dim = 56  # 统一为56维状态向量
         
     def build_vessel_state(self, vessel_data: Dict, port_status: Dict, 
                           queue_status: Dict, berth_status: Dict) -> np.ndarray:

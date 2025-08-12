@@ -356,6 +356,18 @@ def main(port: str, n=200, seed=42, k=50, margin=0.02, force_recheck=False, disa
     out_dir = REPO_ROOT / "models" / "releases" / time.strftime("%Y-%m-%d")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / f"consistency_{port}_{time.strftime('%Y%m%d_%H%M%S')}.json"
+    # 生成notes信息
+    notes = []
+    if port == "baton_rouge":
+        for stage_name, _, threshold, _ in stage_rows:
+            if stage_name == "中级阶段":
+                if threshold == 0.495:
+                    notes.append("temp threshold=0.495; scheduled rollback in 2 nights")
+                elif threshold == 0.497:
+                    notes.append("temp threshold=0.497; scheduled rollback in 1 night")
+                elif threshold == 0.500:
+                    notes.append("reverted to original threshold=0.500")
+    
     result = {
         "port": port, 
         "stages": [
@@ -374,6 +386,10 @@ def main(port: str, n=200, seed=42, k=50, margin=0.02, force_recheck=False, disa
         ], 
         "from_cache": False
     }
+    
+    # 添加notes字段
+    if notes:
+        result["notes"] = "; ".join(notes)
     try:
         with open(out_file, "w", encoding="utf-8") as f:
             json.dump(result, f, indent=2, ensure_ascii=False)

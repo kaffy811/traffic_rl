@@ -1,0 +1,528 @@
+{
+  "宽航道": {
+    "config": {
+      "name": "宽航道",
+      "description": "宽直航道基础训练",
+      "max_vessels": 8,
+      "max_berths": 5,
+      "traffic_intensity": 0.4,
+      "weather_complexity": 0.1,
+      "episodes": 25,
+      "success_threshold": 0.45,
+      "features": [
+        "basic"
+      ]
+    },
+    "performance": {
+      "stage_name": "宽航道",
+      "final_performance": {
+        "avg_reward": 25.112906514140356,
+        "baseline_avg_reward": 28.03962472738963,
+        "completion_rate": 0.46,
+        "success": true,
+        "reward_threshold": 40.75245877025123,
+        "win_rate": 0.46
+      },
+      "best_performance": 0.52,
+      "success": true,
+      "history": [
+        {
+          "episode": 0,
+          "avg_reward": 29.040792888641914,
+          "test_performance": {
+            "avg_reward": 25.948421739237844,
+            "baseline_avg_reward": 27.453821229652828,
+            "completion_rate": 0.5,
+            "success": true,
+            "reward_threshold": 40.75245877025123,
+            "win_rate": 0.5
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 5,
+          "avg_reward": 29.7651678321432,
+          "test_performance": {
+            "avg_reward": 25.941324448337497,
+            "baseline_avg_reward": 27.787281144703567,
+            "completion_rate": 0.52,
+            "success": true,
+            "reward_threshold": 40.75245877025123,
+            "win_rate": 0.52
+          },
+          "loss": 36665.250651041664
+        },
+        {
+          "episode": 10,
+          "avg_reward": 26.31808646174253,
+          "test_performance": {
+            "avg_reward": 25.533023398944906,
+            "baseline_avg_reward": 27.742578713359606,
+            "completion_rate": 0.44,
+            "success": false,
+            "reward_threshold": 40.75245877025123,
+            "win_rate": 0.44
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 15,
+          "avg_reward": 24.15802172469983,
+          "test_performance": {
+            "avg_reward": 25.112906514140356,
+            "baseline_avg_reward": 27.495922375659024,
+            "completion_rate": 0.44,
+            "success": false,
+            "reward_threshold": 40.75245877025123,
+            "win_rate": 0.44
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 20,
+          "avg_reward": 28.407395145603235,
+          "test_performance": {
+            "avg_reward": 25.112906514140356,
+            "baseline_avg_reward": 27.828320446900182,
+            "completion_rate": 0.46,
+            "success": true,
+            "reward_threshold": 40.75245877025123,
+            "win_rate": 0.46
+          },
+          "loss": 37315.645182291664
+        }
+      ],
+      "config": {
+        "name": "宽航道",
+        "description": "宽直航道基础训练",
+        "max_vessels": 8,
+        "max_berths": 5,
+        "traffic_intensity": 0.4,
+        "weather_complexity": 0.1,
+        "episodes": 25,
+        "success_threshold": 0.45,
+        "features": [
+          "basic"
+        ]
+      }
+    },
+    "agent_saved": true
+  },
+  "窄航道": {
+    "config": {
+      "name": "窄航道",
+      "description": "增加航道约束",
+      "max_vessels": 12,
+      "max_berths": 8,
+      "traffic_intensity": 0.6,
+      "weather_complexity": 0.2,
+      "episodes": 30,
+      "success_threshold": 0.42,
+      "features": [
+        "basic",
+        "curvature"
+      ]
+    },
+    "performance": {
+      "stage_name": "窄航道",
+      "final_performance": {
+        "avg_reward": 31.353524388234604,
+        "baseline_avg_reward": 32.23940059979516,
+        "completion_rate": 0.58,
+        "success": true,
+        "reward_threshold": 45.68626733477092,
+        "win_rate": 0.58
+      },
+      "best_performance": 0.6,
+      "success": true,
+      "history": [
+        {
+          "episode": 0,
+          "avg_reward": 30.141706354112948,
+          "test_performance": {
+            "avg_reward": 31.353524388234604,
+            "baseline_avg_reward": 32.70801512963818,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 45.68626733477092,
+            "win_rate": 0.56
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 5,
+          "avg_reward": 31.837035140784852,
+          "test_performance": {
+            "avg_reward": 31.353524388234604,
+            "baseline_avg_reward": 32.24217032328093,
+            "completion_rate": 0.58,
+            "success": true,
+            "reward_threshold": 45.68626733477092,
+            "win_rate": 0.58
+          },
+          "loss": 41911.975911458336
+        },
+        {
+          "episode": 10,
+          "avg_reward": 30.39222438792633,
+          "test_performance": {
+            "avg_reward": 31.353524388234604,
+            "baseline_avg_reward": 31.95753126232638,
+            "completion_rate": 0.6,
+            "success": true,
+            "reward_threshold": 45.68626733477092,
+            "win_rate": 0.6
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 15,
+          "avg_reward": 30.46798233317463,
+          "test_performance": {
+            "avg_reward": 31.353524388234604,
+            "baseline_avg_reward": 31.44069750488554,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 45.68626733477092,
+            "win_rate": 0.56
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 20,
+          "avg_reward": 31.007577147268986,
+          "test_performance": {
+            "avg_reward": 31.353524388234604,
+            "baseline_avg_reward": 31.775743329753006,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 45.68626733477092,
+            "win_rate": 0.56
+          },
+          "loss": 39200.546875
+        },
+        {
+          "episode": 25,
+          "avg_reward": 31.28023801715269,
+          "test_performance": {
+            "avg_reward": 31.353524388234604,
+            "baseline_avg_reward": 32.239654178001835,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 45.68626733477092,
+            "win_rate": 0.56
+          },
+          "loss": 0.0
+        }
+      ],
+      "config": {
+        "name": "窄航道",
+        "description": "增加航道约束",
+        "max_vessels": 12,
+        "max_berths": 8,
+        "traffic_intensity": 0.6,
+        "weather_complexity": 0.2,
+        "episodes": 30,
+        "success_threshold": 0.42,
+        "features": [
+          "basic",
+          "curvature"
+        ]
+      }
+    },
+    "agent_saved": true
+  },
+  "急弯": {
+    "config": {
+      "name": "急弯",
+      "description": "窄弯道训练",
+      "max_vessels": 15,
+      "max_berths": 10,
+      "traffic_intensity": 0.7,
+      "weather_complexity": 0.3,
+      "episodes": 35,
+      "success_threshold": 0.4,
+      "features": [
+        "basic",
+        "curvature",
+        "tide"
+      ]
+    },
+    "performance": {
+      "stage_name": "急弯",
+      "final_performance": {
+        "avg_reward": 33.6402316567749,
+        "baseline_avg_reward": 31.94219390527417,
+        "completion_rate": 0.56,
+        "success": true,
+        "reward_threshold": 38.051171732775416,
+        "win_rate": 0.56
+      },
+      "best_performance": 0.58,
+      "success": true,
+      "history": [
+        {
+          "episode": 0,
+          "avg_reward": 32.82629870497415,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 31.886838457429626,
+            "completion_rate": 0.58,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.58
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 5,
+          "avg_reward": 31.259718869884036,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 32.03616323225272,
+            "completion_rate": 0.58,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.58
+          },
+          "loss": 45897.0703125
+        },
+        {
+          "episode": 10,
+          "avg_reward": 32.766682636539215,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 31.739800978290745,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.56
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 15,
+          "avg_reward": 33.479603626714784,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 31.88755206405508,
+            "completion_rate": 0.58,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.58
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 20,
+          "avg_reward": 31.663632865623843,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 31.034260113403516,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.56
+          },
+          "loss": 38934.481119791664
+        },
+        {
+          "episode": 25,
+          "avg_reward": 34.635804225805664,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 30.987759401123007,
+            "completion_rate": 0.58,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.58
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 30,
+          "avg_reward": 30.73600959910157,
+          "test_performance": {
+            "avg_reward": 33.6402316567749,
+            "baseline_avg_reward": 31.387379564803826,
+            "completion_rate": 0.56,
+            "success": true,
+            "reward_threshold": 38.051171732775416,
+            "win_rate": 0.56
+          },
+          "loss": 0.0
+        }
+      ],
+      "config": {
+        "name": "急弯",
+        "description": "窄弯道训练",
+        "max_vessels": 15,
+        "max_berths": 10,
+        "traffic_intensity": 0.7,
+        "weather_complexity": 0.3,
+        "episodes": 35,
+        "success_threshold": 0.4,
+        "features": [
+          "basic",
+          "curvature",
+          "tide"
+        ]
+      }
+    },
+    "agent_saved": true
+  },
+  "急弯+潮汐": {
+    "config": {
+      "name": "急弯+潮汐",
+      "description": "完整复杂度",
+      "max_vessels": 20,
+      "max_berths": 15,
+      "traffic_intensity": 1.0,
+      "weather_complexity": 0.4,
+      "episodes": 40,
+      "success_threshold": 0.37,
+      "features": [
+        "basic",
+        "curvature",
+        "tide",
+        "risk_weighted"
+      ]
+    },
+    "performance": {
+      "stage_name": "急弯+潮汐",
+      "final_performance": {
+        "avg_reward": 34.43431074551531,
+        "baseline_avg_reward": 34.27140324589179,
+        "completion_rate": 0.4,
+        "success": true,
+        "reward_threshold": 33.27200123072491,
+        "win_rate": 0.4
+      },
+      "best_performance": 0.4,
+      "success": true,
+      "history": [
+        {
+          "episode": 0,
+          "avg_reward": 37.56471707455811,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 34.50383322433934,
+            "completion_rate": 0.38,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.38
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 5,
+          "avg_reward": 39.13184833138609,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 34.45047187242365,
+            "completion_rate": 0.38,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.38
+          },
+          "loss": 53469.796875
+        },
+        {
+          "episode": 10,
+          "avg_reward": 35.674144117561625,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 34.33574645727841,
+            "completion_rate": 0.4,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.4
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 15,
+          "avg_reward": 33.752435181776924,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 34.89153942036424,
+            "completion_rate": 0.36,
+            "success": false,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.36
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 20,
+          "avg_reward": 34.797305261503986,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 35.74585998252293,
+            "completion_rate": 0.4,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.4
+          },
+          "loss": 50323.549479166664
+        },
+        {
+          "episode": 25,
+          "avg_reward": 37.09698837864826,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 35.41162433772064,
+            "completion_rate": 0.4,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.4
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 30,
+          "avg_reward": 34.817578027938666,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 33.93545428293848,
+            "completion_rate": 0.38,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.38
+          },
+          "loss": 0.0
+        },
+        {
+          "episode": 35,
+          "avg_reward": 34.65167275632527,
+          "test_performance": {
+            "avg_reward": 34.43431074551531,
+            "baseline_avg_reward": 36.091964617856625,
+            "completion_rate": 0.38,
+            "success": true,
+            "reward_threshold": 33.27200123072491,
+            "win_rate": 0.38
+          },
+          "loss": 42204.983072916664
+        }
+      ],
+      "config": {
+        "name": "急弯+潮汐",
+        "description": "完整复杂度",
+        "max_vessels": 20,
+        "max_berths": 15,
+        "traffic_intensity": 1.0,
+        "weather_complexity": 0.4,
+        "episodes": 40,
+        "success_threshold": 0.37,
+        "features": [
+          "basic",
+          "curvature",
+          "tide",
+          "risk_weighted"
+        ]
+      }
+    },
+    "agent_saved": true
+  }
+}

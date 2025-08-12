@@ -1,0 +1,35 @@
+{
+  "port": "new_orleans",
+  "stages": [
+    {
+      "stage": "基础阶段",
+      "win_rate": 0.5271428571428571,
+      "threshold": 0.35,
+      "pass": true
+    },
+    {
+      "stage": "初级阶段",
+      "win_rate": 0.5571428571428572,
+      "threshold": 0.4,
+      "pass": true
+    },
+    {
+      "stage": "中级阶段",
+      "win_rate": 0.43,
+      "threshold": 0.47,
+      "pass": false
+    },
+    {
+      "stage": "高级阶段",
+      "win_rate": 0.4257142857142857,
+      "threshold": 0.4,
+      "pass": true
+    },
+    {
+      "stage": "专家阶段",
+      "win_rate": 0.3271428571428571,
+      "threshold": 0.3,
+      "pass": true
+    }
+  ]
+}

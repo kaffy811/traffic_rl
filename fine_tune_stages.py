@@ -50,7 +50,7 @@ class StageFinetuner:
         """构建智能体"""
         # 微调专用配置 - 更激进的参数
         config = {
-            'state_dim': 20,
+            'state_dim': 56,
             'action_dim': 15,
             'hidden_dim': 256,
             'learning_rate': 5e-4,  # 稍微提高学习率

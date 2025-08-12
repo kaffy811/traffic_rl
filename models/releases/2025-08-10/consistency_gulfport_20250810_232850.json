@@ -1,0 +1,28 @@
+{
+  "port": "gulfport",
+  "stages": [
+    {
+      "stage": "标准阶段",
+      "win_rate": 0.49375,
+      "threshold": 0.47,
+      "pass": true,
+      "wilson_lb": 0.45921721639623503,
+      "threshold_source": "config",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    },
+    {
+      "stage": "完整阶段",
+      "win_rate": 0.37875,
+      "threshold": 0.33,
+      "pass": true,
+      "wilson_lb": 0.3457908403111247,
+      "threshold_source": "config",
+      "n_samples": 800,
+      "k_baseline": 50,
+      "recheck_used": false
+    }
+  ],
+  "from_cache": false
+}

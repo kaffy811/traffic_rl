@@ -156,10 +156,11 @@ class PPOBuffer:
     def __len__(self):
         return len(self.buffer)
 
-class GATPPOAgent:
+class GATPPOAgent(nn.Module):
     """GAT-PPO智能体"""
     
     def __init__(self, port_name: str, config: Dict):
+        super().__init__()
         self.port_name = port_name
         self.config = config
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -374,11 +375,19 @@ class GATPPOAgent:
             'avg_episode_length': np.mean(self.episode_lengths[-100:]) if self.episode_lengths else 0,
             'recent_loss': self.training_losses[-1] if self.training_losses else {}
         }
+    
+    def state_dict(self):
+        """获取模型状态字典"""
+        return self.actor_critic.state_dict()
+    
+    def load_state_dict(self, state_dict):
+        """加载模型状态字典"""
+        return self.actor_critic.load_state_dict(state_dict)
 
 def create_default_config(port_name: str) -> Dict:
     """创建默认配置"""
     return {
-        'state_dim': 24,  # MaritimeStateBuilder使用24维状态
+        'state_dim': 56,  # 统一为56维状态，与模型首层in_features一致
         'action_dim': 10,  # 10个泊位
         'hidden_dim': 128,
         'num_heads': 8,

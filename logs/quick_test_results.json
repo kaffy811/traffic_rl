@@ -1,0 +1,55 @@
+{
+  "test_time": "2025-08-10 19:47:44",
+  "total_checks": 10,
+  "passed_checks": 10,
+  "pass_rate": "100.0%",
+  "results": {
+    "sample_size": {
+      "gulfport_standard": {
+        "status": "success",
+        "samples": 600
+      }
+    },
+    "threshold_calibration": {
+      "no_intermediate": {
+        "status": "success",
+        "threshold": 0.47
+      },
+      "br_advanced": {
+        "status": "success",
+        "threshold": 0.37
+      }
+    },
+    "training_improvements": {
+      "curvature_features": {
+        "status": "success"
+      },
+      "risk_weighted_adj": {
+        "status": "success"
+      },
+      "curve_stability_reward": {
+        "status": "success"
+      },
+      "fedprox_aggregation": {
+        "status": "success"
+      }
+    },
+    "progressive_training": {
+      "progressive_stages": {
+        "status": "success",
+        "stages": [
+          "宽航道",
+          "窄航道",
+          "急弯",
+          "急弯+潮汐"
+        ]
+      },
+      "warm_start": {
+        "status": "success"
+      },
+      "convergence_check": {
+        "status": "success"
+      }
+    }
+  }
+}

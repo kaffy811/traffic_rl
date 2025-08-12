@@ -55,7 +55,7 @@ class TransferLearningTrainer:
         
         # 创建智能体并加载模型
         agent = GATPPOAgent(
-            state_dim=20,  # 基础状态维度
+            state_dim=56,  # 统一为56维状态
             action_dim=10,  # 动作空间
             hidden_dim=256,
             port_name=self.source_port,
@@ -72,7 +72,7 @@ class TransferLearningTrainer:
     def create_target_agent(self, source_agent: GATPPOAgent) -> GATPPOAgent:
         """创建目标港口智能体并初始化为源模型权重"""
         target_agent = GATPPOAgent(
-            state_dim=20,
+            state_dim=56,
             action_dim=10,
             hidden_dim=256,
             port_name=self.target_port,
