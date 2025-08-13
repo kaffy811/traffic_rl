@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-08-12 15:41:34",
+  "fl_tag": "fl_20250812_153323",
+  "artifacts": {
+    "global_best": {
+      "path": "models/fl/fl_20250812_153323/global_best.pt",
+      "sha12": "2394b24988ae"
+    }
+  },
+  "thresholds_yaml_sha12": "99b1c8d128cd"
+}

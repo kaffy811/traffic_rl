@@ -5,6 +5,7 @@ from pathlib import Path
 from datetime import datetime
 from math import sqrt
 from glob import glob
+from typing import Optional
 import yaml
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(message)s")
@@ -62,7 +63,7 @@ def wilson_lb(k, n, z=1.96):
     lb = (centre - margin)/denom
     return max(0.0, min(1.0, lb))
 
-def run_consistency_once(port: str, samples: int, seed: int, timeout: int = 1800, no_cache: bool = False) -> Path | None:
+def run_consistency_once(port: str, samples: int, seed: int, timeout: int = 1800, no_cache: bool = False) -> Optional[Path]:
     """调用 consistency_test_fixed.py 并返回它保存的 JSON 路径"""
     cmd = [
         sys.executable, str(CONSISTENCY_SCRIPT),

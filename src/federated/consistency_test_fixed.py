@@ -10,6 +10,7 @@ VERSION: 2025-08-07-r4
 """
 import os, sys, json, time, logging, random, math
 from pathlib import Path
+from typing import Optional
 import torch, numpy as np
 from math import sqrt
 import yaml
@@ -38,7 +39,7 @@ STAGE_FILE_MAP = {
     }
 }
 
-def resolve_ckpt(port: str, stage_name: str) -> Path | None:
+def resolve_ckpt(port: str, stage_name: str) -> Optional[Path]:
     """发现 checkpoint 路径（老/新命名皆可），找不到返回 None。"""
     d1 = REPO_ROOT / "models" / "curriculum_v2" / port
     d2 = REPO_ROOT / "models" / "fine_tuned" / port
@@ -71,7 +72,7 @@ def get_stage_threshold(port: str, stage_name: str, default_threshold: float) ->
     stage_thresholds = port_thresholds.get(stage_name, {})
     return stage_thresholds.get('threshold', default_threshold)
 
-def infer_state_dim(ckpt) -> int | None:
+def infer_state_dim(ckpt) -> Optional[int]:
     """从 ckpt 推断期望输入维度"""
     # 首选 ckpt 内 config
     cfg = ckpt.get("config", {})
