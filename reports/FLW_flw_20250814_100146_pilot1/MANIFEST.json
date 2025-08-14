@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "timestamp": "2025-08-14 10:02:34",
+    "flower_tag": "flw_20250814_100146_pilot1",
+    "host": "VM-4-2-ubuntu",
+    "server_address": "43.163.97.188:8080",
+    "participants": "mac_only",
+    "rounds_saved": 200,
+    "notes": "pilot distributed run; only one external client connected."
+  },
+  "artifacts": {
+    "global_best": {
+      "path": "models/flw/flw_20250814_100146_pilot1/global_best.pt",
+      "sha12": "e0f21caeaabf"
+    }
+  }
+}
