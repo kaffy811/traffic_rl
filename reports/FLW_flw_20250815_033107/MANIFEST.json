@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-08-15 03:31:34",
+  "flower_tag": "flw_20250815_033107",
+  "artifacts": {
+    "global_best": {
+      "path": "models/flw/flw_20250815_033107/global_best.pt",
+      "sha12": "c2d914e155cf",
+      "size_bytes": 193413
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "port": "new_orleans",
+  "seed": 2025,
+  "samples": 800,
+  "success_rate": 0.52625,
+  "avg_reward": 27.202999486087005,
+  "source": "models/flw/flw_20250816_042130_epMix_Balance200/global_round_200.pt",
+  "ts": "2025-08-21 07:20:05",
+  "returncode": 0
+}

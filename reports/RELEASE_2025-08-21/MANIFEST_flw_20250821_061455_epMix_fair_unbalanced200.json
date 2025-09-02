@@ -1,0 +1,9 @@
+{
+  "tag": "flw_20250821_061455_epMix_fair_unbalanced200",
+  "ckpt": "models/flw/flw_20250821_061455_epMix_fair_unbalanced200/global_round_200.pt",
+  "bytes": 384001,
+  "sha256": "d4797d7a85934f368ba9da1b5b35805bcc01e9fd1b655dda686baf93e9f6a362",
+  "sha12": "d4797d7a8593",
+  "created_at": "2025-08-21 07:43:04",
+  "notes": "FairUnbalanced200 (invsize)"
+}

@@ -1,0 +1,131 @@
+{
+  "timestamp": "2025-08-15 04:57:14",
+  "flower_tag": "flw_20250815_045451_ep08_balanced30",
+  "count": 31,
+  "artifacts": {
+    "global_best.pt": {
+      "sha12": "c07fb82e0682",
+      "size": 193413
+    },
+    "global_round_001.pt": {
+      "sha12": "3e49f496ce05",
+      "size": 193537
+    },
+    "global_round_002.pt": {
+      "sha12": "5848d0d9efdb",
+      "size": 193537
+    },
+    "global_round_003.pt": {
+      "sha12": "e394a0a8bedb",
+      "size": 193537
+    },
+    "global_round_004.pt": {
+      "sha12": "16b8db61fba3",
+      "size": 193537
+    },
+    "global_round_005.pt": {
+      "sha12": "6fc53f294607",
+      "size": 193537
+    },
+    "global_round_006.pt": {
+      "sha12": "5b579d565fab",
+      "size": 193537
+    },
+    "global_round_007.pt": {
+      "sha12": "a425c4371e80",
+      "size": 193537
+    },
+    "global_round_008.pt": {
+      "sha12": "b79fc7ffdc94",
+      "size": 193537
+    },
+    "global_round_009.pt": {
+      "sha12": "d6e3dfd28687",
+      "size": 193537
+    },
+    "global_round_010.pt": {
+      "sha12": "09f87d363812",
+      "size": 193537
+    },
+    "global_round_011.pt": {
+      "sha12": "ef1c4706781a",
+      "size": 193537
+    },
+    "global_round_012.pt": {
+      "sha12": "53f46a2b4ff1",
+      "size": 193537
+    },
+    "global_round_013.pt": {
+      "sha12": "815a97a44447",
+      "size": 193537
+    },
+    "global_round_014.pt": {
+      "sha12": "70fa0af05dbf",
+      "size": 193537
+    },
+    "global_round_015.pt": {
+      "sha12": "2c80d365e9fc",
+      "size": 193537
+    },
+    "global_round_016.pt": {
+      "sha12": "5a29f5e11392",
+      "size": 193537
+    },
+    "global_round_017.pt": {
+      "sha12": "716b26c34f2c",
+      "size": 193537
+    },
+    "global_round_018.pt": {
+      "sha12": "a9c20213b711",
+      "size": 193537
+    },
+    "global_round_019.pt": {
+      "sha12": "d78dd5ff473c",
+      "size": 193537
+    },
+    "global_round_020.pt": {
+      "sha12": "376515509f7f",
+      "size": 193537
+    },
+    "global_round_021.pt": {
+      "sha12": "1b46cee2cd7a",
+      "size": 193537
+    },
+    "global_round_022.pt": {
+      "sha12": "d218aa605017",
+      "size": 193537
+    },
+    "global_round_023.pt": {
+      "sha12": "a3ab91297787",
+      "size": 193537
+    },
+    "global_round_024.pt": {
+      "sha12": "994656a3ceaa",
+      "size": 193537
+    },
+    "global_round_025.pt": {
+      "sha12": "e6177594fcbb",
+      "size": 193537
+    },
+    "global_round_026.pt": {
+      "sha12": "75a78ec2ec82",
+      "size": 193537
+    },
+    "global_round_027.pt": {
+      "sha12": "d735b9668dce",
+      "size": 193537
+    },
+    "global_round_028.pt": {
+      "sha12": "052c10ebafee",
+      "size": 193537
+    },
+    "global_round_029.pt": {
+      "sha12": "7b7a8c657002",
+      "size": 193537
+    },
+    "global_round_030.pt": {
+      "sha12": "e1f2e550c8d1",
+      "size": 193537
+    }
+  }
+}

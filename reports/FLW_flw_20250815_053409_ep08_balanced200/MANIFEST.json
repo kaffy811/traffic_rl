@@ -1,0 +1,810 @@
+{
+  "timestamp": "2025-08-15 05:34:16",
+  "flower_tag": "flw_20250815_053409_ep08_balanced200",
+  "artifacts": {
+    "global_best.pt": {
+      "size": 193413,
+      "sha12": "cafe326ca59b"
+    },
+    "global_round_001.pt": {
+      "size": 193537,
+      "sha12": "7ee612eef7d3"
+    },
+    "global_round_002.pt": {
+      "size": 193537,
+      "sha12": "1cfb1234c267"
+    },
+    "global_round_003.pt": {
+      "size": 193537,
+      "sha12": "7d7615dc43aa"
+    },
+    "global_round_004.pt": {
+      "size": 193537,
+      "sha12": "f54a6696a30d"
+    },
+    "global_round_005.pt": {
+      "size": 193537,
+      "sha12": "3e2115d7c617"
+    },
+    "global_round_006.pt": {
+      "size": 193537,
+      "sha12": "481f2b840350"
+    },
+    "global_round_007.pt": {
+      "size": 193537,
+      "sha12": "b340d10fafeb"
+    },
+    "global_round_008.pt": {
+      "size": 193537,
+      "sha12": "7ef298abedd7"
+    },
+    "global_round_009.pt": {
+      "size": 193537,
+      "sha12": "d6593dddb563"
+    },
+    "global_round_010.pt": {
+      "size": 193537,
+      "sha12": "fde4425108f8"
+    },
+    "global_round_011.pt": {
+      "size": 193537,
+      "sha12": "a68a473fe50d"
+    },
+    "global_round_012.pt": {
+      "size": 193537,
+      "sha12": "612fbbf55caf"
+    },
+    "global_round_013.pt": {
+      "size": 193537,
+      "sha12": "64ff720f3b8a"
+    },
+    "global_round_014.pt": {
+      "size": 193537,
+      "sha12": "c4aeef0f6a16"
+    },
+    "global_round_015.pt": {
+      "size": 193537,
+      "sha12": "bf2b7d512533"
+    },
+    "global_round_016.pt": {
+      "size": 193537,
+      "sha12": "78bfabbd7dd2"
+    },
+    "global_round_017.pt": {
+      "size": 193537,
+      "sha12": "2f1a34ff0f0d"
+    },
+    "global_round_018.pt": {
+      "size": 193537,
+      "sha12": "fe7daafb36ff"
+    },
+    "global_round_019.pt": {
+      "size": 193537,
+      "sha12": "f8eecff64cfb"
+    },
+    "global_round_020.pt": {
+      "size": 193537,
+      "sha12": "1a34456a5564"
+    },
+    "global_round_021.pt": {
+      "size": 193537,
+      "sha12": "ed5db4b7a329"
+    },
+    "global_round_022.pt": {
+      "size": 193537,
+      "sha12": "585cc04a32ab"
+    },
+    "global_round_023.pt": {
+      "size": 193537,
+      "sha12": "b1863a9f6ac5"
+    },
+    "global_round_024.pt": {
+      "size": 193537,
+      "sha12": "899c4da21bdb"
+    },
+    "global_round_025.pt": {
+      "size": 193537,
+      "sha12": "a534ec5097ca"
+    },
+    "global_round_026.pt": {
+      "size": 193537,
+      "sha12": "bdf214392fb6"
+    },
+    "global_round_027.pt": {
+      "size": 193537,
+      "sha12": "80826ad5c822"
+    },
+    "global_round_028.pt": {
+      "size": 193537,
+      "sha12": "03d8d11bd0ff"
+    },
+    "global_round_029.pt": {
+      "size": 193537,
+      "sha12": "2729e8b3bac4"
+    },
+    "global_round_030.pt": {
+      "size": 193537,
+      "sha12": "7c160f2554ec"
+    },
+    "global_round_031.pt": {
+      "size": 193537,
+      "sha12": "563443616123"
+    },
+    "global_round_032.pt": {
+      "size": 193537,
+      "sha12": "b09d7a72715a"
+    },
+    "global_round_033.pt": {
+      "size": 193537,
+      "sha12": "06dbe1669d1a"
+    },
+    "global_round_034.pt": {
+      "size": 193537,
+      "sha12": "80a85dfbf0f4"
+    },
+    "global_round_035.pt": {
+      "size": 193537,
+      "sha12": "e51ab142f494"
+    },
+    "global_round_036.pt": {
+      "size": 193537,
+      "sha12": "13401a02dabb"
+    },
+    "global_round_037.pt": {
+      "size": 193537,
+      "sha12": "5ec6ca711997"
+    },
+    "global_round_038.pt": {
+      "size": 193537,
+      "sha12": "e677c5fdb000"
+    },
+    "global_round_039.pt": {
+      "size": 193537,
+      "sha12": "e6b2d8f63436"
+    },
+    "global_round_040.pt": {
+      "size": 193537,
+      "sha12": "7dabf0b56555"
+    },
+    "global_round_041.pt": {
+      "size": 193537,
+      "sha12": "918e76e80ea9"
+    },
+    "global_round_042.pt": {
+      "size": 193537,
+      "sha12": "9190690645ea"
+    },
+    "global_round_043.pt": {
+      "size": 193537,
+      "sha12": "4182e2c8b170"
+    },
+    "global_round_044.pt": {
+      "size": 193537,
+      "sha12": "5d22dcd07aa6"
+    },
+    "global_round_045.pt": {
+      "size": 193537,
+      "sha12": "342d4c4ef8e1"
+    },
+    "global_round_046.pt": {
+      "size": 193537,
+      "sha12": "26865f14337c"
+    },
+    "global_round_047.pt": {
+      "size": 193537,
+      "sha12": "c161c90b2e43"
+    },
+    "global_round_048.pt": {
+      "size": 193537,
+      "sha12": "7968398ca922"
+    },
+    "global_round_049.pt": {
+      "size": 193537,
+      "sha12": "397e5344437f"
+    },
+    "global_round_050.pt": {
+      "size": 193537,
+      "sha12": "81c3fdf90976"
+    },
+    "global_round_051.pt": {
+      "size": 193537,
+      "sha12": "c9c5ebd756b9"
+    },
+    "global_round_052.pt": {
+      "size": 193537,
+      "sha12": "970e393c67e5"
+    },
+    "global_round_053.pt": {
+      "size": 193537,
+      "sha12": "0dad3482028c"
+    },
+    "global_round_054.pt": {
+      "size": 193537,
+      "sha12": "95963cbe4c36"
+    },
+    "global_round_055.pt": {
+      "size": 193537,
+      "sha12": "4cff9c86e264"
+    },
+    "global_round_056.pt": {
+      "size": 193537,
+      "sha12": "4368b7082c4e"
+    },
+    "global_round_057.pt": {
+      "size": 193537,
+      "sha12": "a989ee532e4c"
+    },
+    "global_round_058.pt": {
+      "size": 193537,
+      "sha12": "84f39d391e74"
+    },
+    "global_round_059.pt": {
+      "size": 193537,
+      "sha12": "31141779d9a2"
+    },
+    "global_round_060.pt": {
+      "size": 193537,
+      "sha12": "db71a394fe46"
+    },
+    "global_round_061.pt": {
+      "size": 193537,
+      "sha12": "4082ea1402ba"
+    },
+    "global_round_062.pt": {
+      "size": 193537,
+      "sha12": "aa3773c96f9c"
+    },
+    "global_round_063.pt": {
+      "size": 193537,
+      "sha12": "2faf583b9e66"
+    },
+    "global_round_064.pt": {
+      "size": 193537,
+      "sha12": "7ad03b6b8513"
+    },
+    "global_round_065.pt": {
+      "size": 193537,
+      "sha12": "1d1ff159a254"
+    },
+    "global_round_066.pt": {
+      "size": 193537,
+      "sha12": "2585903c1b24"
+    },
+    "global_round_067.pt": {
+      "size": 193537,
+      "sha12": "b83bd1ad5eaa"
+    },
+    "global_round_068.pt": {
+      "size": 193537,
+      "sha12": "d0b39a4534a0"
+    },
+    "global_round_069.pt": {
+      "size": 193537,
+      "sha12": "bb1fdf485a32"
+    },
+    "global_round_070.pt": {
+      "size": 193537,
+      "sha12": "27835163bd83"
+    },
+    "global_round_071.pt": {
+      "size": 193537,
+      "sha12": "5bceac12b28b"
+    },
+    "global_round_072.pt": {
+      "size": 193537,
+      "sha12": "13eb1fd200ac"
+    },
+    "global_round_073.pt": {
+      "size": 193537,
+      "sha12": "7561df282ea5"
+    },
+    "global_round_074.pt": {
+      "size": 193537,
+      "sha12": "f0522cc536f0"
+    },
+    "global_round_075.pt": {
+      "size": 193537,
+      "sha12": "5102b4092e06"
+    },
+    "global_round_076.pt": {
+      "size": 193537,
+      "sha12": "a2e639f5e246"
+    },
+    "global_round_077.pt": {
+      "size": 193537,
+      "sha12": "86729954c38a"
+    },
+    "global_round_078.pt": {
+      "size": 193537,
+      "sha12": "413d1bf0f235"
+    },
+    "global_round_079.pt": {
+      "size": 193537,
+      "sha12": "e3532d348992"
+    },
+    "global_round_080.pt": {
+      "size": 193537,
+      "sha12": "7a2372563d85"
+    },
+    "global_round_081.pt": {
+      "size": 193537,
+      "sha12": "e097fc203156"
+    },
+    "global_round_082.pt": {
+      "size": 193537,
+      "sha12": "158327fbbb9a"
+    },
+    "global_round_083.pt": {
+      "size": 193537,
+      "sha12": "efbdd5e3fd9b"
+    },
+    "global_round_084.pt": {
+      "size": 193537,
+      "sha12": "335797a537db"
+    },
+    "global_round_085.pt": {
+      "size": 193537,
+      "sha12": "4f44c726a9a2"
+    },
+    "global_round_086.pt": {
+      "size": 193537,
+      "sha12": "1b10b1b860b0"
+    },
+    "global_round_087.pt": {
+      "size": 193537,
+      "sha12": "c8916c8b51b6"
+    },
+    "global_round_088.pt": {
+      "size": 193537,
+      "sha12": "0656fa2d8a41"
+    },
+    "global_round_089.pt": {
+      "size": 193537,
+      "sha12": "defb21e5d01c"
+    },
+    "global_round_090.pt": {
+      "size": 193537,
+      "sha12": "6dd633215e8a"
+    },
+    "global_round_091.pt": {
+      "size": 193537,
+      "sha12": "668ef3410677"
+    },
+    "global_round_092.pt": {
+      "size": 193537,
+      "sha12": "8297663c2cf1"
+    },
+    "global_round_093.pt": {
+      "size": 193537,
+      "sha12": "eeffbca2bdfd"
+    },
+    "global_round_094.pt": {
+      "size": 193537,
+      "sha12": "fa3be8dca08a"
+    },
+    "global_round_095.pt": {
+      "size": 193537,
+      "sha12": "57e9b302b00b"
+    },
+    "global_round_096.pt": {
+      "size": 193537,
+      "sha12": "8a7e65650a6e"
+    },
+    "global_round_097.pt": {
+      "size": 193537,
+      "sha12": "dfd50cf305ad"
+    },
+    "global_round_098.pt": {
+      "size": 193537,
+      "sha12": "00f96e0ef40c"
+    },
+    "global_round_099.pt": {
+      "size": 193537,
+      "sha12": "345d41ae5baa"
+    },
+    "global_round_100.pt": {
+      "size": 193537,
+      "sha12": "f141e14e26ab"
+    },
+    "global_round_101.pt": {
+      "size": 193537,
+      "sha12": "72a9cbc516f1"
+    },
+    "global_round_102.pt": {
+      "size": 193537,
+      "sha12": "125c17b27cb4"
+    },
+    "global_round_103.pt": {
+      "size": 193537,
+      "sha12": "c30556bda110"
+    },
+    "global_round_104.pt": {
+      "size": 193537,
+      "sha12": "f2a7e1c71bfa"
+    },
+    "global_round_105.pt": {
+      "size": 193537,
+      "sha12": "3e6715349ee4"
+    },
+    "global_round_106.pt": {
+      "size": 193537,
+      "sha12": "c8ec556123e6"
+    },
+    "global_round_107.pt": {
+      "size": 193537,
+      "sha12": "760061119c56"
+    },
+    "global_round_108.pt": {
+      "size": 193537,
+      "sha12": "f97cc33e24b4"
+    },
+    "global_round_109.pt": {
+      "size": 193537,
+      "sha12": "7b28f3fad3ba"
+    },
+    "global_round_110.pt": {
+      "size": 193537,
+      "sha12": "e0ece1dcee6e"
+    },
+    "global_round_111.pt": {
+      "size": 193537,
+      "sha12": "97c957717602"
+    },
+    "global_round_112.pt": {
+      "size": 193537,
+      "sha12": "e7cd4dd48253"
+    },
+    "global_round_113.pt": {
+      "size": 193537,
+      "sha12": "be78f348d373"
+    },
+    "global_round_114.pt": {
+      "size": 193537,
+      "sha12": "8db7be996ef1"
+    },
+    "global_round_115.pt": {
+      "size": 193537,
+      "sha12": "2f252f74cb80"
+    },
+    "global_round_116.pt": {
+      "size": 193537,
+      "sha12": "5f35421c582b"
+    },
+    "global_round_117.pt": {
+      "size": 193537,
+      "sha12": "e45435fcb397"
+    },
+    "global_round_118.pt": {
+      "size": 193537,
+      "sha12": "10ec28b280a2"
+    },
+    "global_round_119.pt": {
+      "size": 193537,
+      "sha12": "6c94fde07dcd"
+    },
+    "global_round_120.pt": {
+      "size": 193537,
+      "sha12": "1386d8a8ecd7"
+    },
+    "global_round_121.pt": {
+      "size": 193537,
+      "sha12": "24f8fd10dff5"
+    },
+    "global_round_122.pt": {
+      "size": 193537,
+      "sha12": "99664bb32665"
+    },
+    "global_round_123.pt": {
+      "size": 193537,
+      "sha12": "40e92fe99e1b"
+    },
+    "global_round_124.pt": {
+      "size": 193537,
+      "sha12": "9c09275c1b6c"
+    },
+    "global_round_125.pt": {
+      "size": 193537,
+      "sha12": "56e7c13428eb"
+    },
+    "global_round_126.pt": {
+      "size": 193537,
+      "sha12": "48fdd7ca92c4"
+    },
+    "global_round_127.pt": {
+      "size": 193537,
+      "sha12": "1bdc94bdf586"
+    },
+    "global_round_128.pt": {
+      "size": 193537,
+      "sha12": "990724eeac16"
+    },
+    "global_round_129.pt": {
+      "size": 193537,
+      "sha12": "4eb2a1638a64"
+    },
+    "global_round_130.pt": {
+      "size": 193537,
+      "sha12": "c3e563b55824"
+    },
+    "global_round_131.pt": {
+      "size": 193537,
+      "sha12": "4074bf8dcca1"
+    },
+    "global_round_132.pt": {
+      "size": 193537,
+      "sha12": "e70890f9e665"
+    },
+    "global_round_133.pt": {
+      "size": 193537,
+      "sha12": "ec5deae7d654"
+    },
+    "global_round_134.pt": {
+      "size": 193537,
+      "sha12": "be0eb8ce1677"
+    },
+    "global_round_135.pt": {
+      "size": 193537,
+      "sha12": "5d4ed557ca0d"
+    },
+    "global_round_136.pt": {
+      "size": 193537,
+      "sha12": "2e465905f9b3"
+    },
+    "global_round_137.pt": {
+      "size": 193537,
+      "sha12": "2856b913f338"
+    },
+    "global_round_138.pt": {
+      "size": 193537,
+      "sha12": "3ddb265c7d65"
+    },
+    "global_round_139.pt": {
+      "size": 193537,
+      "sha12": "ee754b05ac4c"
+    },
+    "global_round_140.pt": {
+      "size": 193537,
+      "sha12": "74f2026109ca"
+    },
+    "global_round_141.pt": {
+      "size": 193537,
+      "sha12": "4ef8d652dc37"
+    },
+    "global_round_142.pt": {
+      "size": 193537,
+      "sha12": "d992b03f6a2b"
+    },
+    "global_round_143.pt": {
+      "size": 193537,
+      "sha12": "6f4a57c9b3a1"
+    },
+    "global_round_144.pt": {
+      "size": 193537,
+      "sha12": "19623ac21ba2"
+    },
+    "global_round_145.pt": {
+      "size": 193537,
+      "sha12": "e9c366772b17"
+    },
+    "global_round_146.pt": {
+      "size": 193537,
+      "sha12": "c3a2213a1cbf"
+    },
+    "global_round_147.pt": {
+      "size": 193537,
+      "sha12": "a23f8115ff5a"
+    },
+    "global_round_148.pt": {
+      "size": 193537,
+      "sha12": "d218d3c9d1b4"
+    },
+    "global_round_149.pt": {
+      "size": 193537,
+      "sha12": "c60a6ad43d97"
+    },
+    "global_round_150.pt": {
+      "size": 193537,
+      "sha12": "812d7799c939"
+    },
+    "global_round_151.pt": {
+      "size": 193537,
+      "sha12": "8d6865fe4e49"
+    },
+    "global_round_152.pt": {
+      "size": 193537,
+      "sha12": "990563c19564"
+    },
+    "global_round_153.pt": {
+      "size": 193537,
+      "sha12": "91384d772dc3"
+    },
+    "global_round_154.pt": {
+      "size": 193537,
+      "sha12": "5626d1ab9282"
+    },
+    "global_round_155.pt": {
+      "size": 193537,
+      "sha12": "67c895fcf9e0"
+    },
+    "global_round_156.pt": {
+      "size": 193537,
+      "sha12": "5e1b4dab5b1d"
+    },
+    "global_round_157.pt": {
+      "size": 193537,
+      "sha12": "206a6d028ba1"
+    },
+    "global_round_158.pt": {
+      "size": 193537,
+      "sha12": "253d1b41ec51"
+    },
+    "global_round_159.pt": {
+      "size": 193537,
+      "sha12": "f1f3494b75a9"
+    },
+    "global_round_160.pt": {
+      "size": 193537,
+      "sha12": "baf7d83159cb"
+    },
+    "global_round_161.pt": {
+      "size": 193537,
+      "sha12": "cec5a39bb047"
+    },
+    "global_round_162.pt": {
+      "size": 193537,
+      "sha12": "6e4ad20b1770"
+    },
+    "global_round_163.pt": {
+      "size": 193537,
+      "sha12": "37b550e691dc"
+    },
+    "global_round_164.pt": {
+      "size": 193537,
+      "sha12": "97022c122511"
+    },
+    "global_round_165.pt": {
+      "size": 193537,
+      "sha12": "4849a7be7782"
+    },
+    "global_round_166.pt": {
+      "size": 193537,
+      "sha12": "77bd62eb193c"
+    },
+    "global_round_167.pt": {
+      "size": 193537,
+      "sha12": "84cfb9bd7dfd"
+    },
+    "global_round_168.pt": {
+      "size": 193537,
+      "sha12": "ad879f35798a"
+    },
+    "global_round_169.pt": {
+      "size": 193537,
+      "sha12": "bd93648ceb97"
+    },
+    "global_round_170.pt": {
+      "size": 193537,
+      "sha12": "d9c56e1a9588"
+    },
+    "global_round_171.pt": {
+      "size": 193537,
+      "sha12": "78ac0626d4d0"
+    },
+    "global_round_172.pt": {
+      "size": 193537,
+      "sha12": "29af868bc630"
+    },
+    "global_round_173.pt": {
+      "size": 193537,
+      "sha12": "92cfef542a15"
+    },
+    "global_round_174.pt": {
+      "size": 193537,
+      "sha12": "4f3316409253"
+    },
+    "global_round_175.pt": {
+      "size": 193537,
+      "sha12": "a21654df8aba"
+    },
+    "global_round_176.pt": {
+      "size": 193537,
+      "sha12": "a8a012deb012"
+    },
+    "global_round_177.pt": {
+      "size": 193537,
+      "sha12": "926c97b91429"
+    },
+    "global_round_178.pt": {
+      "size": 193537,
+      "sha12": "03550f30b281"
+    },
+    "global_round_179.pt": {
+      "size": 193537,
+      "sha12": "cc6dfc3fda50"
+    },
+    "global_round_180.pt": {
+      "size": 193537,
+      "sha12": "1f930d21d4fc"
+    },
+    "global_round_181.pt": {
+      "size": 193537,
+      "sha12": "7cd1f6e48060"
+    },
+    "global_round_182.pt": {
+      "size": 193537,
+      "sha12": "b89fba3fc367"
+    },
+    "global_round_183.pt": {
+      "size": 193537,
+      "sha12": "83cd5e4d0827"
+    },
+    "global_round_184.pt": {
+      "size": 193537,
+      "sha12": "a5edcdc6780a"
+    },
+    "global_round_185.pt": {
+      "size": 193537,
+      "sha12": "46f3a7e998fe"
+    },
+    "global_round_186.pt": {
+      "size": 193537,
+      "sha12": "2bab2b1b584f"
+    },
+    "global_round_187.pt": {
+      "size": 193537,
+      "sha12": "8f4ec106a3b5"
+    },
+    "global_round_188.pt": {
+      "size": 193537,
+      "sha12": "da6698aa5db7"
+    },
+    "global_round_189.pt": {
+      "size": 193537,
+      "sha12": "a5f0ee2ccfb7"
+    },
+    "global_round_190.pt": {
+      "size": 193537,
+      "sha12": "58945413d77e"
+    },
+    "global_round_191.pt": {
+      "size": 193537,
+      "sha12": "d3fe60e35257"
+    },
+    "global_round_192.pt": {
+      "size": 193537,
+      "sha12": "3503bff9d059"
+    },
+    "global_round_193.pt": {
+      "size": 193537,
+      "sha12": "14e8418aed2d"
+    },
+    "global_round_194.pt": {
+      "size": 193537,
+      "sha12": "5cd37607cdcc"
+    },
+    "global_round_195.pt": {
+      "size": 193537,
+      "sha12": "45143150bfb2"
+    },
+    "global_round_196.pt": {
+      "size": 193537,
+      "sha12": "624c68357de3"
+    },
+    "global_round_197.pt": {
+      "size": 193537,
+      "sha12": "7665ba21a698"
+    },
+    "global_round_198.pt": {
+      "size": 193537,
+      "sha12": "15625a6c20f9"
+    },
+    "global_round_199.pt": {
+      "size": 193537,
+      "sha12": "a720bdbd98bb"
+    },
+    "global_round_200.pt": {
+      "size": 193537,
+      "sha12": "d58871791729"
+    }
+  }
+}

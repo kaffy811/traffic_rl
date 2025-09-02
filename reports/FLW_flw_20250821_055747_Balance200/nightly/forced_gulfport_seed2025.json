@@ -1,0 +1,10 @@
+{
+  "port": "gulfport",
+  "seed": 2025,
+  "samples": 1600,
+  "success_rate": 0.444375,
+  "avg_reward": 22.504377424255058,
+  "num_samples": 3200,
+  "source": "models/flw/flw_20250821_055747_Balance200/global_round_200.pt",
+  "ts": "2025-08-21 08:25:57"
+}

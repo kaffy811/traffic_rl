@@ -1,0 +1,9 @@
+{
+  "tag": "flw_20250821_060608_Unbalanced200_8_8_vs_2_2",
+  "ckpt": "models/flw/flw_20250821_060608_Unbalanced200_8_8_vs_2_2/global_round_200.pt",
+  "bytes": 384001,
+  "sha256": "b834e6b900d85afaf8b5678bad7955678106140941cd53ee5189e569b4ad7efd",
+  "sha12": "b834e6b900d8",
+  "created_at": "2025-08-21 07:43:04",
+  "notes": "Unbalanced200 (8/8 vs 2/2)"
+}

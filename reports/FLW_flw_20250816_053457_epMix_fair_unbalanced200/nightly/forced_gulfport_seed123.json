@@ -1,0 +1,10 @@
+{
+  "port": "gulfport",
+  "seed": 123,
+  "samples": 800,
+  "success_rate": 0.464375,
+  "avg_reward": 23.040432016755425,
+  "source": "models/flw/flw_20250816_053457_epMix_fair_unbalanced200/global_round_200.pt",
+  "ts": "2025-08-21 07:26:11",
+  "returncode": 0
+}

@@ -1,0 +1,10 @@
+{
+  "port": "south_louisiana",
+  "seed": 2025,
+  "samples": 800,
+  "success_rate": 0.5283333333333333,
+  "avg_reward": 29.73665357836333,
+  "source": "models/flw/flw_20250816_051326_unbalanced200_ep8_8__ep2_2/global_round_200.pt",
+  "ts": "2025-08-21 07:23:17",
+  "returncode": 0
+}

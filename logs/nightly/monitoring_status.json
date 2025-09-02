@@ -1,138 +1,33 @@
 {
-  "run_time": "2025-08-12 20:41:15",
+  "run_time": "2025-08-16 05:48:08",
   "ports": {
     "baton_rouge": {
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_204124.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_baton_rouge_20250816_054809.json",
           "data": {
             "port": "baton_rouge",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.64625,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.6124900317352866,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.54875,
-                "threshold": 0.5,
-                "pass": true,
-                "wilson_lb": 0.514115577762431,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.355,
-                "threshold": 0.34,
-                "pass": true,
-                "wilson_lb": 0.32260575340161846,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
-            "from_cache": false,
-            "notes": "reverted to original threshold=0.500"
+            "stages": [],
+            "from_cache": false
           }
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_204138.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_baton_rouge_20250816_054811.json",
           "data": {
             "port": "baton_rouge",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.625,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.5909295407573959,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 100,
-                "recheck_used": true
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.53625,
-                "threshold": 0.5,
-                "pass": true,
-                "wilson_lb": 0.5016019455529509,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.35625,
-                "threshold": 0.34,
-                "pass": true,
-                "wilson_lb": 0.3238238477740017,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
-            "from_cache": false,
-            "notes": "reverted to original threshold=0.500"
+            "stages": [],
+            "from_cache": false
           }
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_baton_rouge_20250812_204147.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_baton_rouge_20250816_054813.json",
           "data": {
             "port": "baton_rouge",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.66875,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.6353963049943212,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.55375,
-                "threshold": 0.5,
-                "pass": true,
-                "wilson_lb": 0.5191271289114263,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.3575,
-                "threshold": 0.34,
-                "pass": true,
-                "wilson_lb": 0.32504218669365076,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
-            "from_cache": false,
-            "notes": "reverted to original threshold=0.500"
+            "stages": [],
+            "from_cache": false
           }
         }
       ],
@@ -143,196 +38,28 @@
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_204202.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_new_orleans_20250816_054814.json",
           "data": {
             "port": "new_orleans",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.515,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.4803784574820477,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "初级阶段",
-                "win_rate": 0.52,
-                "threshold": 0.4,
-                "pass": true,
-                "wilson_lb": 0.4853666097760782,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.56,
-                "threshold": 0.47,
-                "pass": true,
-                "wilson_lb": 0.5253964915437855,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.5,
-                "threshold": 0.4,
-                "pass": true,
-                "wilson_lb": 0.4654346597112372,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "专家阶段",
-                "win_rate": 0.40375,
-                "threshold": 0.35,
-                "pass": true,
-                "wilson_lb": 0.37028800100538856,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_204217.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_new_orleans_20250816_054816.json",
           "data": {
             "port": "new_orleans",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.5025,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.46792314208830366,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "初级阶段",
-                "win_rate": 0.5325,
-                "threshold": 0.4,
-                "pass": true,
-                "wilson_lb": 0.49785208742454357,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.5275,
-                "threshold": 0.47,
-                "pass": true,
-                "wilson_lb": 0.49285530525572024,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.52,
-                "threshold": 0.4,
-                "pass": true,
-                "wilson_lb": 0.4853666097760782,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "专家阶段",
-                "win_rate": 0.41125,
-                "threshold": 0.35,
-                "pass": true,
-                "wilson_lb": 0.37765502628419084,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_new_orleans_20250812_204231.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_new_orleans_20250816_054817.json",
           "data": {
             "port": "new_orleans",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.5325,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.49785208742454357,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "初级阶段",
-                "win_rate": 0.52625,
-                "threshold": 0.4,
-                "pass": true,
-                "wilson_lb": 0.4916066498857591,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.54625,
-                "threshold": 0.47,
-                "pass": true,
-                "wilson_lb": 0.5116111113860793,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.53125,
-                "threshold": 0.4,
-                "pass": true,
-                "wilson_lb": 0.4966025675887901,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "专家阶段",
-                "win_rate": 0.36875,
-                "threshold": 0.35,
-                "pass": true,
-                "wilson_lb": 0.3360181501601762,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         }
@@ -344,130 +71,28 @@
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_204245.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_south_louisiana_20250816_054819.json",
           "data": {
             "port": "south_louisiana",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.56375,
-                "threshold": 0.41,
-                "pass": true,
-                "wilson_lb": 0.5291607440941466,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.49625,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.4617035486702576,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.3975,
-                "threshold": 0.37,
-                "pass": true,
-                "wilson_lb": 0.3641550658883024,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 100,
-                "recheck_used": true
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_204302.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_south_louisiana_20250816_054821.json",
           "data": {
             "port": "south_louisiana",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.56125,
-                "threshold": 0.41,
-                "pass": true,
-                "wilson_lb": 0.5266510224158848,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": true
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.48125,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.44679846299218356,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.37125,
-                "threshold": 0.37,
-                "pass": true,
-                "wilson_lb": 0.3384598974255992,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 100,
-                "recheck_used": true
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_south_louisiana_20250812_204316.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_south_louisiana_20250816_054822.json",
           "data": {
             "port": "south_louisiana",
-            "stages": [
-              {
-                "stage": "基础阶段",
-                "win_rate": 0.55875,
-                "threshold": 0.41,
-                "pass": true,
-                "wilson_lb": 0.5241421803790288,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "中级阶段",
-                "win_rate": 0.4925,
-                "threshold": 0.45,
-                "pass": true,
-                "wilson_lb": 0.45797437282734893,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "高级阶段",
-                "win_rate": 0.37375,
-                "threshold": 0.37,
-                "pass": true,
-                "wilson_lb": 0.3409025974357176,
-                "threshold_source": "default",
-                "n_samples": 800,
-                "k_baseline": 100,
-                "recheck_used": true
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         }
@@ -479,97 +104,28 @@
       "seeds": [
         {
           "seed": 42,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_204323.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_gulfport_20250816_054824.json",
           "data": {
             "port": "gulfport",
-            "stages": [
-              {
-                "stage": "标准阶段",
-                "win_rate": 0.4975,
-                "threshold": 0.44,
-                "pass": true,
-                "wilson_lb": 0.46294703734328924,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "完整阶段",
-                "win_rate": 0.3875,
-                "threshold": 0.33,
-                "pass": true,
-                "wilson_lb": 0.3543543098904552,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         },
         {
           "seed": 123,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_204330.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_gulfport_20250816_054825.json",
           "data": {
             "port": "gulfport",
-            "stages": [
-              {
-                "stage": "标准阶段",
-                "win_rate": 0.49375,
-                "threshold": 0.44,
-                "pass": true,
-                "wilson_lb": 0.45921721639623503,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              },
-              {
-                "stage": "完整阶段",
-                "win_rate": 0.37875,
-                "threshold": 0.33,
-                "pass": true,
-                "wilson_lb": 0.3457908403111247,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         },
         {
           "seed": 2025,
-          "json": "/Users/kaffy/Documents/GAT-FedPPO/models/releases/2025-08-12/consistency_gulfport_20250812_204341.json",
+          "json": "/home/ubuntu/traffic_rl/models/releases/2025-08-16/consistency_gulfport_20250816_054827.json",
           "data": {
             "port": "gulfport",
-            "stages": [
-              {
-                "stage": "标准阶段",
-                "win_rate": 0.45875,
-                "threshold": 0.44,
-                "pass": true,
-                "wilson_lb": 0.4244990624987902,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 100,
-                "recheck_used": true
-              },
-              {
-                "stage": "完整阶段",
-                "win_rate": 0.39375,
-                "threshold": 0.33,
-                "pass": true,
-                "wilson_lb": 0.360478052759186,
-                "threshold_source": "config",
-                "n_samples": 800,
-                "k_baseline": 50,
-                "recheck_used": false
-              }
-            ],
+            "stages": [],
             "from_cache": false
           }
         }

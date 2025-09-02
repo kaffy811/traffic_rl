@@ -1,0 +1,46 @@
+import argparse, subprocess, sys, json, re, pathlib, time
+
+p = argparse.ArgumentParser()
+p.add_argument("--port", required=True)
+p.add_argument("--seed", type=int, required=True)
+p.add_argument("--samples", type=int, default=800)
+p.add_argument("--out", required=True)
+args = p.parse_args()
+
+cmd = [sys.executable, "src/federated/consistency_test_fixed.py",
+       "--port", args.port, "--samples", str(args.samples),
+       "--seed", str(args.seed), "--no-cache"]
+
+proc = subprocess.run(cmd, capture_output=True, text=True)
+out = proc.stdout + "\n" + proc.stderr
+
+def pick(patterns):
+    for pat in patterns:
+        m = re.search(pat, out, flags=re.IGNORECASE)
+        if m:
+            try: return float(m.group(1))
+            except: pass
+    return None
+
+# 先找 success_rate/accuracy/win_rate；再找 avg_reward/reward_avg
+sr = pick([r"success[_\s]*rate[:=\s]+([0-9.]+)",
+           r"accuracy[:=\s]+([0-9.]+)",
+           r"win[_\s]*rate[:=\s]+([0-9.]+)"])
+reward = pick([r"avg[_\s]*reward[:=\s]+([0-9.]+)",
+               r"reward[_\s]*avg[:=\s]+([0-9.]+)",
+               r"reward[:=\s]+([0-9.]+)"])
+
+# 保存
+path = pathlib.Path(args.out)
+path.parent.mkdir(parents=True, exist_ok=True)
+payload = {
+    "port": args.port,
+    "seed": args.seed,
+    "samples": args.samples,
+    "success_rate": sr,
+    "avg_reward": reward,
+    "ts": time.strftime("%F %T"),
+    "returncode": proc.returncode,
+}
+path.write_text(json.dumps(payload, ensure_ascii=False, indent=2))
+print("WROTE", path)

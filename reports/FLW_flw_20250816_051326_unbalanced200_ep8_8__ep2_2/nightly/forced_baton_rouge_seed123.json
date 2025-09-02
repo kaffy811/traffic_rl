@@ -1,0 +1,10 @@
+{
+  "port": "baton_rouge",
+  "seed": 123,
+  "samples": 800,
+  "success_rate": 0.5095833333333334,
+  "avg_reward": 32.18580080861402,
+  "source": "models/flw/flw_20250816_051326_unbalanced200_ep8_8__ep2_2/global_round_200.pt",
+  "ts": "2025-08-21 07:21:31",
+  "returncode": 0
+}

@@ -1,0 +1,9 @@
+{
+  "tag": "flw_20250821_055747_Balance200",
+  "ckpt": "models/flw/flw_20250821_055747_Balance200/global_round_200.pt",
+  "bytes": 384001,
+  "sha256": "4cd9ca2e65f9b90f07572308a9a9d36fafbab44b81152c8667987096a6405225",
+  "sha12": "4cd9ca2e65f9",
+  "created_at": "2025-08-21 07:43:04",
+  "notes": "Balanced200"
+}

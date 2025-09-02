@@ -1,0 +1,10 @@
+{
+  "port": "baton_rouge",
+  "seed": 42,
+  "samples": 1600,
+  "success_rate": 0.5420833333333334,
+  "avg_reward": 32.92070180599318,
+  "num_samples": 4800,
+  "source": "models/flw/flw_20250821_055747_Balance200/global_round_200.pt",
+  "ts": "2025-08-21 08:18:39"
+}

@@ -1,0 +1,130 @@
+{
+  "timestamp": "2025-08-15 02:59:06",
+  "flower_tag": "flw_20250815_025838",
+  "artifacts": {
+    "global_best.pt": {
+      "path": "models/flw/flw_20250815_025838/global_best.pt",
+      "sha12": "e48bbc6bea7b"
+    },
+    "global_round_001.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_001.pt",
+      "sha12": "fa0534cbbbce"
+    },
+    "global_round_002.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_002.pt",
+      "sha12": "b727c1b404fa"
+    },
+    "global_round_003.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_003.pt",
+      "sha12": "be2172da183b"
+    },
+    "global_round_004.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_004.pt",
+      "sha12": "49ad1fba85b0"
+    },
+    "global_round_005.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_005.pt",
+      "sha12": "68d3b1f960e5"
+    },
+    "global_round_006.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_006.pt",
+      "sha12": "40ffcc28bfcf"
+    },
+    "global_round_007.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_007.pt",
+      "sha12": "85bb05d1cf99"
+    },
+    "global_round_008.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_008.pt",
+      "sha12": "83f67af3fc47"
+    },
+    "global_round_009.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_009.pt",
+      "sha12": "172871b13ff2"
+    },
+    "global_round_010.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_010.pt",
+      "sha12": "edba6d834570"
+    },
+    "global_round_011.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_011.pt",
+      "sha12": "172a04bdeb50"
+    },
+    "global_round_012.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_012.pt",
+      "sha12": "c258e16e0bda"
+    },
+    "global_round_013.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_013.pt",
+      "sha12": "1cbf9e6bd481"
+    },
+    "global_round_014.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_014.pt",
+      "sha12": "e149ebf435f0"
+    },
+    "global_round_015.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_015.pt",
+      "sha12": "1efe1144c093"
+    },
+    "global_round_016.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_016.pt",
+      "sha12": "4e257a4461d7"
+    },
+    "global_round_017.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_017.pt",
+      "sha12": "c4cf3dacfa46"
+    },
+    "global_round_018.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_018.pt",
+      "sha12": "739b9a7e5807"
+    },
+    "global_round_019.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_019.pt",
+      "sha12": "32deaae3fdfa"
+    },
+    "global_round_020.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_020.pt",
+      "sha12": "e9c3b5aff744"
+    },
+    "global_round_021.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_021.pt",
+      "sha12": "2506be69cedc"
+    },
+    "global_round_022.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_022.pt",
+      "sha12": "7ca651b4d283"
+    },
+    "global_round_023.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_023.pt",
+      "sha12": "5a61f6931d9e"
+    },
+    "global_round_024.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_024.pt",
+      "sha12": "68b235ed46bb"
+    },
+    "global_round_025.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_025.pt",
+      "sha12": "2c0f8039b432"
+    },
+    "global_round_026.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_026.pt",
+      "sha12": "ba08cdabdb4c"
+    },
+    "global_round_027.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_027.pt",
+      "sha12": "161977764ca3"
+    },
+    "global_round_028.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_028.pt",
+      "sha12": "ac662324aea2"
+    },
+    "global_round_029.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_029.pt",
+      "sha12": "b30f7902dfb4"
+    },
+    "global_round_030.pt": {
+      "path": "models/flw/flw_20250815_025838/global_round_030.pt",
+      "sha12": "09bce72f484d"
+    }
+  }
+}
